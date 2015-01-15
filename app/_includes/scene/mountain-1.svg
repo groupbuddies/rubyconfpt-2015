@@ -1,0 +1,14 @@
+<svg width="415px" height="196px" viewBox="0 0 415 196" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>1st mountain</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-4" sketch:type="MSArtboardGroup" transform="translate(0.000000, -704.000000)">
+            <g id="1st-mountain" sketch:type="MSLayerGroup" transform="translate(-157.000000, 704.000000)">
+                <path d="M290.522655,0.5 C490.114923,0.5 580.5,214 580.5,214 L0.545310929,214 C0.545310929,214 90.9303881,0.5 290.522655,0.5 Z" id="Rectangle-93" fill="#6CB182" sketch:type="MSShapeGroup"></path>
+                <path d="M292.522655,3.5 C335.135336,3.5 371.164055,16.390625 371.164055,16.390625 C352.324208,107.011087 502.621887,177.761549 441.449211,206.246094 C334.894885,255.862224 2.54531093,217 2.54531093,217 C2.54531093,217 92.9303881,3.5 292.522655,3.5 Z" id="Rectangle-94" fill="#69AD7F" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
