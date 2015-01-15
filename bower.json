@@ -2,7 +2,6 @@
   "name": "test",
   "version": "0.0.0",
   "dependencies": {
-    "jquery": "latest",
-    "fullpage": "latest"
+    "neat": "~1.7.1"
   }
 }
