@@ -1,0 +1,73 @@
+/** Colors **/
+$theme-color-red: #C00
+$theme-color-yellow: #DAA520
+$theme-color-green: #0C0
+$theme-color-blue: #00C
+$theme-color-black: #000
+$theme-color-white: #FFF
+
+// $theme-palettes: (
+//   neutral: (
+//     white: $theme-color-material-white
+//   ),
+//   primary: (
+//     base: $theme-color-material-blue-grey-500,
+//     light: $theme-color-material-blue-grey-100,
+//     dark: $theme-color-material-blue-grey-900
+//   ),
+//   accent-primary: (
+//     base:  $theme-color-material-amber-500,
+//     dark: $theme-color-material-amber-600
+//   ),
+//   accent-secondary: (
+//     base:  $theme-color-material-teal-500,
+//     light: $theme-color-material-teal-300,
+//     dark: $theme-color-material-teal-600
+//   )
+// );
+
+// @function theme-palette($palette, $tone: 'base') {
+//   @return map-get(map-get($theme-palettes, $palette), $tone);
+// }
+
+
+/** Fonts **/
+$theme-base-font-size: 1em
+$theme-alpha-font-size: $theme-base-font-size * 2.25
+$theme-beta-font-size:  $theme-base-font-size * 2
+$theme-gamma-font-size: $theme-base-font-size * 1.75
+$theme-delta-font-size: $theme-base-font-size * 1.5
+
+$theme-font-weight-bold: 700
+$theme-font-weight-regular: 400
+
+$theme-font-styles: (
+  regular: (
+    style: normal,
+    weight: $theme-font-weight-regular
+  ),
+  italic: (
+    style: italic,
+    weight: $theme-font-weight-regular
+  ),
+  bold: (
+    style: normal,
+    weight: $theme-font-weight-bold
+  )
+)
+
+@mixin alpha
+  font-size: $theme-alpha-font-size
+
+@mixin beta
+  font-size: $theme-beta-font-size
+
+@mixin gamma
+  font-size: $theme-gamma-font-size
+
+@mixin delta
+  font-size: $theme-delta-font-size
+
+@mixin theme-font-style($font-style)
+  font-style: map-get(map-get($theme-font-styles, $font-style), style)
+  font-weight: map-get(map-get($theme-font-styles, $font-style), weight)

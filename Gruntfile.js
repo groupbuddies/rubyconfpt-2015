@@ -23,7 +23,10 @@ module.exports = function (grunt) {
     },
     watch: {
       compass: {
-        files: ['<%= yeoman.app %>/_sass/**/*.{scss,sass}'],
+        files: [
+          '<%= yeoman.app %>/_sass/**/*.{scss,sass}',
+          '<%= yeoman.app %>/_bower_components/**/*.{scss,sass}'
+        ],
         tasks: ['compass:server', 'autoprefixer:server']
       },
       autoprefixer: {
@@ -116,7 +119,11 @@ module.exports = function (grunt) {
         // If you're using global Sass gems, require them here.
         // require: ['singularity', 'jacket'],
         bundleExec: true,
-        sassDir: '<%= yeoman.app %>/_sass',
+        sassDir: ['<%= yeoman.app %>/_sass'],
+        importPath: [
+          '<%= yeoman.app %>/_bower_components/neat/app/assets/stylesheets',
+          '<%= yeoman.app %>/_bower_components/bourbon/app/assets/stylesheets'
+        ],
         cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/img',
         javascriptsDir: '<%= yeoman.app %>/js',
