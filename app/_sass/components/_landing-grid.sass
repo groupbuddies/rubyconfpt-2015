@@ -1,4 +1,6 @@
 $landing-grid-spacing: $spacing * 3
+$landing-grid-spacing-top: $spacing * 3
+$landing-grid-spacing-right: $spacing * 2
 
 .LandingGrid
   @include outer-container
@@ -6,6 +8,8 @@ $landing-grid-spacing: $spacing * 3
 
 .LandingGrid-nav
   @include fill-parent
+  padding-top: $landing-grid-spacing-top
+  padding-right: $landing-grid-spacing-right
 
 .LandingGrid-content
   margin: $landing-grid-spacing 0
@@ -19,6 +23,7 @@ $landing-grid-spacing: $spacing * 3
 .LandingGrid-logo
   display: block
   margin: auto
+  max-width: 100%
 
 .LandingGrid-date
   text-align: center
