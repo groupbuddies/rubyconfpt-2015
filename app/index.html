@@ -5,21 +5,29 @@ title: Your New Jekyll Site
 
 <div class="LandingGrid">
   <div class="LandingGrid-nav">
-    <a href="#">Download Prospectus</a>
-    <a href="#">Follow us on twitter</a>
+    <a class="Btn Btn--green Btn--large" href="#">Download Prospectus</a>
+    <a class="Btn Btn--blue Btn--large"  href="#">Follow us on twitter</a>
   </div>
 
   <div class="LandingGrid-content">
-    <img src="/img/logo.png">
+    <div class="LandingGrid-logo">
+      <img src="/img/logo.png">
+    </div>
 
-    <h1 class="Landing-title">Rubyconf</h1>
-    <h2 class="Landing-subtitle">Portugal '15</h2>
-    <h3 class="Landing-subsubtitle"><strong>3-5 July</strong> Braga</h3>
+    <div class="LandingGrid-title">
+      <h1 class="Landing-title">Rubyconf</h1>
+      <h2 class="Landing-subtitle">Portugal <strong>'15</strong></h2>
+      <h3 class="Landing-subsubtitle"><strong>3-5 July</strong> Braga</h3>
+    </div>
 
-    <p><strong>The 2nd edition of RubyConf Portugal is coming and it's going to be bigger, bolder and awesome-er!</strong></p>
+    <div class="LandingGrid-text">
+      <p><strong>The 2nd edition of RubyConf Portugal is coming and it's going to be bigger, bolder and awesome-er!</strong></p>
 
-    <p>Subscribe to our newsletter so you don't miss out on any of the amazing stuff we're working on.</p>
+      <p>Subscribe to our newsletter so you don't miss out on any of the amazing stuff we're working on.</p>
+    </div>
 
-    {% include mailchimp-subscribe.html %}
+    <div class="LandingGrid-newsletter">
+      {% include mailchimp-subscribe.html %}
+    </div>
   </div>
 </div>
