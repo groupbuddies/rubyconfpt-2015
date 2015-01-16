@@ -1,9 +1,10 @@
 /** Colors **/
-$color-red: #C00
-$color-yellow: #DAA520
-$color-green: #0C0
-$color-blue: #00C
-$color-black: #333
+$color-red: #D66262
+$color-yellow: #FACC26
+$color-water: #D6F3E6
+$color-green: #80BD93
+$color-blue: #4DC0CC
+$color-black: #444E5D
 $color-white: #FFF
 
 /** Breakpoints */
@@ -12,50 +13,28 @@ $media-mobile: new-breakpoint(max-width 500px 4)
 /** Spacing */
 $spacing: 1em
 
-// $theme-palettes: (
-//   neutral: (
-//     white: $theme-color-material-white
-//   ),
-//   primary: (
-//     base: $theme-color-material-blue-grey-500,
-//     light: $theme-color-material-blue-grey-100,
-//     dark: $theme-color-material-blue-grey-900
-//   ),
-//   accent-primary: (
-//     base:  $theme-color-material-amber-500,
-//     dark: $theme-color-material-amber-600
-//   ),
-//   accent-secondary: (
-//     base:  $theme-color-material-teal-500,
-//     light: $theme-color-material-teal-300,
-//     dark: $theme-color-material-teal-600
-//   )
-// );
-
-// @function theme-palette($palette, $tone: 'base') {
-//   @return map-get(map-get($theme-palettes, $palette), $tone);
-// }
-
-
-/** Fonts **/
+/** Fonts Sizes **/
 $theme-base-font-size: 1em
 $theme-alpha-font-size: $theme-base-font-size * 2.25
 $theme-beta-font-size:  $theme-base-font-size * 2
 $theme-gamma-font-size: $theme-base-font-size * 1.75
 $theme-delta-font-size: $theme-base-font-size * 1.5
 
-@mixin alpha
-  font-size: $theme-alpha-font-size
+/** Font Family **/
+$theme-font-family-title: "freight-display-pro"
+$theme-font-family-body: "brandon-grotesque"
 
-@mixin beta
-  font-size: $theme-beta-font-size
+html,
+body
+  font-family: $theme-font-family-body
 
-@mixin gamma
-  font-size: $theme-gamma-font-size
+h1,
+h2,
+h3,
+h4
+  font-family: $theme-font-family-title
 
-@mixin delta
-  font-size: $theme-delta-font-size
-
-@mixin theme-font-style($font-style)
-  font-style: map-get(map-get($theme-font-styles, $font-style), style)
-  font-weight: map-get(map-get($theme-font-styles, $font-style), weight)
+html,
+body
+  height: 100%
+  margin: 0

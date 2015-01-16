@@ -1,0 +1,18 @@
+$landing-scene-sun-size: 104px
+$landing-scene-sun-spacing: $spacing * 3
+
+.LandingScene
+  min-height: 100%
+  background-color: $color-water
+  background-image: url(/img/scene/sky.png), url(/img/scene/skyline.png)
+  background-position: center center, center bottom
+  background-repeat: no-repeat
+  background-size: contain
+  // background-size: cover
+
+.LandingScene-sun
+  position: absolute
+  margin: $landing-scene-sun-spacing
+  background-image: url(/img/scene/sun.png)
+  width: $landing-scene-sun-size
+  height: $landing-scene-sun-size

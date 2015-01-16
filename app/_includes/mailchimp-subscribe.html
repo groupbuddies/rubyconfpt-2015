@@ -1,6 +1,11 @@
 <form action="{{ data.rubyconfpt.mailchimp }}" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="NewsletterForm" target="_blank" novalidate>
   <div class="NewsletterForm-input">
-    <input type="email" value="" name="EMAIL"id="mce-EMAIL" placeholder="YOUR EMAIL" required>
+    <span class="InputHoshi">
+      <input class="InputHoshi-field input__field input__field--hoshi" type="email" value="" name="EMAIL" id="mce-EMAIL" required>
+      <label class="InputHoshi-label input__label input__label--hoshi input__label--hoshi-color-1" for="mce-EMAIL">
+        <span class="InputHoshi-labelContent input__label-content input__label-content--hoshi">YOUR EMAIL</span>
+      </label>
+    </span>
   </div>
 
     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->

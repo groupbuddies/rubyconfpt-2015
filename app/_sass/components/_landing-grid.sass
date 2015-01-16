@@ -1,12 +1,21 @@
+$landing-grid-spacing: $spacing * 3
+
 .LandingGrid
   @include outer-container
+  max-width: 100%
 
-.LandingGrid-nav,
-  @include span-columns(4)
-  @include shift(8)
-  @include omega()
+.LandingGrid-nav
+  @include fill-parent
+  display: inline-block
+
+.LandingGrid-rightBtns
+  float: right
+
+.LandingGrid-Btn
+  margin: $spacing
 
 .LandingGrid-content
+  margin: $landing-grid-spacing 0
   @include span-columns(6)
   @include shift(3)
   @include omega()
@@ -14,15 +23,9 @@
     @include span-columns(12 of 12)
     @include shift(0)
 
-.LandingGrid-logo
-  @include span-columns(2 of 6)
-
-.LandingGrid-title
-  @include span-columns(4 of 6)
-  @include omega()
-
+.LandingGrid-logo,
 .LandingGrid-text,
+.LandingGrid-date,
 .LandingGrid-newsletter
   @include span-columns(12)
   @include omega()
-  margin-top: $spacing * 3
