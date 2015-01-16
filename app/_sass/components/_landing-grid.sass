@@ -6,26 +6,19 @@ $landing-grid-spacing: $spacing * 3
 
 .LandingGrid-nav
   @include fill-parent
-  display: inline-block
-
-.LandingGrid-rightBtns
-  float: right
-
-.LandingGrid-Btn
-  margin: $spacing
 
 .LandingGrid-content
   margin: $landing-grid-spacing 0
-  @include span-columns(6)
-  @include shift(3)
+  @include span-columns(4)
+  @include shift(4)
   @include omega()
   @include media($media-mobile)
     @include span-columns(12 of 12)
     @include shift(0)
 
-.LandingGrid-logo,
-.LandingGrid-text,
-.LandingGrid-date,
-.LandingGrid-newsletter
-  @include span-columns(12)
-  @include omega()
+.LandingGrid-logo
+  display: block
+  margin: auto
+
+.LandingGrid-date
+  text-align: center

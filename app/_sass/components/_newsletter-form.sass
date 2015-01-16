@@ -1,9 +1,11 @@
+$newsletter-form-input-spacing: $spacing * 2
+
 .NewsletterForm
-  @include outer-container
+  @include display(flex)
 
 .NewsletterForm-input
-  @include span-columns(7)
+  @include flex(3)
+  margin-right: $newsletter-form-input-spacing
 
 .NewsletterForm-submit
-  @include span-columns(5)
-  @include omega
+  @include flex(1)
