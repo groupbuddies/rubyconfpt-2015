@@ -324,7 +324,7 @@ module.exports = function (grunt) {
     buildcontrol: {
       dist: {
         options: {
-          remote: '../',
+          remote: 'git@github.com:groupbuddies/rubyconfpt-2015',
           branch: 'gh-pages',
           commit: true,
           push: true
