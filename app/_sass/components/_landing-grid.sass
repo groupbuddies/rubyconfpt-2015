@@ -1,6 +1,8 @@
-$landing-grid-spacing: $spacing * 3
+$landing-grid-content-margin: $spacing
 $landing-grid-spacing-top: $spacing * 3
-$landing-grid-spacing-right: $spacing * 2
+$landing-grid-spacing-horizontal: $spacing * 4
+$landing-grid-spacing-horizontal-mobile: $spacing * 2
+$landing-grid-logo-width: 487px
 
 .LandingGrid
   @include outer-container
@@ -8,17 +10,14 @@ $landing-grid-spacing-right: $spacing * 2
 
 .LandingGrid-nav
   @include fill-parent
-  padding-top: $landing-grid-spacing-top
-  padding-right: $landing-grid-spacing-right
+  padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal 0
+  @include media($media-mobile)
+    padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal-mobile 0
 
 .LandingGrid-content
-  margin: $landing-grid-spacing 0
-  @include span-columns(4)
-  @include shift(4)
-  @include omega()
-  @include media($media-mobile)
-    @include span-columns(12 of 12)
-    @include shift(0)
+  max-width: $landing-grid-logo-width
+  margin: $landing-grid-content-margin auto
+  padding: $spacing
 
 .LandingGrid-logo
   display: block
