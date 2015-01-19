@@ -6,17 +6,10 @@ title: Your New Jekyll Site
 <div class="LandingGrid LandingScene">
   <div class="LandingScene-sun"></div>
 
-  <div class="LandingGrid-nav LandingNav">
-    <div class="LandingNav-btns">
-      <a class="Btn Btn--green Btn--block LandingNav-btn" href="#">Download Prospectus</a>
-      <a class="Btn Btn--blue Btn--block LandingNav-btn"  href="{{ site.data.rubyconfpt.twitter }}">Follow us on twitter</a>
-    </div>
-  </div>
-
   <div class="LandingGrid-content">
     <img class="LandingGrid-logo" src="img/logo.png">
 
-    <h3 class="LandingGrid-date Landing-subsubtitle"><strong>3-5 July</strong> Braga</h3>
+    <h3 class="LandingGrid-date"><strong>3-5 July</strong> Braga</h3>
 
     <div class="LandingGrid-text Text">
       <p><strong>The 2nd edition of RubyConf Portugal is coming and it's going to be bigger, bolder and awesome-er!</strong></p>
@@ -26,6 +19,16 @@ title: Your New Jekyll Site
 
     <div class="LandingGrid-newsletter">
       {% include mailchimp-subscribe.html %}
+    </div>
+  </div>
+
+  <div class="LandingGrid-links LandingLinks">
+    <div class="LandingLinks-btns">
+      <a class="Btn Btn--green Btn--block LandingLinks-btn" href="#">Download Prospectus</a>
+      <a class="Btn Btn--blue LandingLinks-btn"  href="{{ site.data.rubyconfpt.twitter }}">
+        <i class="fa fa-twitter"></i>
+        Follow us
+      </a>
     </div>
   </div>
 </div>

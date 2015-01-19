@@ -8,6 +8,8 @@ $landing-scene-sun-spacing: $spacing * 3
   background-position: center center, center bottom
   background-repeat: no-repeat
   background-size: cover, contain
+  position: relative
+  z-index: 1
 
 .LandingScene-sun
   position: absolute
@@ -15,3 +17,4 @@ $landing-scene-sun-spacing: $spacing * 3
   background-image: url(../img/scene/sun.png)
   width: $landing-scene-sun-size
   height: $landing-scene-sun-size
+  z-index: -1

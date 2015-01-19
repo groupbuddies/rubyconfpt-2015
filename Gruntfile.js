@@ -122,7 +122,8 @@ module.exports = function (grunt) {
         sassDir: ['<%= yeoman.app %>/_sass'],
         importPath: [
           '<%= yeoman.app %>/_bower_components/neat/app/assets/stylesheets',
-          '<%= yeoman.app %>/_bower_components/bourbon/app/assets/stylesheets'
+          '<%= yeoman.app %>/_bower_components/bourbon/app/assets/stylesheets',
+          '<%= yeoman.app %>/_bower_components/font-awesome/scss'
         ],
         cssDir: '.tmp/css',
         imagesDir: '<%= yeoman.app %>/img',
@@ -286,9 +287,9 @@ module.exports = function (grunt) {
             'img/**/*',
             'fonts/**/*',
             // Like Jekyll, exclude files & folders prefixed with an underscore.
-            '!**/_*{,/**}'
+            '!**/_*{,/**}',
             // Explicitly add any files your site needs for distribution here.
-            //'_bower_components/jquery/jquery.js',
+            '_bower_components/font-awesome/fonts/**/*',
             //'favicon.ico',
             //'apple-touch*.png'
           ],
@@ -316,7 +317,7 @@ module.exports = function (grunt) {
             '<%= yeoman.dist %>/js/**/*.js',
             '<%= yeoman.dist %>/css/**/*.css',
             // '<%= yeoman.dist %>/img/**/*.{gif,jpg,jpeg,png,svg,webp}',
-            '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
+            // '<%= yeoman.dist %>/fonts/**/*.{eot*,otf,svg,ttf,woff}'
           ]
         }]
       }
