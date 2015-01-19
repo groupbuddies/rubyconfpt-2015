@@ -1,1 +1,0 @@
-(function(){$(function(){return $.fn.hoshiInput=function(){return $(this).on("focus",".InputHoshi-field",function(a){return $(a.delegateTarget).addClass("InputHoshi--filled")}),$(this).on("blur",".InputHoshi-field",function(a){return $(a.delegateTarget).removeClass("InputHoshi--filled")})},$(".InputHoshi").hoshiInput()})}).call(this);
