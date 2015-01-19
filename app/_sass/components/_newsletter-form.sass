@@ -7,10 +7,15 @@ $newsletter-form-input-spacing: $spacing * 2
 
 .NewsletterForm-input
   flex-grow: 3
+  @include align-self(flex-end)
   @include media($media-desktop)
     margin-right: $newsletter-form-input-spacing
+  @include media($media-mobile)
+    width: 100%
 
 .NewsletterForm-submit
   max-width: 200px
+  padding-bottom: 4px
+  @include align-self(flex-end)
   @include media($media-mobile)
     align-self: flex-end
