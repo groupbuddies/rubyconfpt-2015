@@ -26,7 +26,9 @@ $landing-grid-logo-width: 487px
   text-align: center
 
 .LandingGrid-text
-  margin: $spacing*4 0
+  margin: $spacing*1.5 0
+  @include media($media-mobile)
+    margin: $spacing*2 0
 
 .LandingGrid-links
   @include fill-parent
