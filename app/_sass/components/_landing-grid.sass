@@ -32,7 +32,7 @@ $landing-grid-logo-width: 487px
   @include fill-parent
   padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal 0
   @include media($media-mobile)
-    padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal-mobile 0
+    padding: 0 $landing-grid-spacing-horizontal-mobile 0
 
 @include media($media-desktop)
   .LandingGrid-links
@@ -40,10 +40,3 @@ $landing-grid-logo-width: 487px
     top: 0
   .LandingGrid-content
     padding-top: 150px
-
-@include media($media-mobile)
-  .LandingGrid-links
-    @include fill-parent
-    padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal 0
-    @include media($media-mobile)
-      padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal-mobile 0
