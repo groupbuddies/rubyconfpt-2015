@@ -3,11 +3,11 @@ $landing-scene-sun-spacing: $spacing * 3
 
 .LandingScene
   min-height: 100%
-  background-color: $color-water
-  background-image: url(../img/scene/sky.png), url(../img/scene/skyline.png)
-  background-position: center center, center bottom
-  background-repeat: no-repeat
-  background-size: cover, contain
+  background-color: blue /* $color-water */
+  // background-image: url(../img/scene/sky.png), url(../img/scene/skyline.svg)
+  // background-position: center center, center bottom
+  // background-repeat: no-repeat
+  // background-size: cover, contain
   position: relative
   z-index: 1
 
@@ -20,3 +20,63 @@ $landing-scene-sun-spacing: $spacing * 3
   z-index: -1
   @include media($media-mobile)
     display: none
+
+$skyline-width: 400px
+$skyline-height: 75px
+$cloud-width: 100%
+$cloud-height: 500px
+$skyline-time: 5s
+$cloud1-time: 5s
+$cloud2-time: 5s
+$cloud1-coords: 0px 0px, 100px 100px, 200px 200px
+$cloud2-coords: 200px 0px, 300px 100px, 500px 200px
+
+.LandingScene-skyline
+  background-image: url(../img/scene/skyline.svg)
+  background-position: 0 bottom
+  background-size: $skyline-width 100%
+  height: $skyline-height
+  position: absolute
+  bottom: 0
+  width: 100%
+  animation: LandingScene-animSkyline $skyline-time linear infinite
+
+@keyframes LandingScene-animSkyline
+  from
+    backround-position: 0 bottom
+  to
+    background-position: $skyline-width bottom
+
+@keyframes LandingScene-animCloud
+  from
+    left: 0
+  to
+    left: $cloud-width
+
+.LandingScene-cloud-1,
+.LandingScene-cloud-2
+  width: $cloud-width
+  height: $cloud-height
+  background-repeat: no-repeat
+  background-position: 0 0
+  position: absolute
+  overflow: hidden
+  z-index: -1
+
+.LandingScene-cloud-1
+  background-image: url(../img/scene/cloud1.svg)
+  animation: LandingScene-animCloud $cloud1-time linear infinite
+
+.LandingScene-cloud-2
+  background-image: url(../img/scene/cloud2.svg)
+  animation: LandingScene-animCloud $cloud2-time linear infinite
+
+@for $i from 1 through length($cloud1-coords)
+  .LandingScene-cloud-1[data-index='#{$i}']
+    top: nth(nth($cloud1-coords, $i), 1)
+    left: nth(nth($cloud1-coords, $i), 2)
+
+@for $i from 1 through length($cloud2-coords)
+  .LandingScene-cloud-2[data-index='#{$i}']
+    top: nth(nth($cloud2-coords, $i), 1)
+    left: nth(nth($cloud2-coords, $i), 2)
