@@ -26,6 +26,7 @@ $cloud3-top: 150px
   background-image: url(../img/scene/bottom-clouds.svg)
   background-size: $skyline-width 100%
   height: $skyline-height
+  -webkit-animation: LandingScene-animSkyline $skyline-time linear infinite
   animation: LandingScene-animSkyline $skyline-time linear infinite
   position: absolute
   width: 100%
@@ -37,7 +38,19 @@ $cloud3-top: 150px
   to
     background-position: $skyline-width bottom
 
+@-webkit-keyframes LandingScene-animSkyline
+  from
+    backround-position: 0 bottom
+  to
+    background-position: $skyline-width bottom
+
 @keyframes LandingScene-animClouds
+  from
+    backround-position: 0 top
+  to
+    background-position: $cloud-width top
+
+@-webkit-keyframes LandingScene-animClouds
   from
     backround-position: 0 top
   to
@@ -58,14 +71,17 @@ $cloud3-top: 150px
 .LandingScene-cloud-1
   top: $cloud1-top
   background-image: url(../img/scene/cloud1.svg)
+  -webkit-animation: LandingScene-animClouds $cloud1-time linear infinite
   animation: LandingScene-animClouds $cloud1-time linear infinite
 
 .LandingScene-cloud-2
   top: $cloud2-top
   background-image: url(../img/scene/cloud2.svg)
+  -webkit-animation: LandingScene-animClouds $cloud1-time linear infinite
   animation: LandingScene-animClouds $cloud2-time linear infinite
 
 .LandingScene-cloud-3
   top: $cloud3-top
   background-image: url(../img/scene/cloud3.svg)
+  -webkit-animation: LandingScene-animClouds $cloud1-time linear infinite
   animation: LandingScene-animClouds $cloud3-time linear infinite
