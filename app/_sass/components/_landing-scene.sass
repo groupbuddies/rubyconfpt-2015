@@ -12,22 +12,24 @@ $landing-scene-sun-spacing: $spacing * 3
 
 $skyline-width: 654px
 $skyline-height: 125px
-$cloud-width: 2000px
-$cloud-height: 1000px
-$skyline-time: 10s
-$cloud1-time: 45s
-$cloud2-time: 65s
-$cloud3-time: 80s
+$cloud-width: 2400px
+$cloud-height: 600px
+$skyline-time: 80s
+$cloud2-time: 130s
+$cloud1-time: 180s
+$cloud3-time: 200s
+$cloud1-top: 100px
+$cloud2-top: 0px
+$cloud3-top: 150px
 
 .LandingScene-skyline
   background-image: url(../img/scene/bottom-clouds.svg)
-  background-position: 0 bottom
   background-size: $skyline-width 100%
   height: $skyline-height
-  position: absolute
-  bottom: -10px
-  width: 100%
   animation: LandingScene-animSkyline $skyline-time linear infinite
+  position: absolute
+  width: 100%
+  bottom: -10px
 
 @keyframes LandingScene-animSkyline
   from
@@ -48,18 +50,22 @@ $cloud3-time: 80s
   height: $cloud-height
   background-repeat: repeat
   background-position: 0 top
+  background-size: $cloud-width contain
   position: absolute
   overflow: hidden
   z-index: -1
 
 .LandingScene-cloud-1
+  top: $cloud1-top
   background-image: url(../img/scene/cloud1.svg)
   animation: LandingScene-animClouds $cloud1-time linear infinite
 
 .LandingScene-cloud-2
+  top: $cloud2-top
   background-image: url(../img/scene/cloud2.svg)
   animation: LandingScene-animClouds $cloud2-time linear infinite
 
 .LandingScene-cloud-3
-  background-image: url(../img/scene/cloud2.svg)
+  top: $cloud3-top
+  background-image: url(../img/scene/cloud3.svg)
   animation: LandingScene-animClouds $cloud3-time linear infinite
