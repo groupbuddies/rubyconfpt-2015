@@ -2,42 +2,30 @@ $landing-scene-sun-size: 104px
 $landing-scene-sun-spacing: $spacing * 3
 
 .LandingScene
+  width: 100%
+  height: 100%
   min-height: 100%
-  background-color: blue /* $color-water */
-  // background-image: url(../img/scene/sky.png), url(../img/scene/skyline.svg)
-  // background-position: center center, center bottom
-  // background-repeat: no-repeat
-  // background-size: cover, contain
-  position: relative
-  z-index: 1
-
-.LandingScene-sun
+  background-color: $color-water
   position: absolute
-  margin: $landing-scene-sun-spacing
-  background-image: url(../img/scene/sun.png)
-  width: $landing-scene-sun-size
-  height: $landing-scene-sun-size
+  overflow: hidden
   z-index: -1
-  @include media($media-mobile)
-    display: none
 
-$skyline-width: 400px
-$skyline-height: 75px
-$cloud-width: 100%
-$cloud-height: 500px
-$skyline-time: 5s
-$cloud1-time: 5s
-$cloud2-time: 5s
-$cloud1-coords: 0px 0px, 100px 100px, 200px 200px
-$cloud2-coords: 200px 0px, 300px 100px, 500px 200px
+$skyline-width: 654px
+$skyline-height: 125px
+$cloud-width: 2000px
+$cloud-height: 1000px
+$skyline-time: 10s
+$cloud1-time: 45s
+$cloud2-time: 65s
+$cloud3-time: 80s
 
 .LandingScene-skyline
-  background-image: url(../img/scene/skyline.svg)
+  background-image: url(../img/scene/bottom-clouds.svg)
   background-position: 0 bottom
   background-size: $skyline-width 100%
   height: $skyline-height
   position: absolute
-  bottom: 0
+  bottom: -10px
   width: 100%
   animation: LandingScene-animSkyline $skyline-time linear infinite
 
@@ -47,36 +35,31 @@ $cloud2-coords: 200px 0px, 300px 100px, 500px 200px
   to
     background-position: $skyline-width bottom
 
-@keyframes LandingScene-animCloud
+@keyframes LandingScene-animClouds
   from
-    left: 0
+    backround-position: 0 top
   to
-    left: $cloud-width
+    background-position: $cloud-width top
 
 .LandingScene-cloud-1,
-.LandingScene-cloud-2
+.LandingScene-cloud-2,
+.LandingScene-cloud-3
   width: $cloud-width
   height: $cloud-height
-  background-repeat: no-repeat
-  background-position: 0 0
+  background-repeat: repeat
+  background-position: 0 top
   position: absolute
   overflow: hidden
   z-index: -1
 
 .LandingScene-cloud-1
   background-image: url(../img/scene/cloud1.svg)
-  animation: LandingScene-animCloud $cloud1-time linear infinite
+  animation: LandingScene-animClouds $cloud1-time linear infinite
 
 .LandingScene-cloud-2
   background-image: url(../img/scene/cloud2.svg)
-  animation: LandingScene-animCloud $cloud2-time linear infinite
+  animation: LandingScene-animClouds $cloud2-time linear infinite
 
-@for $i from 1 through length($cloud1-coords)
-  .LandingScene-cloud-1[data-index='#{$i}']
-    top: nth(nth($cloud1-coords, $i), 1)
-    left: nth(nth($cloud1-coords, $i), 2)
-
-@for $i from 1 through length($cloud2-coords)
-  .LandingScene-cloud-2[data-index='#{$i}']
-    top: nth(nth($cloud2-coords, $i), 1)
-    left: nth(nth($cloud2-coords, $i), 2)
+.LandingScene-cloud-3
+  background-image: url(../img/scene/cloud2.svg)
+  animation: LandingScene-animClouds $cloud3-time linear infinite
