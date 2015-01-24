@@ -4,8 +4,9 @@ $ ->
       $(event.delegateTarget).addClass('InputHoshi--filled')
 
     $(this).on 'blur', '.InputHoshi-field', (event) ->
-      if $(event.delegateTarget).find('.InputHoshi-field').val().length == 0
-        $(event.delegateTarget).removeClass('InputHoshi--filled')
+      $target = $(event.delegateTarget)
+      if $target.find('.InputHoshi-field').val().length == 0
+        $target.removeClass('InputHoshi--filled')
 
 
   $('.InputHoshi').hoshiInput()
