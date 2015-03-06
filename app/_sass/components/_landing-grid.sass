@@ -24,6 +24,11 @@ $landing-grid-logo-width: 487px
 
 .LandingGrid-date
   text-align: center
+  @include uppercase
+  @include beta
+  @include media($media-mobile)
+    @include gamma
+
 
 .LandingGrid-text
   margin: $spacing*1.5 0
