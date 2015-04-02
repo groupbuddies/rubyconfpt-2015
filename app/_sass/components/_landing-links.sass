@@ -2,15 +2,13 @@ $landing-links-btn-width: 260px
 
 .LandingLinks
   display: inline-block
+  @include media($media-mobile)
+    display: none
 
 .LandingLinks-btns
   @include display(flex)
   @include media($media-desktop)
-    @include justify-content(flex-end)
-  @include media($media-mobile)
     @include justify-content(space-between)
 
 .LandingLinks-btn
   margin: $spacing
-  @include media($media-mobile)
-    margin: 0 $spacing / 2 $spacing * 2 $spacing / 2

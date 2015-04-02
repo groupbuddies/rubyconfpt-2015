@@ -2,7 +2,7 @@ $landing-grid-content-margin: $spacing
 $landing-grid-spacing-top: $spacing * 2
 $landing-grid-spacing-horizontal: $spacing * 4
 $landing-grid-spacing-horizontal-mobile: $spacing * 2
-$landing-grid-logo-width: 487px
+$landing-grid-logo-width: 500px
 
 .LandingGrid
   @include outer-container
@@ -18,7 +18,7 @@ $landing-grid-logo-width: 487px
 .LandingGrid-logo
   display: block
   margin: auto
-  max-width: 80%
+  max-width: 75%
   @include media($media-mobile)
     max-width: 80%
 
@@ -26,7 +26,7 @@ $landing-grid-logo-width: 487px
   text-align: center
 
 .LandingGrid-text
-  margin: $spacing*1.5 0
+  margin: $spacing*2.5 0
   @include media($media-mobile)
     margin: $spacing*2 0
 
@@ -35,6 +35,10 @@ $landing-grid-logo-width: 487px
   padding: $landing-grid-spacing-top $landing-grid-spacing-horizontal 0
   @include media($media-mobile)
     padding: 0 $landing-grid-spacing-horizontal-mobile 0
+
+.LandingGrid-centered
+  width: 40%
+  margin: auto
 
 @include media($media-desktop)
   .LandingGrid-links
