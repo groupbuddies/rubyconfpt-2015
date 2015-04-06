@@ -8,15 +8,16 @@ $Scene-cloud1-time: 200s
 $Scene-cloud3-time: 250s
 $Scene-cloud1-top: 0px
 $Scene-cloud2-top: 50px
-$Scene-cloud3-top: 150px
+// $Scene-mountains-top: 270px
 
 .Scene
   position: absolute
   width: 100%
-  min-height: 100%
-  // padding-bottom: 85%
+  padding-bottom: 80%
   overflow: hidden
   background-color: $color-water
+  background: -webkit-radial-gradient(13% 13%, #DEFEF0  0%, #D8EBEC  88%)
+  background: radial-gradient(at 13%, #DEFEF0  0%, #D8EBEC  88%)
   z-index: -1
 
 .Scene-skyline
@@ -55,15 +56,28 @@ $Scene-cloud3-top: 150px
 
 .Scene-cloud-1,
 .Scene-cloud-2,
-.Scene-cloud-3
-  width: $Scene-cloud-width
-  height: $Scene-cloud-height
+.Scene-cloud-3,
+.Scene-mountains,
+.Scene-town
+  width: 100%
+  height: 100%
   background-repeat: repeat
   background-position: 0 top
   background-size: contain
   position: absolute
   overflow: hidden
   z-index: -1
+
+.Scene-cloud-1,
+.Scene-cloud-2,
+.Scene-cloud-3,
+  width: $Scene-cloud-width
+  height: $Scene-cloud-height
+
+.Scene-mountains,
+.Scene-town
+  background-repeat: no-repeat
+  background-size: contain
 
 .Scene-cloud-1
   top: $Scene-cloud1-top
@@ -73,12 +87,25 @@ $Scene-cloud3-top: 150px
 
 .Scene-cloud-2
   top: $Scene-cloud2-top
-  background-image: url(../img/scene/cloud2.svg)
+  background-image: url(../img/scene/cloud3.svg)
   -webkit-animation: Scene-animClouds $Scene-cloud2-time linear infinite
   animation: Scene-animClouds $Scene-cloud2-time linear infinite
 
-.Scene-cloud-3
-  top: $Scene-cloud3-top
-  background-image: url(../img/scene/cloud3.svg)
-  -webkit-animation: Scene-animClouds $Scene-cloud3-time linear infinite
-  animation: Scene-animClouds $Scene-cloud3-time linear infinite
+.Scene-mountains
+  bottom: 0
+  background-position: bottom 20% center
+  background-image: url(../img/scene/mountains.svg)
+
+.Scene-town
+  bottom: 0
+  background-position: bottom
+  background-image: url(../img/scene/town.svg)
+
+.Scene-gandalf
+  background-image: url(../img/scene/gandalf.svg)
+
+@include media($media-mobile)
+  .Scene
+    padding-bottom: 150%
+  .Scene-mountains
+    bottom: -20%
