@@ -1,8 +1,40 @@
 .SceneOverlay
-  display: none
-  max-width: 500px
+  z-index: 10000
   margin: auto
   text-align: center
+  max-width: 490px
+  padding: 1em 0
+  +media-xs
+    margin-top: 30%
+  +media-sm
+    margin-top: 10%
+
 
 .SceneOverlay-logo
-  max-width: 557px
+  +media-xs
+    max-width: 80%
+  +media-sm
+    max-width: 300px
+
+.SceneOverlay-slogan
+  +font-responsive-largeTitle
+
+  margin: auto
+  +media-xs
+    max-width: 320px
+    margin-top: $space-small
+  +media-sm
+    max-width: 100%
+    margin-top: $space-base
+
+.SceneOverlay-info
+  +font-responsive-title
+
+  +media-xs
+    margin: $space-small
+  +media-sm
+    margin: $space-base
+
+.SceneOverlay-date
+  font-weight: bold
+  text-transform: uppercase

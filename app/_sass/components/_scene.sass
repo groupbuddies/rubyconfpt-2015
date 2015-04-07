@@ -8,17 +8,14 @@ $Scene-cloud1-time: 200s
 $Scene-cloud3-time: 250s
 $Scene-cloud1-top: 0px
 $Scene-cloud2-top: 50px
-// $Scene-mountains-top: 270px
 
 .Scene
   position: absolute
   width: 100%
-  padding-bottom: 80%
   overflow: hidden
-  background-color: $color-water
   background: -webkit-radial-gradient(13% 13%, #DEFEF0  0%, #D8EBEC  88%)
   background: radial-gradient(at 13%, #DEFEF0  0%, #D8EBEC  88%)
-  z-index: -1
+  z-index: 1
 
 .Scene-skyline
   background-image: url(../img/scene/bottom-clouds.svg)
@@ -57,6 +54,7 @@ $Scene-cloud2-top: 50px
 .Scene-cloud-1,
 .Scene-cloud-2,
 .Scene-cloud-3,
+.Scene-sun,
 .Scene-mountains,
 .Scene-town
   width: 100%
@@ -74,6 +72,7 @@ $Scene-cloud2-top: 50px
   width: $Scene-cloud-width
   height: $Scene-cloud-height
 
+.Scene-sun,
 .Scene-mountains,
 .Scene-town
   background-repeat: no-repeat
@@ -91,6 +90,13 @@ $Scene-cloud2-top: 50px
   -webkit-animation: Scene-animClouds $Scene-cloud2-time linear infinite
   animation: Scene-animClouds $Scene-cloud2-time linear infinite
 
+.Scene-sun
+  top: 0
+  width: 30%
+  height: 30%
+  background-position: bottom 20% center
+  background-image: url(../img/scene/sun.svg)
+
 .Scene-mountains
   bottom: 0
   background-position: bottom 20% center
@@ -104,8 +110,20 @@ $Scene-cloud2-top: 50px
 .Scene-gandalf
   background-image: url(../img/scene/gandalf.svg)
 
-@include media($media-mobile)
+@include media-xs
   .Scene
-    padding-bottom: 150%
+    height: 120%
   .Scene-mountains
-    bottom: -20%
+    bottom: -10%
+  .Scene-town
+    bottom: 0
+
+@include media-sm
+  .Scene-mountains
+    bottom: -00%
+  // .Scene-town
+  //   bottom: 0
+
+// @include media-md
+//   .Scene
+//     height: 120%

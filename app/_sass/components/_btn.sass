@@ -1,3 +1,18 @@
-.Btn
+$btn-cta-border-color: #e1ad30
+$btn-cta-bg: linear-gradient(to bottom, #ffde66, #facc26)
+$btn-cta-text-color: #9f4c00
 
 .Btn--cta
+  @include serif
+  border-radius: 10px
+  background: $btn-cta-bg
+  color: $btn-cta-text-color
+  box-shadow: 0 3px 0px #e1aa26
+  text-shadow: 0 1px #fae9e8
+  padding: 0.5em 1em
+  display: inline-block
+  text-decoration: none
+  text-transform: uppercase
+  +font-title
+  +media-xs-only
+    +font-text

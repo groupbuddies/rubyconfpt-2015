@@ -1,0 +1,27 @@
+/** Font Family */
+@mixin sans-serif
+  font-family: $theme-font-family-sans-serif
+
+@mixin serif
+  font-family: $theme-font-family-serif
+
+
+/** Font Size */
+@mixin font-text
+  font-size: $theme-font-text
+@mixin font-title
+  font-size: $theme-font-title
+@mixin font-largeTitle
+  font-size: $theme-font-largeTitle
+
+@mixin font-responsive-largeTitle
+  +media-xs
+    +font-title
+  +media-sm
+    +font-largeTitle
+
+@mixin font-responsive-title
+  +media-xs
+    +font-text
+  +media-sm
+    +font-title

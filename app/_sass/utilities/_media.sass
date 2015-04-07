@@ -1,0 +1,23 @@
+$media-xs-only: "max-width: 768px"
+$media-sm: "min-width: 768px"
+$media-md: "min-width: 960px"
+$media-lg: "min-width: 1200px"
+
+@mixin media-xs
+  @content
+
+@mixin media-xs-only
+  @media ($media-xs-only)
+    @content
+
+@mixin media-sm
+  @media ($media-sm)
+    @content
+
+@mixin media-md
+  @media ($media-md)
+    @content
+
+@mixin media-lg
+  @media ($media-lg)
+    @content
