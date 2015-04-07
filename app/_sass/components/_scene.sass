@@ -1,13 +1,12 @@
 $Scene-skyline-width: 654px
-$Scene-skyline-height: 125px
+$Scene-skyline-height: 400px
 $Scene-cloud-width: 2400px
 $Scene-cloud-height: 70%
 $Scene-skyline-time: 80s
-$Scene-cloud2-time: 130s
 $Scene-cloud1-time: 200s
-$Scene-cloud3-time: 250s
+$Scene-cloud2-time: 130s
 $Scene-cloud1-top: 0px
-$Scene-cloud2-top: 50px
+$Scene-cloud2-top: 100px
 
 .Scene
   position: absolute
@@ -17,35 +16,7 @@ $Scene-cloud2-top: 50px
   background: radial-gradient(at 13%, #DEFEF0  0%, #D8EBEC  88%)
   z-index: 1
 
-.Scene-skyline
-  background-image: url(../img/scene/bottom-clouds.svg)
-  background-size: $Scene-skyline-width 100%
-  height: $Scene-skyline-height
-  -webkit-animation: Scene-animSkyline $Scene-skyline-time linear infinite
-  animation: Scene-animSkyline $Scene-skyline-time linear infinite
-  position: absolute
-  width: 100%
-  bottom: -10px
-
-@keyframes Scene-animSkyline
-  from
-    backround-position: 0 bottom
-  to
-    background-position: $Scene-skyline-width bottom
-
-@-webkit-keyframes Scene-animSkyline
-  from
-    backround-position: 0 bottom
-  to
-    background-position: $Scene-skyline-width bottom
-
-@keyframes Scene-animClouds
-  from
-    backround-position: 0 top
-  to
-    background-position: $Scene-cloud-width top
-
-@-webkit-keyframes Scene-animClouds
++keyframes(Scene-animClouds)
   from
     backround-position: 0 top
   to
@@ -53,13 +24,9 @@ $Scene-cloud2-top: 50px
 
 .Scene-cloud-1,
 .Scene-cloud-2,
-.Scene-cloud-3,
 .Scene-sun,
 .Scene-mountains,
 .Scene-town
-  width: 100%
-  height: 100%
-  background-repeat: repeat
   background-position: 0 top
   background-size: contain
   position: absolute
@@ -67,39 +34,39 @@ $Scene-cloud2-top: 50px
   z-index: -1
 
 .Scene-cloud-1,
-.Scene-cloud-2,
-.Scene-cloud-3,
+.Scene-cloud-2
   width: $Scene-cloud-width
-  height: $Scene-cloud-height
+  height: 100%
+  background-repeat: repeat-x
 
 .Scene-sun,
 .Scene-mountains,
 .Scene-town
-  background-repeat: no-repeat
+  width: 100%
+  height: 100%
   background-size: contain
+  background-repeat: no-repeat
 
 .Scene-cloud-1
   top: $Scene-cloud1-top
   background-image: url(../img/scene/cloud1.svg)
-  -webkit-animation: Scene-animClouds $Scene-cloud1-time linear infinite
-  animation: Scene-animClouds $Scene-cloud1-time linear infinite
+  +animation(Scene-animClouds $Scene-cloud1-time linear infinite)
 
 .Scene-cloud-2
   top: $Scene-cloud2-top
   background-image: url(../img/scene/cloud2.svg)
-  -webkit-animation: Scene-animClouds $Scene-cloud2-time linear infinite
-  animation: Scene-animClouds $Scene-cloud2-time linear infinite
+  +animation(Scene-animClouds $Scene-cloud2-time linear infinite)
 
 .Scene-sun
   top: 0
-  width: 30%
-  height: 30%
+  width: 20%
+  height: 20%
   background-position: bottom 20% center
   background-image: url(../img/scene/sun.svg)
 
 .Scene-mountains
   bottom: 0
-  background-position: bottom 20% center
+  background-position: bottom
   background-image: url(../img/scene/mountains.svg)
 
 .Scene-town
@@ -113,17 +80,7 @@ $Scene-cloud2-top: 50px
 @include media-xs
   .Scene
     height: 120%
-  .Scene-mountains
-    bottom: -10%
-  .Scene-town
-    bottom: 0
 
 @include media-sm
-  .Scene-mountains
-    bottom: -00%
-  // .Scene-town
-  //   bottom: 0
-
-// @include media-md
-//   .Scene
-//     height: 120%
+  .Scene
+    height: 140%

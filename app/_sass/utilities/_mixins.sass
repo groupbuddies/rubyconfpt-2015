@@ -25,3 +25,14 @@
     +font-text
   +media-sm
     +font-title
+
+/** Transitions */
+@mixin keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-webkit-keyframes #{$name}
+    @content
+
+@mixin animation($args)
+  -webkit-animation: $args
+  animation: $args
