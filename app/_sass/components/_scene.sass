@@ -1,7 +1,7 @@
 $Scene-skyline-width: 654px
 $Scene-skyline-height: 400px
 $Scene-cloud-width: 2400px
-$Scene-cloud-height: 70%
+$Scene-cloud-height: 60%
 $Scene-skyline-time: 80s
 $Scene-cloud1-time: 200s
 $Scene-cloud2-time: 130s
@@ -12,15 +12,14 @@ $Scene-cloud2-top: 100px
   position: absolute
   width: 100%
   overflow: hidden
-  background: -webkit-radial-gradient(13% 13%, #DEFEF0  0%, #D8EBEC  88%)
-  background: radial-gradient(at 13%, #DEFEF0  0%, #D8EBEC  88%)
+  background: #DEFEF0
   z-index: 1
 
 +keyframes(Scene-animClouds)
   from
-    backround-position: 0 top
+    transform: translateX(0%)
   to
-    background-position: $Scene-cloud-width top
+    transform: translateX(100%)
 
 .Scene-cloud-1,
 .Scene-cloud-2,
@@ -36,8 +35,8 @@ $Scene-cloud2-top: 100px
 .Scene-cloud-1,
 .Scene-cloud-2
   width: $Scene-cloud-width
-  height: 100%
-  background-repeat: repeat-x
+  height: $Scene-cloud-height
+  background-repeat: repeat
 
 .Scene-sun,
 .Scene-mountains,
@@ -50,15 +49,14 @@ $Scene-cloud2-top: 100px
 .Scene-cloud-1
   top: $Scene-cloud1-top
   background-image: url(../img/scene/cloud1.svg)
-  +animation(Scene-animClouds $Scene-cloud1-time linear infinite)
+  +animation(Scene-animClouds $Scene-cloud1-time linear 3s infinite)
 
 .Scene-cloud-2
   top: $Scene-cloud2-top
   background-image: url(../img/scene/cloud2.svg)
-  +animation(Scene-animClouds $Scene-cloud2-time linear infinite)
+  +animation(Scene-animClouds $Scene-cloud2-time linear 3s infinite)
 
 .Scene-sun
-  top: 0
   width: 20%
   height: 20%
   background-position: bottom 20% center
@@ -77,10 +75,12 @@ $Scene-cloud2-top: 100px
 .Scene-gandalf
   background-image: url(../img/scene/gandalf.svg)
 
-@include media-xs
-  .Scene
+.Scene
+  +media-xs
     height: 120%
-
-@include media-sm
-  .Scene
+  +media-sm
     height: 140%
+
+.Scene-anchor
+  position: absolute
+  bottom: 0
