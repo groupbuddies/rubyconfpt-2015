@@ -4,8 +4,6 @@
 
 @mixin serif
   font-family: $theme-font-family-serif
-
-
 /** Font Size */
 @mixin font-text
   font-size: $theme-font-text
@@ -30,7 +28,7 @@
 @mixin keyframes($name)
   @-webkit-keyframes #{$name}
     @content
-  @-webkit-keyframes #{$name}
+  @keyframes #{$name}
     @content
 
 @mixin animation($args)

@@ -1,0 +1,57 @@
+$anim-cloudTranslateTime-back: 7000s
+$anim-cloudTranslateTime-front: 4000s
+$anim-scene-time: 4s
+$anim-cloudFade-time: 10s
+
++keyframes(animClouds)
+  from
+    transform: translateX(0%)
+  to
+    transform: translateX(100%)
+
+.Scene-clouds--back
+  +animation(animClouds $anim-cloudTranslateTime-back linear infinite)
+.Scene-clouds--front
+  +animation(animClouds $anim-cloudTranslateTime-front linear infinite)
+
++keyframes(animForeground)
+  from
+    transform: translateY(100%)
+  to
+    transform: translateY(0)
+
++keyframes(animSun)
+  from
+    transform: translateY(120%)
+  to
+    transform: translateY(0)
+
+.Scene-mountains
+  transform: translateY(100%)
+  +animation(animForeground $anim-scene-time 0.3s ease-in-out forwards)
+.Scene-town
+  transform: translateY(100%)
+  +animation(animForeground $anim-scene-time ease-in-out forwards)
+.Scene-sun
+  transform: translateY(120%)
+  +animation(animSun $anim-scene-time 0.5s ease-in-out forwards)
+
++keyframes(animCloudsWrapper)
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.Scene-cloudsWrapper
+  opacity: 0
+  +animation(animCloudsWrapper $anim-cloudFade-time ease-in-out forwards)
+
++keyframes(SceneOverlay-anim)
+  from
+    opacity: 0
+  to
+    opacity: 1
+
+.SceneOverlay
+  opacity: 0
+  +animation(SceneOverlay-anim 2s 2s ease-in-out forwards)

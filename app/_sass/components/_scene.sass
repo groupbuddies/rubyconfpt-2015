@@ -1,28 +1,18 @@
-$Scene-skyline-width: 100%
-$Scene-skyline-height: 100%
-$Scene-cloud-width: 2400px
-$Scene-cloud-height: 60%
-$Scene-skyline-time: 80s
-$Scene-cloud1-time: 200s
-$Scene-cloud2-time: 130s
-$Scene-cloud1-top: 0px
-$Scene-cloud2-top: 100px
+$scene-skyline-width: 1000%
+$scene-skyline-height: 100%
+$scene-cloud-width: 2400px
+$scene-cloud-height: 60%
+$scene-skyline-time: 80s
 
 .Scene
   position: relative
   width: 100%
+  height: 100%
   z-index: 1
   overflow: hidden
   background: #DEFEF0
 
-+keyframes(Scene-animClouds)
-  from
-    transform: translateX(0%)
-  to
-    transform: translateX(100%)
-
-.Scene-cloud-1,
-.Scene-cloud-2,
+.Scene-cloudsWrapper,
 .Scene-sun,
 .Scene-mountains,
 .Scene-town
@@ -32,11 +22,17 @@ $Scene-cloud2-top: 100px
   background-position: 0 top
   background-size: contain
 
-.Scene-cloud-1,
-.Scene-cloud-2
-  width: $Scene-cloud-width
-  height: $Scene-cloud-height
+.Scene-cloudsWrapper
+  width: 1000%
+  margin: 0 -500%
+  height: $scene-cloud-height
   background-repeat: repeat
+  +media-portrait
+    height: 32%
+    bottom: 0
+  +media-landscape
+    height: 60%
+    top: 0
 
 .Scene-sun,
 .Scene-mountains,
@@ -44,64 +40,42 @@ $Scene-cloud2-top: 100px
   width: 100%
   height: 100vh
   bottom: 0
-  background-size: contain
+  background-size: 100%
   background-repeat: no-repeat
 
-.Scene-cloud-1
-  top: $Scene-cloud1-top
-  background-image: url(../img/scene/cloud1.svg)
-  +animation(Scene-animClouds $Scene-cloud1-time linear infinite)
+.Scene-clouds
+  width: 1000%
+  height: 100%
+  background-position: top left
+  background-size: contain
+  background-repeat: repeat
 
-.Scene-cloud-2
-  top: $Scene-cloud2-top
+.Scene-clouds--front
+  background-image: url(../img/scene/cloud1.svg)
+
+.Scene-clouds--back
   background-image: url(../img/scene/cloud2.svg)
-  +animation(Scene-animClouds $Scene-cloud2-time linear infinite)
 
 .Scene-sun
   width: 20%
   height: 100vh
-  background-position: top center
   background-image: url(../img/scene/sun.svg)
+  +media-landscape
+    background-position: top center
+  +media-portrait
+    background-position: bottom 30% center
 
 .Scene-mountains
-  bottom: 0
-  background-position-y: bottom
+  background-position: bottom
   background-image: url(../img/scene/mountains.svg)
-  background-size: 100%
   +media-landscape
-    background-size: cover
-    background-position-y: 20px
+    background-position: 20px
   +media-portrait
-    background-size: contain
 
 .Scene-town
-  bottom: 0
   background-position: bottom
   background-image: url(../img/scene/town.svg)
 
 .Scene-gandalf
   background-image: url(../img/scene/gandalf.svg)
 
-.Scene
-  height: 100%
-
-+keyframes(animSceneForeground)
-  from
-    transform: translateY(200%)
-  to
-    transform: translateY(0)
-
-+keyframes(animSceneSun)
-  from
-    transform: translateY(-200px)
-  to
-    transform: translateY(0)
-
-.Scene-mountains
-  transform: translateY(200%)
-  +animation(animSceneForeground 4s 1s ease-in-out forwards)
-.Scene-town
-  transform: translateY(200%)
-  +animation(animSceneForeground 4s 1.2s ease-in-out forwards)
-.Scene-sun
-  +animation(animSceneSun 3s 1s ease-in-out forwards)
