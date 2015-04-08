@@ -1,5 +1,5 @@
-$Scene-skyline-width: 654px
-$Scene-skyline-height: 400px
+$Scene-skyline-width: 100%
+$Scene-skyline-height: 100%
 $Scene-cloud-width: 2400px
 $Scene-cloud-height: 60%
 $Scene-skyline-time: 80s
@@ -9,11 +9,11 @@ $Scene-cloud1-top: 0px
 $Scene-cloud2-top: 100px
 
 .Scene
-  position: absolute
+  position: relative
   width: 100%
+  z-index: 1
   overflow: hidden
   background: #DEFEF0
-  z-index: 1
 
 +keyframes(Scene-animClouds)
   from
@@ -26,11 +26,11 @@ $Scene-cloud2-top: 100px
 .Scene-sun,
 .Scene-mountains,
 .Scene-town
-  background-position: 0 top
-  background-size: contain
+  z-index: -1
   position: absolute
   overflow: hidden
-  z-index: -1
+  background-position: 0 top
+  background-size: contain
 
 .Scene-cloud-1,
 .Scene-cloud-2
@@ -42,30 +42,37 @@ $Scene-cloud2-top: 100px
 .Scene-mountains,
 .Scene-town
   width: 100%
-  height: 100%
+  height: 100vh
+  bottom: 0
   background-size: contain
   background-repeat: no-repeat
 
 .Scene-cloud-1
   top: $Scene-cloud1-top
   background-image: url(../img/scene/cloud1.svg)
-  +animation(Scene-animClouds $Scene-cloud1-time linear 3s infinite)
+  +animation(Scene-animClouds $Scene-cloud1-time linear infinite)
 
 .Scene-cloud-2
   top: $Scene-cloud2-top
   background-image: url(../img/scene/cloud2.svg)
-  +animation(Scene-animClouds $Scene-cloud2-time linear 3s infinite)
+  +animation(Scene-animClouds $Scene-cloud2-time linear infinite)
 
 .Scene-sun
   width: 20%
-  height: 20%
-  background-position: bottom 20% center
+  height: 100vh
+  background-position: top center
   background-image: url(../img/scene/sun.svg)
 
 .Scene-mountains
   bottom: 0
-  background-position: bottom
+  background-position-y: bottom
   background-image: url(../img/scene/mountains.svg)
+  background-size: 100%
+  +media-landscape
+    background-size: cover
+    background-position-y: 20px
+  +media-portrait
+    background-size: contain
 
 .Scene-town
   bottom: 0
@@ -76,11 +83,25 @@ $Scene-cloud2-top: 100px
   background-image: url(../img/scene/gandalf.svg)
 
 .Scene
-  +media-xs
-    height: 120%
-  +media-sm
-    height: 140%
+  height: 100%
 
-.Scene-anchor
-  position: absolute
-  bottom: 0
++keyframes(animSceneForeground)
+  from
+    transform: translateY(200%)
+  to
+    transform: translateY(0)
+
++keyframes(animSceneSun)
+  from
+    transform: translateY(-200px)
+  to
+    transform: translateY(0)
+
+.Scene-mountains
+  transform: translateY(200%)
+  +animation(animSceneForeground 4s 1s ease-in-out forwards)
+.Scene-town
+  transform: translateY(200%)
+  +animation(animSceneForeground 4s 1.2s ease-in-out forwards)
+.Scene-sun
+  +animation(animSceneSun 3s 1s ease-in-out forwards)

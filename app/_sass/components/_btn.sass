@@ -4,18 +4,19 @@ $btn-cta-text-color: #9f4c00
 
 .Btn--cta
   @include serif
+  display: inline-block
+  padding: 0.5em 1em
   border-radius: 10px
   background: $btn-cta-bg
   color: $btn-cta-text-color
   box-shadow: 0 3px 0px #e1aa26
   text-shadow: 0 1px #fae9e8
-  padding: 0.5em 1em
-  display: inline-block
   text-decoration: none
   text-transform: uppercase
-  +font-title
-  +media-xs-only
+  +media-xs
     +font-text
+  +media-md
+    +font-title
 
   transition: all 0.2s ease-in-out
   background-size: 1% 200%

@@ -1,6 +1,6 @@
 $media-xs-only: "max-width: 768px"
-$media-sm: "min-width: 768px"
-$media-md: "min-width: 960px"
+$media-sm: "min-width: 1000px"
+$media-md: "min-width: 1200px"
 $media-lg: "min-width: 1200px"
 
 @mixin media-xs
@@ -20,4 +20,12 @@ $media-lg: "min-width: 1200px"
 
 @mixin media-lg
   @media ($media-lg)
+    @content
+
+@mixin media-portrait
+  @media (orientation: portrait)
+    @content
+
+@mixin media-landscape
+  @media (orientation: landscape)
     @content
