@@ -2,11 +2,19 @@ $btn-cta-border-color: #e1ad30
 $btn-cta-bg: linear-gradient(to bottom, #ffde66, darken(#facc26, 5%))
 $btn-cta-text-color: #9f4c00
 
+.Btn
+  -webkit-font-smoothing: antialiased
+  -webkit-appearance: none
+  display: inline-block
+  border: none
+  border-radius: 10px
+  transition: all 0.3s ease-in-out
+  cursor: pointer
+
 .Btn--cta
   @include serif
   display: inline-block
   padding: 0.5em 1em
-  border-radius: 10px
   background: $btn-cta-bg
   color: $btn-cta-text-color
   box-shadow: 0 3px 0px #e1aa26
@@ -22,3 +30,15 @@ $btn-cta-text-color: #9f4c00
   background-size: 1% 200%
   &:hover
     background-position: 0% 100%
+
+
+.Btn--submit
+  +font-text
+  padding: $space-small * 0.5 $space-small
+  background-color: $color-red
+  color: $color-white
+  text-transform: uppercase
+  height: 50px
+
+  &:hover
+    background-color: darken($color-red, 5%)
