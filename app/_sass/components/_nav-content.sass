@@ -15,8 +15,8 @@ $nav-media-break: "min-width: 960px"
     width: 80%
     margin: 0 auto $space-base auto
 
-  +media-large-menu
-    max-width: 400px
+  +media-sm
+    width: 350px
     padding: $space-base
 
 .NavContent-title
@@ -31,6 +31,7 @@ $nav-media-break: "min-width: 960px"
   list-style-type: none
 
 .NavContent-item
+  max-width: 400px
   padding-top: $space-small
   +media-xs-only
     padding-top: $space-small * 0.5

@@ -5,7 +5,23 @@
 
   <ul class="Speakers-list">
     {% for speaker in site.data.speakers %}
-      <h1>{{ speaker.name }}</h1>
+      <div class="Speaker">
+        <img class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
+        <h1 class="Speaker-name">
+          <div class="Speaker-firstName">{{ speaker.firstName }}</div>
+          <div class="Speaker-lastName">{{ speaker.lastName }}</div>
+        </h1>
+        <h2 class="Speaker-shortDesc">{{ speaker.shortDesc }}</h2>
+        <div class="Speaker-links">
+          <a href="https://twitter.com/{{ speaker.twitter }}">
+            <i class="fa fa-twitter"></i>
+          </a>
+
+          <a href="https://github.com/{{ speaker.github }}">
+            <i class="fa fa-github"></i>
+          </a>
+        </div>
+      </div>
     {% endfor %}
   </ul>
 </section>

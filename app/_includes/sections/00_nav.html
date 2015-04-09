@@ -61,7 +61,11 @@
 
         <section class="NavContent-section">
           <h2 class="NavContent-title">Subscribe our newsletter</h2>
-          {% include mailchimp-subscribe.html inputClass="InputHoshi--nav" btnClass="Btn--nav" %}
+          <div class="NavContent-newsletter">
+            <div class="NavContent-item">
+              {% include mailchimp-subscribe.html inputClass="InputHoshi--nav" btnClass="Btn--nav" %}
+            </div>
+          </div>
         </section>
       </div>
     </nav>
