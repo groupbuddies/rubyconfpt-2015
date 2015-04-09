@@ -1,14 +1,40 @@
-<div class="Nav">
+<div class="Nav" id="Nav">
   <input type="checkbox" class="Nav-checkbox" id="Nav-checkbox">
 
   <label for="Nav-checkbox" class="Nav-burger">
-    <div class="Nav-burgerText Nav-burgerText--closed">Menu</div>
-    <div class="Nav-burgerText Nav-burgerText--open">Close menu</div>
     <div class="Nav-burgerLine Nav-burgerLine--top"></div>
     <div class="Nav-burgerLine Nav-burgerLine--middle"></div>
     <div class="Nav-burgerLine Nav-burgerLine--bottom"></div>
   </label>
 
-  <nav class="Nav-overlay">
-  </nav>
+  <div class="Nav-overlay">
+    <nav class="NavContent">
+      <section class="NavContent-section">
+        <h2 class="NavContent-title">Where do you want to go?</h2>
+        <ul class="NavContent-items">
+          <li class="NavContent-item">Agenda</li>
+          <li class="NavContent-item">Speakers</li>
+          <li class="NavContent-item">Venue</li>
+          <li class="NavContent-item">Blog</li>
+        </ul class="NavContent-items">
+      </section>
+
+      <section class="NavContent-section">
+        <h2 class="NavContent-title">What do you want to do?</h2>
+        <ul class="NavContent-items">
+          <li class="NavContent-item">Buy tickets</li>
+          <li class="NavContent-item">Submit a talk</li>
+          <li class="NavContent-item">Download sponsor prospectus</li>
+        </ul class="NavContent-items">
+      </section>
+
+      <section class="NavContent-section">
+        <h2 class="NavContent-title">Where do you want to reach us</h2>
+        <ul class="NavContent-items">
+          <li class="NavContent-item">Write to: hello@rubyconf.pt</li>
+          <li class="NavContent-item">Call us at: +351 123 456 789</li>
+        </ul>
+      </section>
+    </nav>
+  </div>
 </div>

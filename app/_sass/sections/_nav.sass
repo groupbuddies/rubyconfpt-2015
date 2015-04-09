@@ -1,7 +1,7 @@
-$nav-burger-size: 100px
-$nav-burger-inner-size: $nav-burger-size * 0.35
+$nav-burger-size: 60px
+$nav-burger-inner-size: $nav-burger-size * 0.28
 $nav-burger-line-height: 2px
-$nav-burger-line-width: $nav-burger-size * 0.4
+$nav-burger-line-width: $nav-burger-size * 0.6
 
 /** Dangerous math ahead. Touch with care */
 $nav-burger-line-left: ($nav-burger-size - $nav-burger-line-width) * 0.5
@@ -31,36 +31,35 @@ $nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-s
   height: $nav-burger-size
   display: block
   border-radius: 50%
-  color: $color-blue
   +transition(all 0.5s ease-in-out)
   cursor: pointer
-  opacity: 0.9
+  opacity: 0.95
+  background-color: $color-green
 
-.Nav-burgerText
-  +font-title
-  position: absolute
-  display: block
-  width: 200px
-  height: $nav-burger-size
-  margin-left: -200px
-  line-height: $nav-burger-size
-  text-align: right
-  text-transform: uppercase
-
-.Nav-burgerText--closed
-  opacity: 1
-.Nav-burgerText--open
-  +transition(all 0.5s)
-  opacity: 0
+  &:before
+    content: 'close menu'
+    +font-title
+    +transition(all 0.5s)
+    position: absolute
+    display: block
+    width: 200px
+    height: $nav-burger-size
+    margin-left: -200px
+    line-height: $nav-burger-size
+    text-align: right
+    text-transform: uppercase
+    color: $color-white
+    opacity: 0
 
 .Nav-burgerLine
-  +transition(all 0.3s ease-in-out)
+  +transition(all 0.3s)
   position: absolute
   display: block
   left: $nav-burger-line-left
   height: $nav-burger-line-height
   width: $nav-burger-line-width
-  background-color: $color-blue
+  background-color: $color-white
+  box-shadow: 0px 0px 1px $color-white
 
 .Nav-burgerLine--top
   top: $nav-burgerLine-top-offset
@@ -70,18 +69,20 @@ $nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-s
   top: $nav-burgerLine-bottom-offset
 
 .Nav-overlay
-  +transition(all 0.5s ease-in-out)
+  +transition(all 0.5s)
   position: absolute
   display: block
   width: 100%
-  height: 100%
   opacity: 0
   background-color: $color-green
+  padding-top: 150px
+  height: calc(100% - 150px)
 
 .Nav-checkbox:checked
   ~ .Nav-burger
     color: $color-white
-    .Nav-burgerText--open
+    background-color: transparent
+    &:before
       opacity: 1
     .Nav-burgerLine
       background-color: $color-white
@@ -96,4 +97,4 @@ $nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-s
 
   ~ .Nav-overlay
     pointer-events: all
-    opacity: 0.9
+    opacity: 0.95

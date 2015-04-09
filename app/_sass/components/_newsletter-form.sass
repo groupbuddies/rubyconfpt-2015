@@ -2,13 +2,16 @@ $newsletter-form-input-spacing: $space-base
 
 .NewsletterForm
   display: flex
-  // @include media($media-mobile)
-  //   @include flex-direction(column)
+  flex-wrap: wrap
+  justify-content: center
 
 .NewsletterForm-input
-  flex-grow: 2
+  flex-grow: 1
   align-items: flex-end
   margin-right: $newsletter-form-input-spacing
+  +media-xs-only
+    margin-left: $newsletter-form-input-spacing
+    margin-bottom: $newsletter-form-input-spacing * 0.5
 
 .NewsletterForm-submit
   max-width: 200px

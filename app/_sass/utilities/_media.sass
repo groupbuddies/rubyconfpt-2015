@@ -22,6 +22,10 @@ $media-lg: "min-width: 1200px"
   @media ($media-lg)
     @content
 
+@mixin media-large-menu
+  @media ($nav-media-break)
+    @content
+
 @mixin media-portrait
   @media (orientation: portrait)
     @content

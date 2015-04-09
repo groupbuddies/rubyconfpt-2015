@@ -1,0 +1,36 @@
+$nav-media-break: "min-width: 960px"
+
+.NavContent
+  color: $color-white
+  overflow-y: scroll
+  height: 100%
+  +media-large-menu
+    margin: auto 0 auto $space-base
+
+.NavContent-section
+  max-width: 400px
+  padding: $space-small
+  flex-grow: 3
+  margin: 0 auto $space-base 0
+  +media-xs-only
+    margin-bottom: $space-small
+
+  +media-large-menu
+    vertical-align: top
+    // &:odd
+    display: inline-block
+
+.NavContent-title
+  +font-responsive-title
+  border-bottom: solid 1px $color-white
+
+.NavContent-items
+  +sans-serif
+  +font-responsive-title
+  text-transform: uppercase
+  list-style-type: none
+
+.NavContent-item
+  padding-top: $space-small
+  +media-xs-only
+    padding-top: $space-small * 0.5
