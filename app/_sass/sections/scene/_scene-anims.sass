@@ -1,6 +1,6 @@
 $anim-cloudTranslateTime-back: 7000s
 $anim-cloudTranslateTime-front: 4000s
-$anim-scene-time: 4s
+$anim-scene-time: 2s
 $anim-cloudFade-time: 10s
 
 +keyframes(animClouds)
@@ -28,13 +28,13 @@ $anim-cloudFade-time: 10s
 
 .Scene-mountains
   transform: translateY(100%)
-  +animation(animForeground $anim-scene-time 0.3s ease-in-out forwards)
+  +animation(animForeground $anim-scene-time 0.3s ease-out forwards)
 .Scene-town
   transform: translateY(100%)
-  +animation(animForeground $anim-scene-time ease-in-out forwards)
+  +animation(animForeground $anim-scene-time ease-out forwards)
 .Scene-sun
   transform: translateY(120%)
-  +animation(animSun $anim-scene-time 0.5s ease-in-out forwards)
+  +animation(animSun $anim-scene-time 0.5s ease-out forwards)
 
 +keyframes(animCloudsWrapper)
   from
@@ -44,7 +44,7 @@ $anim-cloudFade-time: 10s
 
 .Scene-cloudsWrapper
   opacity: 0
-  +animation(animCloudsWrapper $anim-cloudFade-time ease-in-out forwards)
+  +animation(animCloudsWrapper $anim-cloudFade-time ease-out forwards)
 
 +keyframes(SceneOverlay-anim)
   from
