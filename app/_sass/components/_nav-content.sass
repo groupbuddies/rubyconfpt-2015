@@ -4,25 +4,25 @@ $nav-media-break: "min-width: 960px"
   color: $color-white
   overflow-y: scroll
   height: 100%
+
+.NavContent-row
   +media-large-menu
-    margin: auto 0 auto $space-base
+    display: flex
+    justify-content: center
 
 .NavContent-section
-  max-width: 400px
-  padding: $space-small
-  flex-grow: 3
-  margin: 0 auto $space-base 0
   +media-xs-only
-    margin-bottom: $space-small
+    width: 80%
+    margin: 0 auto $space-base auto
 
   +media-large-menu
-    vertical-align: top
-    // &:odd
-    display: inline-block
+    max-width: 400px
+    padding: $space-base
 
 .NavContent-title
   +font-responsive-title
   border-bottom: solid 1px $color-white
+  max-width: 400px
 
 .NavContent-items
   +sans-serif

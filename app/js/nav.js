@@ -1,26 +1,28 @@
-(function() {
+$(function() {
   'use strict';
 
-  var $window = $(window);
+  var $document = $(document);
   var $nav = $('#Nav');
-  var $checkbox = $('#Nav-checkbox')
-  $window.on('scroll', setNavClass);
-  $checkbox.on('change', setWindowScroll);
+  var $btn = $('#BurgerBtn');
+  $document.on('scroll', setNavClass);
+  $btn.on('click', toggleMenu);
 
   function setNavClass(event) {
-    console.log($window.scrollTop());
-    if ($window.scrollTop() > 100) {
+    if ($document.scrollTop() > 100) {
       $nav.addClass('Nav--scrolled');
     } else {
       $nav.removeClass('Nav--scrolled');
     }
-  };
+  }
 
-  function setWindowScroll(event) {
-    if (this.checked) {
-      $('body, html').css('overflow', 'hidden');
+  function toggleMenu() {
+    $nav.toggleClass('Nav--open');
+    $btn.toggleClass('BurgerBtn--open');
+
+    if ($nav.hasClass('Nav--open')) {
+      $('html, body').css('overflow', 'hidden');
     } else {
-      $('body, html').css('overflow', 'auto');
+      $('html, body').css('overflow', 'visible');
     }
   }
-})();
+});

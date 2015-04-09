@@ -1,40 +1,69 @@
 <div class="Nav" id="Nav">
-  <input type="checkbox" class="Nav-checkbox" id="Nav-checkbox">
+  <div class="Nav-bar">
+    <div class="Nav-barMenu">
+      <a class="Btn Btn--nav">Buy tickets</a>
+      <a class="Btn Btn--nav">Submit a talk</a>
 
-  <label for="Nav-checkbox" class="Nav-burger">
-    <div class="Nav-burgerLine Nav-burgerLine--top"></div>
-    <div class="Nav-burgerLine Nav-burgerLine--middle"></div>
-    <div class="Nav-burgerLine Nav-burgerLine--bottom"></div>
-  </label>
+      <label id="BurgerBtn" class="BurgerBtn">
+        <div class="BurgerBtn-line"></div>
+        <div class="BurgerBtn-line"></div>
+        <div class="BurgerBtn-line"></div>
+      </label>
+    </div>
+
+    <div class="Nav-barLogo">
+      <img class="NavLogo" src="/img/logo-small.png">
+      <span class="Nav-title">Rubyconf portugal'15</span>
+    </div>
+  </div>
 
   <div class="Nav-overlay">
     <nav class="NavContent">
-      <section class="NavContent-section">
-        <h2 class="NavContent-title">Where do you want to go?</h2>
-        <ul class="NavContent-items">
-          <li class="NavContent-item">Agenda</li>
-          <li class="NavContent-item">Speakers</li>
-          <li class="NavContent-item">Venue</li>
-          <li class="NavContent-item">Blog</li>
-        </ul class="NavContent-items">
-      </section>
+      <div class="NavContent-row">
+        <section class="NavContent-section">
+          <h2 class="NavContent-title">Where do you want to go?</h2>
+          <ul class="NavContent-items">
+            <li class="NavContent-item">Agenda</li>
+            <li class="NavContent-item">Speakers</li>
+            <li class="NavContent-item">Venue</li>
+            <li class="NavContent-item">Blog</li>
+          </ul class="NavContent-items">
+        </section>
 
-      <section class="NavContent-section">
-        <h2 class="NavContent-title">What do you want to do?</h2>
-        <ul class="NavContent-items">
-          <li class="NavContent-item">Buy tickets</li>
-          <li class="NavContent-item">Submit a talk</li>
-          <li class="NavContent-item">Download sponsor prospectus</li>
-        </ul class="NavContent-items">
-      </section>
+        <section class="NavContent-section">
+          <h2 class="NavContent-title">What do you want to do?</h2>
+          <ul class="NavContent-items">
+            <li class="NavContent-item">Buy tickets</li>
+            <li class="NavContent-item">Submit a talk</li>
+            <li class="NavContent-item">Download sponsor prospectus</li>
+          </ul class="NavContent-items">
+        </section>
+      </div>
 
-      <section class="NavContent-section">
-        <h2 class="NavContent-title">Where do you want to reach us</h2>
-        <ul class="NavContent-items">
-          <li class="NavContent-item">Write to: hello@rubyconf.pt</li>
-          <li class="NavContent-item">Call us at: +351 123 456 789</li>
-        </ul>
-      </section>
+      <div class="NavContent-row">
+        <section class="NavContent-section">
+          <h2 class="NavContent-title">Where do you want to reach us</h2>
+          <ul class="NavContent-items">
+            <li class="NavContent-item">
+              <div class="NavContact">
+                <span class="NavContact-label">Write to:</span>
+                <span class="NavContact-value">{{ site.data.rubyconfpt.email }}</span>
+              </div>
+            </li>
+          <ul class="NavContent-items">
+            <li class="NavContent-item">
+              <div class="NavContact">
+                <span class="NavContact-label">Call us at:</span>
+                <span class="NavContact-value">{{ site.data.rubyconfpt.phone }}</span>
+              </div>
+            </li>
+        </section>
+
+        <section class="NavContent-section">
+          <h2 class="NavContent-title">Subscribe our newsletter</h2>
+          {% include mailchimp-subscribe.html inputClass="InputHoshi--nav" btnClass="Btn--nav" %}
+        </section>
+      </div>
     </nav>
   </div>
 </div>

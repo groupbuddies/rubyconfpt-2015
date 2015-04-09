@@ -1,13 +1,4 @@
-$nav-burger-size: 60px
-$nav-burger-inner-size: $nav-burger-size * 0.28
-$nav-burger-line-height: 2px
-$nav-burger-line-width: $nav-burger-size * 0.6
-
-/** Dangerous math ahead. Touch with care */
-$nav-burger-line-left: ($nav-burger-size - $nav-burger-line-width) * 0.5
-$nav-burgerLine-top-offset:    ($nav-burger-size - ($nav-burger-inner-size)) * 0.5
-$nav-burgerLine-middle-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-size * 0.5)
-$nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-size)
+$nav-bar-size: 80px
 
 .Nav
   +nav-layer
@@ -17,84 +8,72 @@ $nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-s
   width: 100%
   height: 100%
   pointer-events: none
+  color: $color-green
 
-.Nav-checkbox
-  display: none
+.Nav--scrolled,
+.Nav--open
+  color: $color-white
 
-.Nav-burger
+.Nav-bar
   +navBtn-layer
-  pointer-events: all
-  position: absolute
-  top: $space-base
-  right: $space-base
-  width: $nav-burger-size
-  height: $nav-burger-size
-  display: block
-  border-radius: 50%
-  +transition(all 0.5s ease-in-out)
-  cursor: pointer
-  opacity: 0.95
-  background-color: $color-green
-
-  &:before
-    content: 'close menu'
-    +font-title
-    +transition(all 0.5s)
-    position: absolute
-    display: block
-    width: 200px
-    height: $nav-burger-size
-    margin-left: -200px
-    line-height: $nav-burger-size
-    text-align: right
-    text-transform: uppercase
-    color: $color-white
-    opacity: 0
-
-.Nav-burgerLine
   +transition(all 0.3s)
   position: absolute
-  display: block
-  left: $nav-burger-line-left
-  height: $nav-burger-line-height
-  width: $nav-burger-line-width
-  background-color: $color-white
-  box-shadow: 0px 0px 1px $color-white
+  width: 100%
+  height: $nav-bar-size
+  display: flex
+  flex-direction: row-reverse
+  justify-content: space-between
 
-.Nav-burgerLine--top
-  top: $nav-burgerLine-top-offset
-.Nav-burgerLine--middle
-  top: $nav-burgerLine-middle-offset
-.Nav-burgerLine--bottom
-  top: $nav-burgerLine-bottom-offset
+.Nav-bar
+  .Nav-barLogo,
+  .Btn
+    display: none
+
++media-large-menu
+  .Nav--scrolled:not(.Nav--open),
+    .Nav-bar .Btn
+      display: block
+
++media-sm
+  .Nav.Nav--scrolled,
+  .Nav.Nav--open
+    .Nav-barLogo
+      display: flex
+
+.Nav--scrolled
+  .Nav-bar
+    background-color: $color-green
+
+.Nav-barMenu
+  display: flex
+
+.Nav-barMenu,
+.Nav-barLogo
+  align-items: center
+  margin: 20px
+  +font-text
+  text-transform: uppercase
+  > :not(:last-child)
+    margin-right: $space-small
 
 .Nav-overlay
-  +transition(all 0.5s)
+  +transition(all 0.3s)
   position: absolute
+  top: 0
   display: block
   width: 100%
   opacity: 0
   background-color: $color-green
   padding-top: 150px
   height: calc(100% - 150px)
+  +media-xs-only
+    padding-top: 80px
+    height: calc(100% - 80px)
 
-.Nav-checkbox:checked
-  ~ .Nav-burger
-    color: $color-white
-    background-color: transparent
-    &:before
-      opacity: 1
-    .Nav-burgerLine
-      background-color: $color-white
-    .Nav-burgerLine--top
-      transform: rotate(45deg)
-      top: $nav-burgerLine-middle-offset
-    .Nav-burgerLine--middle
-      opacity: 0
-    .Nav-burgerLine--bottom
-      transform: rotate(-45deg)
-      top: $nav-burgerLine-middle-offset
+.Nav--open
+  .Nav-bar
+    opacity: 0.95
 
-  ~ .Nav-overlay
+  .Nav-overlay
     pointer-events: all
     opacity: 0.95

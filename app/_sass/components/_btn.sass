@@ -9,6 +9,8 @@ $btn-cta-text-color: #9f4c00
   border: none
   border-radius: 10px
   transition: all 0.3s ease-in-out
+  text-transform: uppercase
+  text-decoration: none
   cursor: pointer
 
 .Btn--cta
@@ -19,14 +21,12 @@ $btn-cta-text-color: #9f4c00
   color: $btn-cta-text-color
   box-shadow: 0 3px 0px #e1aa26
   text-shadow: 0 1px #fae9e8
-  text-decoration: none
-  text-transform: uppercase
   +media-xs
     +font-text
   +media-md
     +font-title
 
-  transition: all 0.2s ease-in-out
+  transition: all 0.3s ease-in-out
   background-size: 1% 200%
   &:hover
     background-position: 0% 100%
@@ -37,8 +37,16 @@ $btn-cta-text-color: #9f4c00
   padding: $space-small * 0.5 $space-small
   background-color: $color-red
   color: $color-white
-  text-transform: uppercase
   height: 50px
-
   &:hover
     background-color: darken($color-red, 5%)
+
+.Btn--nav
+  +font-text
+  color: $color-white
+  height: 50px
+  line-height: 50px
+  vertica-align: middle
+  padding: 0 $space-small
+  border: solid 1px $color-white
+  background-color: transparent
