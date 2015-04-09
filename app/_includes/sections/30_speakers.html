@@ -1,0 +1,11 @@
+<section class="Speakers">
+  <h1 class="Speakers-title">
+    <span class="SectionTitle">Speakers</span>
+  </h1>
+
+  <ul class="Speakers-list">
+    {% for speaker in site.data.speakers %}
+      <h1>{{ speaker.name }}</h1>
+    {% endfor %}
+  </ul>
+</section>

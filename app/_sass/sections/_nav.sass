@@ -1,0 +1,99 @@
+$nav-burger-size: 100px
+$nav-burger-inner-size: $nav-burger-size * 0.35
+$nav-burger-line-height: 2px
+$nav-burger-line-width: $nav-burger-size * 0.4
+
+/** Dangerous math ahead. Touch with care */
+$nav-burger-line-left: ($nav-burger-size - $nav-burger-line-width) * 0.5
+$nav-burgerLine-top-offset:    ($nav-burger-size - ($nav-burger-inner-size)) * 0.5
+$nav-burgerLine-middle-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-size * 0.5)
+$nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-size)
+
+.Nav
+  +nav-layer
+  position: fixed
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  pointer-events: none
+
+.Nav-checkbox
+  display: none
+
+.Nav-burger
+  +navBtn-layer
+  pointer-events: all
+  position: absolute
+  top: $space-base
+  right: $space-base
+  width: $nav-burger-size
+  height: $nav-burger-size
+  display: block
+  border-radius: 50%
+  color: $color-blue
+  +transition(all 0.5s ease-in-out)
+  cursor: pointer
+  opacity: 0.9
+
+.Nav-burgerText
+  +font-title
+  position: absolute
+  display: block
+  width: 200px
+  height: $nav-burger-size
+  margin-left: -200px
+  line-height: $nav-burger-size
+  text-align: right
+  text-transform: uppercase
+
+.Nav-burgerText--closed
+  opacity: 1
+.Nav-burgerText--open
+  +transition(all 0.5s)
+  opacity: 0
+
+.Nav-burgerLine
+  +transition(all 0.3s ease-in-out)
+  position: absolute
+  display: block
+  left: $nav-burger-line-left
+  height: $nav-burger-line-height
+  width: $nav-burger-line-width
+  background-color: $color-blue
+
+.Nav-burgerLine--top
+  top: $nav-burgerLine-top-offset
+.Nav-burgerLine--middle
+  top: $nav-burgerLine-middle-offset
+.Nav-burgerLine--bottom
+  top: $nav-burgerLine-bottom-offset
+
+.Nav-overlay
+  +transition(all 0.5s ease-in-out)
+  position: absolute
+  display: block
+  width: 100%
+  height: 100%
+  opacity: 0
+  background-color: $color-green
+
+.Nav-checkbox:checked
+  ~ .Nav-burger
+    color: $color-white
+    .Nav-burgerText--open
+      opacity: 1
+    .Nav-burgerLine
+      background-color: $color-white
+    .Nav-burgerLine--top
+      transform: rotate(45deg)
+      top: $nav-burgerLine-middle-offset
+    .Nav-burgerLine--middle
+      opacity: 0
+    .Nav-burgerLine--bottom
+      transform: rotate(-45deg)
+      top: $nav-burgerLine-middle-offset
+
+  ~ .Nav-overlay
+    pointer-events: all
+    opacity: 0.9
