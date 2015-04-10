@@ -5,8 +5,8 @@ $(function() {
   var $nav = $('#Nav');
   var $btn = $('#BurgerBtn');
   $document.on('scroll', setNavClass);
-  $btn.on('click', toggleMenu);
-  $nav.on('click', '.NavContent a', toggleMenu);
+  $btn.on('click tap', toggleMenuWithoutPropagation);
+  $nav.on('click tap', '.NavContent a', toggleMenu);
 
   function setNavClass(event) {
     if ($document.scrollTop() > 100) {
@@ -16,7 +16,12 @@ $(function() {
     }
   }
 
-  function toggleMenu() {
+  function toggleMenuWithoutPropagation(event) {
+    event.preventDefault();
+    toggleMenu(event);
+  }
+
+  function toggleMenu(event) {
     $nav.toggleClass('Nav--open');
     $btn.toggleClass('BurgerBtn--open');
 
@@ -25,5 +30,9 @@ $(function() {
     } else {
       $('body').css('overflow', 'visible');
     }
+  }
+
+  function toogleMenuAndFollow(event) {
+
   }
 });
