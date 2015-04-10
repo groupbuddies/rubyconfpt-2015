@@ -23,17 +23,28 @@ $nav-burgerLine-bottom-offset: $nav-burgerLine-top-offset + ($nav-burger-inner-s
   background-color: $color-green
   margin-left: 80px
 
-  // &:before
-  //   content: 'menu'
-  //   +font-text
-  //   +transition(all 0.3s)
-  //   display: block
-  //   width: 200px
-  //   height: $nav-burger-size
-  //   margin-left: -210px
-  //   line-height: $nav-burger-size
-  //   text-align: right
-  //   text-transform: uppercase
+  &:before
+    +font-text
+    +transition(all 0.3s)
+    height: $nav-burger-size
+    line-height: $nav-burger-size
+    text-align: right
+    text-transform: uppercase
+    color: $color-white
+
+.Nav--scrolled
+  .BurgerBtn:before
+    content: 'menu'
+    display: block
+    width: 80px
+    margin-left: -80px
+
+.Nav--open
+  .BurgerBtn:before
+    content: 'close menu'
+    display: block
+    width: 200px
+    margin-left: -210px
 
 .BurgerBtn-line
   +transition(all 0.3s)

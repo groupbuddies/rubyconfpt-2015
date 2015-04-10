@@ -1,22 +1,25 @@
-$speaker-picture-size: 150px
+$speaker-picture-size: 160px
+$speaker-picture-border-size: 6px
 
 .Speaker
   width: 400px
   display: flex
   flex-direction: column
   align-items: center
+  margin-bottom: $space-base
 
 .Speaker-picture
   width: $speaker-picture-size
   height: $speaker-picture-size
   border-radius: 50%
-  border: solid 5px #ccc
+  border: solid $speaker-picture-border-size $color-grey
 
 .Speaker-name
   +font-title
   +serif
   text-transform: uppercase
   color: $color-blue
+  margin-top: $space-small
 
 .Speaker-firstName,
 .Speaker-lastName
@@ -32,6 +35,15 @@ $speaker-picture-size: 150px
 .Speaker-shortDesc
   +font-text
   +sans-serif
+  margin: 15px
+  color: $color-grey
 
 .Speaker-links
-  +font-title
+  font-size: 26px
+  a
+    color: $color-grey
+    text-decoration: none
+    &:not(:last-child)
+      margin-right: 13px
+    &:hover
+      color: darken($color-grey, 5%)
