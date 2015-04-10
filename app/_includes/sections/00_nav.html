@@ -1,8 +1,9 @@
 <div class="Nav" id="Nav">
   <div class="Nav-bar">
     <div class="Nav-barMenu">
-      <a class="Btn Btn--nav" target="_blank" href="{{ site.data.rubyconfpt.tito_url }}">Buy tickets</a>
-      <a class="Btn Btn--nav" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">Submit a talk</a>
+      <a class="Btn Btn--regular" target="_blank" href="{{ site.data.rubyconfpt.tito_url }}">Buy ticket</a>
+      <a class="Btn Btn--regular" target="_blank" href="#sponsors">Sponsor us</a>
+      <a class="Btn Btn--regular" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">Submit a talk</a>
 
       <label id="BurgerBtn" class="BurgerBtn">
         <div class="BurgerBtn-line"></div>
@@ -61,7 +62,7 @@
           <h2 class="NavContent-title">Subscribe our newsletter</h2>
           <div class="NavContent-newsletter">
             <div class="NavContent-item">
-              {% include mailchimp-subscribe.html inputClass="InputHoshi--nav" btnClass="Btn--nav" %}
+              {% include mailchimp-subscribe.html inputClass="InputHoshi--nav" btnClass="Btn--regular Btn--bordered" %}
             </div>
           </div>
         </section>

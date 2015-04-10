@@ -1,11 +1,15 @@
-$btn-cta-border-color: #e1ad30
-$btn-cta-bg: linear-gradient(to bottom, #ffde66, darken(#facc26, 5%))
-$btn-cta-text-color: #9f4c00
+$btn-ticket-border-color: #e1ad30
+$btn-ticket-bg: linear-gradient(to bottom, #ffde66, darken(#facc26, 10%))
+$btn-ticket-text-color: #9f4c00
 
 .Btn
+  +font-text
+  height: 50px
+  line-height: 50px
   -webkit-font-smoothing: antialiased
   -webkit-appearance: none
   display: inline-block
+  padding: 0 $space-small
   border: none
   border-radius: 10px
   transition: all 0.3s ease-in-out
@@ -13,40 +17,41 @@ $btn-cta-text-color: #9f4c00
   text-decoration: none
   cursor: pointer
 
-  +font-text
+.Btn--regular
   color: $color-white
-  height: 50px
-  line-height: 50px
-  vertical-align: middle
   padding: 0 $space-small
-  background-color: $color-green
+  background: $color-green
+  &:hover
+    background: darken($color-green, 10%)
 
-.Btn--cta
-  @include serif
+.Btn--bordered
+  border: solid 1px $color-white
+
+.Btn--ticket
   display: inline-block
-  padding: 0.5em 1em
-  background: $btn-cta-bg
+  background: $btn-ticket-bg
   border: none
-  color: $btn-cta-text-color
+  color: $btn-ticket-text-color
   box-shadow: 0 3px 0px #e1aa26
   text-shadow: 0 1px #fae9e8
-  +media-xs
-    +font-text
-  +media-md
-    +font-title
-
-  transition: all 0.3s ease-in-out
+  transition: all 0.3s
   background-size: 1% 200%
   &:hover
     background-position: 0% 100%
 
+.Btn--alternate
+  border: solid 1px $color-blue
+  background-color: $color-white
+  &:hover
+    color: $color-white
+    background-color: $color-blue
 
-//   +font-text
-//   padding: $space-small * 0.5 $space-small
-//   background-color: $color-red
-//   color: $color-green
-//   height: 50px
-//   &:hover
-//     background-color: darken($color-red, 5%)
-
-// .Btn--nav
+.Btn--cta
+  height: 60px
+  line-height: 60px
+  vertical-align: middle
+  @include serif
+  +media-xs
+    +font-text
+  +media-md
+    +font-title
