@@ -32,6 +32,12 @@ $(function() {
     } else {
       $('body').css('overflow', 'visible');
     }
+
+    if ($btn.hasClass('BurgerBtn--open')) {
+      $btn.trigger('menu-opened');
+    } else {
+      $btn.trigger('menu-closed');
+    }
   }
 
   function toogleMenuAndFollow(event) {
