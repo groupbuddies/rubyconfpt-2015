@@ -1,0 +1,70 @@
+{
+  "tweets": [
+    {
+      "author": "Gautam Rege",
+      "handle": "@gautamrege",
+      "text": "Loved #rubyconfpt Well done organizers. It time for me to GO. C you all next year. Get some Rust 😉",
+      "picture": "img/profile_pics/gautam.jpeg"
+    },
+    {
+      "author": "Some(@steveklabnik)",
+      "handle": "‏@steveklabnik",
+      "text": "It was @rubyconfpt's first year, but you wouldn't have known. What a great conf.",
+      "picture": "img/profile_pics/steve.jpeg"
+    },
+    {
+      "author": "Katrina Owen",
+      "handle": "‏@kytrinyx",
+      "text": "Thank you so much to everyone at @rubyconfpt for making the conference such a great experience. It was a pleasure meeting you all.",
+      "picture": "img/profile_pics/katrina.png"
+    },
+    {
+      "author": "Jeremy Walker",
+      "handle": "‏@iHiD",
+      "text": "I feel like I've spent about 2% of the time I would have liked to with everyone at #rubyconfpt. Met some amazing lovely people here. Ruby++",
+      "picture": "img/profile_pics/jeremy.png"
+    },
+    {
+      "author": "Falk Köppe",
+      "handle": "‏@fkoeppe",
+      "text": "#Fyber thanks the awesome speakers, organizers and attendees for the terrific #rubyconfpt. It's been a blast!!!11 Hope to see you next time!",
+      "picture": "img/profile_pics/falk.jpg"
+    },
+    {
+      "author": "Caleb Thompson",
+      "handle": "‏@calebthompson",
+      "text": "#Fyber thanks the awesome speakers, organizers and attendees for the terrific #rubyconfpt. It's been a blast!!!11 Hope to see you next time!",
+      "picture": "img/profile_pics/caleb.jpeg"
+    },
+    {
+      "author": "RedLight Software",
+      "handle": "‏@weareredlight",
+      "text": "Living a @rubyconfpt hangover. We're truly proud of being part of such event. Congratulations to the organizing team and everyone involved.",
+      "picture": "img/profile_pics/redlight.png"
+    },
+    {
+      "author": "Jumpseller",
+      "handle": "‏@JumpSeller",
+      "text": "@rubyconfpt We're the ones thanking you for hosting this great event",
+      "picture": "img/profile_pics/jumpseller.png"
+    },
+    {
+      "author": "Bodo Tasche",
+      "handle": "‏@bitboxer",
+      "text": "Back in the @bitcrowd office. Missing @rubyconfpt already. Such an amazing event.",
+      "picture": "img/profile_pics/bodo.jpeg"
+    },
+    {
+      "author": "José Mota",
+      "handle": "‏@josemotanet",
+      "text": "@rubyconfpt Again, congratulations on marking a new era for Ruby in Portugal. We needed this.",
+      "picture": "img/profile_pics/jose.jpeg"
+    },
+    {
+      "author": "Erik Michaels-Ober",
+      "handle": "‏@sferik",
+      "text": "Many thanks to @groupbuddies—the organizers of @rubyconfpt—for creating such a special event. Hope to stay in touch with all my new friends.",
+      "picture": "img/profile_pics/erik.jpg"
+    }
+  ]
+}

@@ -5,8 +5,8 @@ $(function() {
   var $nav = $('#Nav');
   var $btn = $('#BurgerBtn');
   $document.on('scroll', setNavClass);
-  $btn.on('click tap', toggleMenuWithoutPropagation);
-  $nav.on('click tap', '.NavContent a', toggleMenu);
+  $btn.on('click', toggleMenuWithoutPropagation);
+  $nav.on('click', '.NavContent a', toggleMenu);
   setNavClass();
 
   function setNavClass(event) {
