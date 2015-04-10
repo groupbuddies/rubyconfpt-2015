@@ -1,4 +1,4 @@
-<div class="Nav" id="Nav">
+<div class="Nav {{ include.class }}" id="Nav">
   <div class="Nav-bar">
     <div class="Nav-barMenu">
       <a class="Btn Btn--regular" target="_blank" href="{{ site.data.rubyconfpt.tito_url }}">Buy ticket</a>
@@ -12,10 +12,10 @@
       </a>
     </div>
 
-    <div class="Nav-barLogo">
+    <a class="Nav-barLogo" href="/">
       <img class="NavLogo" src="/img/logo-small.png">
       <span class="Nav-title">Rubyconf portugal'15</span>
-    </div>
+    </a>
   </div>
 
   <div class="Nav-overlay">
@@ -26,6 +26,7 @@
           <ul class="NavContent-items">
             <li class="NavContent-item"><a href="#speakers">Speakers</a></li>
             <li class="NavContent-item"><a href="{{ site.data.rubyconfpt.blog }}">Blog</a></li>
+            <li class="NavContent-item"><a href="/code-of-conduct">Code of Conduct</a></li>
           </ul class="NavContent-items">
         </section>
 
@@ -41,7 +42,7 @@
 
       <div class="NavContent-row">
         <section class="NavContent-section">
-          <h2 class="NavContent-title">Where do you want to reach us</h2>
+          <h2 class="NavContent-title">How do you want to reach us?</h2>
           <ul class="NavContent-items">
             <li class="NavContent-item">
               <div class="NavContact">

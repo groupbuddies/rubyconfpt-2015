@@ -11,6 +11,7 @@ $nav-bar-size: 80px
   color: $color-green
 
 .Nav--scrolled,
+.Nav--alwaysOpaque,
 .Nav--open
   color: $color-white
 
@@ -25,7 +26,8 @@ $nav-bar-size: 80px
   justify-content: space-between
   pointer-events: all
 
-.Nav--scrolled:not(.Nav--open)
+.Nav--scrolled:not(.Nav--open),
+.Nav--alwaysOpaque:not(.Nav--open)
   .Nav-bar
     box-shadow: 0 4px 0 rgba(32, 32, 32, 0.2)
 
@@ -41,11 +43,13 @@ $nav-bar-size: 80px
 
 +media-sm
   .Nav.Nav--scrolled,
+  .Nav.Nav--alwaysOpaque,
   .Nav.Nav--open
     .Nav-barLogo
       display: flex
 
-.Nav--scrolled
+.Nav--scrolled,
+.Nav--alwaysOpaque
   .Nav-bar
     background-color: $color-green
 
@@ -58,6 +62,8 @@ $nav-bar-size: 80px
   margin: 20px
   +font-text
   text-transform: uppercase
+  text-decoration: none
+  color: $color-white
   > :not(:last-child)
     margin-right: $space-small
 
