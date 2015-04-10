@@ -6,6 +6,7 @@ $(function() {
   var $btn = $('#BurgerBtn');
   $document.on('scroll', setNavClass);
   $btn.on('click', toggleMenu);
+  $nav.on('click', '.NavContent a', toggleMenu);
 
   function setNavClass(event) {
     if ($document.scrollTop() > 100) {
@@ -20,9 +21,9 @@ $(function() {
     $btn.toggleClass('BurgerBtn--open');
 
     if ($nav.hasClass('Nav--open')) {
-      $('html, body').css('overflow', 'hidden');
+      $('body').css('overflow', 'hidden');
     } else {
-      $('html, body').css('overflow', 'visible');
+      $('body').css('overflow', 'visible');
     }
   }
 });

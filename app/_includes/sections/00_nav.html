@@ -1,8 +1,8 @@
 <div class="Nav" id="Nav">
   <div class="Nav-bar">
     <div class="Nav-barMenu">
-      <a class="Btn Btn--nav">Buy tickets</a>
-      <a class="Btn Btn--nav">Submit a talk</a>
+      <a class="Btn Btn--nav" target="_blank" href="{{ site.data.rubyconfpt.tito_url }}">Buy tickets</a>
+      <a class="Btn Btn--nav" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">Submit a talk</a>
 
       <label id="BurgerBtn" class="BurgerBtn">
         <div class="BurgerBtn-line"></div>
@@ -23,19 +23,17 @@
         <section class="NavContent-section">
           <h2 class="NavContent-title">Where do you want to go?</h2>
           <ul class="NavContent-items">
-            <li class="NavContent-item">Agenda</li>
-            <li class="NavContent-item">Speakers</li>
-            <li class="NavContent-item">Venue</li>
-            <li class="NavContent-item">Blog</li>
+            <li class="NavContent-item"><a href="#speakers">Speakers</a></li>
+            <li class="NavContent-item"><a href="{{ site.data.rubyconfpt.blog }}">Blog</a></li>
           </ul class="NavContent-items">
         </section>
 
         <section class="NavContent-section">
           <h2 class="NavContent-title">What do you want to do?</h2>
           <ul class="NavContent-items">
-            <li class="NavContent-item">Buy tickets</li>
-            <li class="NavContent-item">Submit a talk</li>
-            <li class="NavContent-item">Download sponsor prospectus</li>
+            <li class="NavContent-item"><a target="_blank" href="{{ site.data.rubyconfpt.tito_url }}">Buy tickets</a></li>
+            <li class="NavContent-item"><a target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">Submit a talk</a></li>
+            <li class="NavContent-item"><a download href="{{ site.data.rubyconfpt.prospectus }}">Download sponsor prospectus</a></li>
           </ul class="NavContent-items">
         </section>
       </div>
@@ -47,7 +45,7 @@
             <li class="NavContent-item">
               <div class="NavContact">
                 <span class="NavContact-label">Write to:</span>
-                <span class="NavContact-value">{{ site.data.rubyconfpt.email }}</span>
+                <span class="NavContact-value"><a href="mailto:{{ site.data.rubyconfpt.email }}">{{ site.data.rubyconfpt.email }}</a></span>
               </div>
             </li>
           <ul class="NavContent-items">
