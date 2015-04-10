@@ -13,11 +13,20 @@ $btn-cta-text-color: #9f4c00
   text-decoration: none
   cursor: pointer
 
+  +font-text
+  color: $color-white
+  height: 50px
+  line-height: 50px
+  vertical-align: middle
+  padding: 0 $space-small
+  background-color: $color-green
+
 .Btn--cta
   @include serif
   display: inline-block
   padding: 0.5em 1em
   background: $btn-cta-bg
+  border: none
   color: $btn-cta-text-color
   box-shadow: 0 3px 0px #e1aa26
   text-shadow: 0 1px #fae9e8
@@ -32,21 +41,12 @@ $btn-cta-text-color: #9f4c00
     background-position: 0% 100%
 
 
-.Btn--submit
-  +font-text
-  padding: $space-small * 0.5 $space-small
-  background-color: $color-red
-  color: $color-white
-  height: 50px
-  &:hover
-    background-color: darken($color-red, 5%)
+//   +font-text
+//   padding: $space-small * 0.5 $space-small
+//   background-color: $color-red
+//   color: $color-green
+//   height: 50px
+//   &:hover
+//     background-color: darken($color-red, 5%)
 
-.Btn--nav
-  +font-text
-  color: $color-white
-  height: 50px
-  line-height: 50px
-  vertica-align: middle
-  padding: 0 $space-small
-  border: solid 1px $color-white
-  background-color: transparent
+// .Btn--nav

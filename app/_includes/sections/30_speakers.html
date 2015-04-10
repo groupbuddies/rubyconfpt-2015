@@ -6,22 +6,46 @@
   <ul class="Speakers-list">
     {% for speaker in site.data.speakers %}
       <div class="Speaker">
-        <img class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
+        <div class="Speaker-pictureWrapper">
+          <img class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
+        </div>
         <h1 class="Speaker-name">
           <div class="Speaker-firstName">{{ speaker.firstName }}</div>
           <div class="Speaker-lastName">{{ speaker.lastName }}</div>
         </h1>
         <h2 class="Speaker-shortDesc">{{ speaker.shortDesc }}</h2>
         <div class="Speaker-links">
-          <a href="https://twitter.com/{{ speaker.twitter }}">
-            <i class="fa fa-twitter"></i>
-          </a>
+          {% if speaker.twitter %}
+            <a href="https://twitter.com/{{ speaker.twitter }}">
+              <i class="fa fa-twitter"></i>
+            </a>
+          {% endif %}
 
-          <a href="https://github.com/{{ speaker.github }}">
-            <i class="fa fa-github"></i>
-          </a>
+          {% if speaker.github %}
+            <a href="https://github.com/{{ speaker.github }}">
+              <i class="fa fa-github"></i>
+            </a>
+          {% endif %}
         </div>
       </div>
     {% endfor %}
+
+    <div class="Speaker">
+      <div class="Speaker-pictureWrapper">
+        <!-- <img class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}"> -->
+      </div>
+      <h1 class="Speaker-name">
+        <div class="Speaker-firstName">More</div>
+        <div class="Speaker-lastName">Soon</div>
+      </h1>
+    </div>
   </ul>
+
+  <hr class="Separator Separator--small">
+
+  <div class="SpeakerCTA">
+    <h1 class="SpeakerCTA-title">Want to be part of this amazing lineup of speakers?</h1>
+    <h2 class="SpeakerCTA-subtitle">Call for proposals are open until {{ site.data.rubyconfpt.cfp_close_date }}</h2>
+    <a class="Btn" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">Submit a talk</a>
+  </div>
 </section>

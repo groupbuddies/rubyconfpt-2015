@@ -6,41 +6,11 @@
   talk_title:
   picture_name: avdi.png
   website:
-- firstName: Avdi
-  lastName: Grimm
-  shortDesc: Founder of RubyTapas
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
-  website:
-- firstName: Avdi
-  lastName: Grimm
-  shortDesc: Founder of RubyTapas
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
-  website:
-- firstName: Avdi
-  lastName: Grimm
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
-  website:
-- firstName: Avdi
-  lastName: Grimm
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
-  website:
-- firstName: Avdi
-  lastName: Grimm
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
-  website:
-- firstName: Avdi
-  lastName: Grimm
-  twitter: avdi
-  talk_title:
-  picture_name: avdi.png
+
+- firstName: Sean
+  lastName: Griffin
+  shortDesc: Rails commiter,<br>host of bikeshed
+  twitter: sgrif
+  github: sgrif
+  picture_name: sean-griffin.jpg
   website:

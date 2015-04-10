@@ -8,11 +8,17 @@ $speaker-picture-border-size: 6px
   align-items: center
   margin-bottom: $space-base
 
-.Speaker-picture
+.Speaker-pictureWrapper
   width: $speaker-picture-size
   height: $speaker-picture-size
+  overflow: hidden
   border-radius: 50%
-  border: solid $speaker-picture-border-size $color-grey
+  border: solid $speaker-picture-border-size $color-yellow
+  background-color: $color-yellow
+
+.Speaker-picture
+  width: 100%
+  margin: auto
 
 .Speaker-name
   +font-title
@@ -36,7 +42,8 @@ $speaker-picture-border-size: 6px
   +font-text
   +sans-serif
   margin: 15px
-  color: $color-grey
+  text-align: center
+  color: $color-yellow
 
 .Speaker-links
   font-size: 26px
