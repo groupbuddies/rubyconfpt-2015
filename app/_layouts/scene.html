@@ -9,7 +9,8 @@
           var imageNames;
           var images = [];
 
-          if (hours > 4 && hours < 18) {
+          hours = 3;
+          if (hours > 4 && hours < 19) {
             cssClass = 'day';
             imageNames = ['town', 'mountains', 'cloud1', 'cloud2', 'sun'];
           } else {
@@ -20,7 +21,6 @@
           imageNames.forEach(function(imgName, i) {
             images[i] = new Image();
             images[i].src = '/img/scene/' + cssClass + '/' + imgName + '.svg';
-            console.log('preloading ' + images[i].src);
           });
 
           html.className += ' ' + cssClass;
@@ -40,6 +40,8 @@
 
         <!-- build:js({app,.tmp}) js/scripts.js -->
         <script src="/_bower_components/jquery/dist/jquery.js"></script>
+        <script src="/_bower_components/velocity/velocity.js"></script>
+        <script src="/js/scene.js"></script>
         <script src="/js/hoshi.js"></script>
         <script src="/js/nav.js"></script>
         <!-- endbuild -->

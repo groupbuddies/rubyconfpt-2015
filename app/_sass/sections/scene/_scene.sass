@@ -17,6 +17,7 @@ $scene-skyline-time: 80s
   overflow: hidden
   background-position: 0 top
   background-size: contain
+  +transform(translate3d(0px, 0px, 0px))
 
 .Scene-stars
   width: 100%
@@ -24,8 +25,8 @@ $scene-skyline-time: 80s
   background-repeat: no-repeat
 
 .Scene-cloudsWrapper
-  width: 1000%
-  margin: 0 -500%
+  width: 100%
+  // margin: 0 -100%
   height: $scene-cloud-height
   background-repeat: repeat
   +media-portrait
@@ -46,7 +47,7 @@ $scene-skyline-time: 80s
   width: 1000%
   height: 100%
   background-position: top left
-  background-size: contain
+  background-size: 10%
   background-repeat: repeat
 
 .Scene-sun
