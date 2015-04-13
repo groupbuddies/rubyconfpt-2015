@@ -10,16 +10,18 @@ $scene-skyline-time: 80s
   width: 100%
   height: 100%
   overflow: hidden
-  background: #DEFEF0
 
 .Scene-cloudsWrapper,
-.Scene-sun,
-.Scene-mountains,
-.Scene-town
+.Scene-fullSize
   position: absolute
   overflow: hidden
   background-position: 0 top
   background-size: contain
+
+.Scene-stars
+  width: 100%
+  height: $scene-cloud-height
+  background-repeat: no-repeat
 
 .Scene-cloudsWrapper
   width: 1000%
@@ -33,46 +35,40 @@ $scene-skyline-time: 80s
     height: 60%
     top: 0
 
-.Scene-sun,
-.Scene-mountains,
-.Scene-town
+.Scene-fullSize
   width: 100%
   height: 100vh
   bottom: 0
   background-size: 100%
   background-repeat: no-repeat
 
-.Scene-clouds
+.Scene-clouds,
   width: 1000%
   height: 100%
   background-position: top left
   background-size: contain
   background-repeat: repeat
 
-.Scene-clouds--front
-  background-image: url(../img/scene/cloud1.svg)
-
-.Scene-clouds--back
-  background-image: url(../img/scene/cloud2.svg)
-
 .Scene-sun
   width: 20%
   height: 100vh
-  background-image: url(../img/scene/sun.svg)
+  +media-landscape
+    background-position: top center
+  +media-portrait
+    background-position: bottom 30% center
+
+.Scene-stars
+  height: 100vh
   +media-landscape
     background-position: top center
   +media-portrait
     background-position: bottom 30% center
 
 .Scene-mountains
-  background-position: 20% center
-  background-image: url(../img/scene/mountains.svg)
+  background-position: bottom center
+  +media-lg
+    background-position: bottom 80% center
 
 .Scene-town
   background-position: bottom
-  background-image: url(../img/scene/town.svg)
-
-.Scene-gandalf
-  background-position: bottom
-  background-image: url(../img/scene/gandalf.svg)
 

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="373px" height="344px" viewBox="0 0 373 344" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Sun</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="26.2138097" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="26.2138097" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="The-view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="NIGHT" sketch:type="MSArtboardGroup">
+            <g id="Sun" sketch:type="MSLayerGroup" transform="translate(47.482320, 19.075521)">
+                <ellipse id="Oval-12" opacity="0.2" fill="#FFFDF4" filter="url(#filter-1)" sketch:type="MSShapeGroup" cx="126.075521" cy="126.075521" rx="73.075521" ry="73.075521"></ellipse>
+                <ellipse id="Oval-13" opacity="0.0738922575" fill="#DEE7F5" filter="url(#filter-2)" sketch:type="MSShapeGroup" cx="126.075521" cy="126.075521" rx="126.075521" ry="126.075521"></ellipse>
+                <ellipse id="Oval-6" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="125.765879" cy="125.888775" rx="33.7032904" ry="33.7032904"></ellipse>
+                <path d="M124.765879,157.592066 C126.371699,158.394976 139.517678,157.924479 149.51768,147.924479 C159.517682,137.924479 158.469169,123.888775 158.469169,123.888775 C158.469169,123.888775 152.135868,138.306291 144.51768,145.924479 C136.899492,153.542667 123.160059,156.789156 124.765879,157.592066 Z" id="Oval-7" fill="#F3EBBF" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <script>
+          var hours = new Date().getHours();
+          var html = document.getElementsByTagName('html')[0];
+          var cssClass;
+
+          var imageNames;
+          var images = [];
+
+          if (hours > 4 && hours < 18) {
+            cssClass = 'day';
+            imageNames = ['town', 'mountains', 'cloud1', 'cloud2', 'sun'];
+          } else {
+            cssClass = 'night';
+            imageNames = ['town', 'mountains', 'stars', 'moon'];
+          }
+
+          imageNames.forEach(function(imgName, i) {
+            images[i] = new Image();
+            images[i].src = '/img/scene/' + cssClass + '/' + imgName + '.svg';
+            console.log('preloading ' + images[i].src);
+          });
+
+          html.className += ' ' + cssClass;
+        </script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>

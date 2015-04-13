@@ -1,4 +1,5 @@
 .SceneOverlay
+  +sceneOverlay-layer
   max-width: 490px
   padding: 1em 0
   text-align: center
@@ -40,3 +41,23 @@
   font-weight: bold
   text-transform: uppercase
 
+.night
+  .SceneOverlay
+    color: $color-white
+
+.Scene--footer
+  .SceneOverlay
+    height: 100%
+
+.SceneOverlay-smallLogo
+  +sceneOverlay-layer
+
+.SceneOverlay-footerTitle,
+.SceneOverlay-footerSubtitle
+  +sceneOverlay-layer
+  +font-text
+  text-transform: uppercase
+
+.SceneOverlay-footerTitle
+  font-weight: bold
+  margin-top: $space-small

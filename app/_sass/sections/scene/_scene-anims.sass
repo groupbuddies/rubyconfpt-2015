@@ -3,55 +3,57 @@ $anim-cloudTranslateTime-front: 4000s
 $anim-scene-time: 2s
 $anim-cloudFade-time: 10s
 
-+keyframes(animClouds)
-  from
-    transform: translateX(0%)
-  to
-    transform: translateX(100%)
+.Scene--animated
+  +keyframes(animClouds)
+    from
+      transform: translateX(0%)
+    to
+      transform: translateX(100%)
 
-.Scene-clouds--back
-  +animation(animClouds $anim-cloudTranslateTime-back linear infinite)
-.Scene-clouds--front
-  +animation(animClouds $anim-cloudTranslateTime-front linear infinite)
+  .Scene-clouds--back
+    +animation(animClouds $anim-cloudTranslateTime-back linear infinite)
+  .Scene-clouds--front
+    +animation(animClouds $anim-cloudTranslateTime-front linear infinite)
 
-+keyframes(animForeground)
-  from
+  +keyframes(animForeground)
+    from
+      transform: translateY(100%)
+    to
+      transform: translateY(0)
+
+  +keyframes(animSun)
+    from
+      transform: translateY(120%)
+    to
+      transform: translateY(0)
+
+  .Scene-mountains
     transform: translateY(100%)
-  to
-    transform: translateY(0)
-
-+keyframes(animSun)
-  from
+    +animation(animForeground $anim-scene-time 0.3s ease-out forwards)
+  .Scene-town
+    transform: translateY(100%)
+    +animation(animForeground $anim-scene-time ease-out forwards)
+  .Scene-sun
     transform: translateY(120%)
-  to
-    transform: translateY(0)
+    +animation(animSun $anim-scene-time 0.5s ease-out forwards)
 
-.Scene-mountains
-  transform: translateY(100%)
-  +animation(animForeground $anim-scene-time 0.3s ease-out forwards)
-.Scene-town
-  transform: translateY(100%)
-  +animation(animForeground $anim-scene-time ease-out forwards)
-.Scene-sun
-  transform: translateY(120%)
-  +animation(animSun $anim-scene-time 0.5s ease-out forwards)
+  +keyframes(animCloudsWrapper)
+    from
+      opacity: 0
+    to
+      opacity: 1
 
-+keyframes(animCloudsWrapper)
-  from
+  .Scene-cloudsWrapper,
+  .Scene-stars
     opacity: 0
-  to
-    opacity: 1
+    +animation(animCloudsWrapper $anim-cloudFade-time ease-out forwards)
 
-.Scene-cloudsWrapper
-  opacity: 0
-  +animation(animCloudsWrapper $anim-cloudFade-time ease-out forwards)
+  +keyframes(SceneOverlay-anim)
+    from
+      opacity: 0
+    to
+      opacity: 1
 
-+keyframes(SceneOverlay-anim)
-  from
+  .SceneOverlay
     opacity: 0
-  to
-    opacity: 1
-
-.SceneOverlay
-  opacity: 0
-  +animation(SceneOverlay-anim 2s 2s ease-in-out forwards)
+    +animation(SceneOverlay-anim 2s 2s ease-in-out forwards)

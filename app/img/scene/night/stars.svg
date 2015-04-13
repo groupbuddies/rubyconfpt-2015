@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1410px" height="515px" viewBox="0 0 1410 515" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>Stars</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="1.11443015" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feGaussianBlur stdDeviation="1.11443015" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1.11443015" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.11443015" in="SourceGraphic" result="blur"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="The-view" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="NIGHT" sketch:type="MSArtboardGroup" transform="translate(-8.000000, -4.000000)">
+            <g id="Stars" sketch:type="MSLayerGroup" transform="translate(-479.000000, 4.000000)">
+                <circle id="Oval-3717" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1631" cy="22" r="3"></circle>
+                <circle id="Oval-3711" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1811" cy="102" r="3"></circle>
+                <circle id="Oval-3710" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1858.5" cy="51.5" r="0.5"></circle>
+                <circle id="Oval-3712" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1759.5" cy="32.5" r="1.5"></circle>
+                <circle id="Oval-3713" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1668.5" cy="141.5" r="0.5"></circle>
+                <circle id="Oval-3714" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1718.5" cy="91.5" r="1.5"></circle>
+                <circle id="Oval-3715" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1568.5" cy="51.5" r="1.5"></circle>
+                <circle id="Oval-3736" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1311" cy="142" r="3"></circle>
+                <circle id="Oval-3733" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1439.5" cy="152.5" r="1.5"></circle>
+                <circle id="Oval-3734" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1397.5" cy="210.5" r="0.5"></circle>
+                <circle id="Oval-3735" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1248.5" cy="171.5" r="1.5"></circle>
+                <circle id="Oval-3737" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1429.5" cy="22.5" r="1.5"></circle>
+                <circle id="Oval-3738" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1388.5" cy="81.5" r="1.5"></circle>
+                <circle id="Oval-3739" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1267.5" cy="20.5" r="0.5"></circle>
+                <circle id="Oval-3740" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1227.5" cy="60.5" r="0.5"></circle>
+                <circle id="Oval-3741" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1297.5" cy="210.5" r="0.5"></circle>
+                <circle id="Oval-3742" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1587.5" cy="210.5" r="0.5"></circle>
+                <circle id="Oval-3743" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1507.5" cy="80.5" r="0.5"></circle>
+                <circle id="Oval-3744" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1027.5" cy="30.5" r="0.5"></circle>
+                <circle id="Oval-3745" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="977.5" cy="80.5" r="0.5"></circle>
+                <circle id="Oval-3757" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="667.5" cy="220.5" r="0.5"></circle>
+                <circle id="Oval-3732" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1211" cy="232" r="3"></circle>
+                <circle id="Oval-3726" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="901" cy="182" r="3"></circle>
+                <circle id="Oval-3727" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1081" cy="262" r="3"></circle>
+                <circle id="Oval-3819" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1451" cy="322" r="3"></circle>
+                <circle id="Oval-3754" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1141" cy="272" r="3"></circle>
+                <circle id="Oval-3755" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1321" cy="352" r="3"></circle>
+                <circle id="Oval-3756" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1368.5" cy="301.5" r="0.5"></circle>
+                <circle id="Oval-3758" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1269.5" cy="282.5" r="1.5"></circle>
+                <circle id="Oval-3764" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1178.5" cy="391.5" r="0.5"></circle>
+                <circle id="Oval-3765" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1228.5" cy="341.5" r="1.5"></circle>
+                <circle id="Oval-3766" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1078.5" cy="301.5" r="1.5"></circle>
+                <circle id="Oval-3767" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="821" cy="392" r="3"></circle>
+                <circle id="Oval-3768" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="949.5" cy="402.5" r="1.5"></circle>
+                <circle id="Oval-3769" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="907.5" cy="460.5" r="0.5"></circle>
+                <circle id="Oval-3770" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="758.5" cy="421.5" r="1.5"></circle>
+                <circle id="Oval-3771" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="939.5" cy="272.5" r="1.5"></circle>
+                <circle id="Oval-3772" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="898.5" cy="331.5" r="1.5"></circle>
+                <circle id="Oval-3773" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="777.5" cy="270.5" r="0.5"></circle>
+                <circle id="Oval-3774" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="737.5" cy="310.5" r="0.5"></circle>
+                <circle id="Oval-3775" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="807.5" cy="460.5" r="0.5"></circle>
+                <circle id="Oval-3776" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1097.5" cy="460.5" r="0.5"></circle>
+                <circle id="Oval-3777" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1017.5" cy="330.5" r="0.5"></circle>
+                <circle id="Oval-3778" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="537.5" cy="280.5" r="0.5"></circle>
+                <circle id="Oval-3814" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="487.5" cy="330.5" r="0.5"></circle>
+                <circle id="Oval-3816" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="721" cy="482" r="3"></circle>
+                <circle id="Oval-3818" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="591" cy="512" r="3"></circle>
+                <circle id="Oval-3728" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1129.5" cy="212.5" r="1.5"></circle>
+                <circle id="Oval-3729" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1028.5" cy="191.5" r="0.5"></circle>
+                <circle id="Oval-3828" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="544" cy="344" r="3"></circle>
+                <circle id="Oval-3831" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="952.5" cy="74.5" r="1.5"></circle>
+                <circle id="Oval-3832" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="851.5" cy="53.5" r="0.5"></circle>
+                <circle id="Oval-3753" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1139.5" cy="362.5" r="1.5"></circle>
+                <circle id="Oval-3752" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1038.5" cy="341.5" r="0.5"></circle>
+                <circle id="Oval-3730" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="988.5" cy="251.5" r="1.5"></circle>
+                <circle id="Oval-3731" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="838.5" cy="211.5" r="1.5"></circle>
+                <circle id="Oval-3721" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1531" cy="172" r="3"></circle>
+                <circle id="Oval-3718" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1569.5" cy="292.5" r="1.5"></circle>
+                <circle id="Oval-3820" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1828.5" cy="311.5" r="0.5"></circle>
+                <circle id="Oval-3821" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1778.5" cy="221.5" r="1.5"></circle>
+                <circle id="Oval-3822" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1628.5" cy="181.5" r="1.5"></circle>
+                <circle id="Oval-3719" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1618.5" cy="241.5" r="1.5"></circle>
+                <circle id="Oval-3720" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1468.5" cy="201.5" r="1.5"></circle>
+                <circle id="Oval-3748" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1437.5" cy="370.5" r="0.5"></circle>
+                <circle id="Oval-3746" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1337.5" cy="370.5" r="0.5"></circle>
+                <circle id="Oval-3747" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1508.5" cy="361.5" r="1.5"></circle>
+                <circle id="Oval-3751" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1287.5" cy="280.5" r="0.5"></circle>
+                <circle id="Oval-3749" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1187.5" cy="280.5" r="0.5"></circle>
+                <circle id="Oval-3750" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1368.5" cy="221.5" r="1.5"></circle>
+                <circle id="Oval-3725" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1181" cy="32" r="3"></circle>
+                <circle id="Oval-3722" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1219.5" cy="152.5" r="1.5"></circle>
+                <circle id="Oval-3723" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1268.5" cy="101.5" r="1.5"></circle>
+                <circle id="Oval-3724" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1118.5" cy="61.5" r="1.5"></circle>
+                <circle id="Oval-3716" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1488.5" cy="1.5" r="1.5"></circle>
+                <circle id="Oval-3760" fill="#FFFBE4" sketch:type="MSShapeGroup" cx="1888.5" cy="231.5" r="1.5"></circle>
+                <polygon id="Star-2" fill="#FFFFFF" filter="url(#filter-1)" sketch:type="MSShapeGroup" points="1890 167.866331 1885.75736 170.242641 1888.13367 166 1885.75736 161.757359 1890 164.133669 1894.24264 161.757359 1891.86633 166 1894.24264 170.242641 "></polygon>
+                <polygon id="Star-3" opacity="0.606051772" fill="#FFFFFF" filter="url(#filter-2)" sketch:type="MSShapeGroup" points="968 136.866331 963.757359 139.242641 966.133669 135 963.757359 130.757359 968 133.133669 972.242641 130.757359 969.866331 135 972.242641 139.242641 "></polygon>
+                <polygon id="Star-4" opacity="0.606051772" fill="#FFFFFF" filter="url(#filter-3)" sketch:type="MSShapeGroup" points="1360 10.8663313 1355.75736 13.2426407 1358.13367 9 1355.75736 4.75735931 1360 7.13366866 1364.24264 4.75735931 1361.86633 9 1364.24264 13.2426407 "></polygon>
+                <polygon id="Star-5" opacity="0.606051772" fill="#FFFFFF" filter="url(#filter-4)" sketch:type="MSShapeGroup" points="1040 290.866331 1035.75736 293.242641 1038.13367 289 1035.75736 284.757359 1040 287.133669 1044.24264 284.757359 1041.86633 289 1044.24264 293.242641 "></polygon>
+            </g>
+        </g>
+    </g>
+</svg>
