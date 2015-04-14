@@ -2,7 +2,9 @@
   'use strict';
 
   $(function() {
-    console.log('loaded');
+
+    var $document = $(document);
+
     var $town = $('.Scene-town');
     var $mountains = $('.Scene-mountains');
     var $sun = $('.Scene-sun');
@@ -10,6 +12,8 @@
     var $cloudsBack = $('.Scene-clouds--back');
     var $cloudsFront = $('.Scene-clouds--front');
     var $overlay = $('.SceneOverlay, .Nav-barMenu');
+
+    var allAnimatedElems = [$town, $mountains, $sun, $cloudsWrapper, $cloudsBack, $cloudsFront, $overlay];
 
     $town.velocity({
       translateZ: 0,
@@ -70,5 +74,12 @@
       delay: 2000,
       ease: 'easeInOut'
     })
+
+    if ($document.scrollTop() > 100) {
+      allAnimatedElems.forEach(function(elem) {
+        elem.velocity('finish');
+      })
+    }
+
   });
 })();
