@@ -10,7 +10,6 @@ $(function() {
   setNavClass();
 
   function setNavClass(event) {
-    console.log($nav.hasClass('Nav--scrolled'));
     var scroll = $document.scrollTop();
     if (scroll > 100 && !$nav.hasClass('Nav--scrolled')) {
       $nav.addClass('Nav--scrolled');
