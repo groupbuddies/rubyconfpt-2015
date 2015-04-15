@@ -2,6 +2,7 @@ $(function() {
   var tweetsPath = 'tweets.json';
   var picturesPath = 'pictures.json';
 
+  var tweetLinkClass = '.Tweet';
   var tweetTextClass = '.Tweet-text';
   var tweetNameClass = '.Tweet-authorName';
   var tweetPictureClass = '.Tweet-picture';
@@ -17,6 +18,7 @@ $(function() {
   }
 
   function populateTweet($container, data, picture) {
+    $container.find(tweetLinkClass).attr('href', data.url);
     $container.find(tweetNameClass).text(data.author);
     $container.find(tweetHandlerClass).text(data.handle);
     $container.find(tweetNameClass).text(data.author);
