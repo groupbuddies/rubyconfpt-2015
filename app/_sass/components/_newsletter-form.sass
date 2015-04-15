@@ -20,5 +20,7 @@ $newsletter-form-input-spacing: $space-base
 .NewsletterForm-submit
   max-width: 200px
   padding-bottom: 4px
-  align-items: flex-end
-  &:after
+  display: flex
+  justify-content: flex-end
+  +media-xs-only
+    max-width: none
