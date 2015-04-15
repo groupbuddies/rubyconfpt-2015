@@ -8,6 +8,5 @@ $(function() {
     audio.play();
   };
 
-
   awesomeMusic.load();
 });
