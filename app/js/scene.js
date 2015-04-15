@@ -73,7 +73,7 @@
       ease: 'easeInOut'
     })
 
-    if ($document.scrollTop() > 100) {
+    if ($document.scrollTop() > 100 || $('.Nav').hasClass('Nav--alwaysOpaque')) {
       allAnimatedElems.forEach(function(elem) {
         elem.velocity('finish');
       })
