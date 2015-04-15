@@ -26,7 +26,7 @@ $(function() {
 
   function toggleMenu(event) {
     $nav.toggleClass('Nav--away')
-    $nav.toggleClass('Nav--open');
+      $nav.toggleClass('Nav--open');
     $btn.toggleClass('BurgerBtn--open');
     setOverlayState();
 

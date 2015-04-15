@@ -73,11 +73,24 @@
       ease: 'easeInOut'
     })
 
-    if ($document.scrollTop() > 100 || $('.Nav').hasClass('Nav--alwaysOpaque')) {
+    console.log(getUrlParameter('no-anim'));
+    if ($document.scrollTop() > 100
+        || getUrlParameter('no-anim')
+        || $('.Nav').hasClass('Nav--alwaysOpaque')) {
       allAnimatedElems.forEach(function(elem) {
         elem.velocity('finish');
       })
     }
 
+    function getUrlParameter(sParam) {
+      var sPageURL = window.location.search.substring(1);
+      var sURLVariables = sPageURL.split('&');
+      for (var i = 0; i < sURLVariables.length; i++)  {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] == sParam) {
+          return sParameterName[1];
+        }
+      }
+    }
   });
 })();
