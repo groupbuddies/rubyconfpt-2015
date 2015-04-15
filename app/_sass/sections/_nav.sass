@@ -10,6 +10,10 @@ $nav-bar-size: 60px
   pointer-events: none
   color: $color-green
 
+.Nav--away
+  .Nav-overlay
+    +transform(translate3d(9999px, 9999px, 0))
+
 .Nav--scrolled,
 .Nav--alwaysOpaque,
 .Nav--open
@@ -69,7 +73,7 @@ $nav-bar-size: 60px
     margin-right: $space-small
 
 .Nav-overlay
-  +transition(all 0.3s)
+  +transition(opacity 0.3s)
   position: absolute
   top: 0
   display: block
