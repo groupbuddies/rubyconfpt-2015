@@ -1,4 +1,4 @@
-$tweet-profile-picture-size: 60px
+$tweet-profile-picture-size: 50px
 $tweet-picture-border-radius: 50%
 
 .Tweet
@@ -20,12 +20,15 @@ $tweet-picture-border-radius: 50%
   min-width: $tweet-profile-picture-size
   min-height: $tweet-profile-picture-size
   border-radius: $tweet-picture-border-radius
+  margin-right: $space-small
+
+  +media-sm-md
+    display: none
 
 .Tweet-authorInformation
   display: flex
   flex-direction: column
   align-items: flex-start
-  margin-left: $space-small
 
 .Tweet-authorName
   color: $color-twitter-blue

@@ -1,6 +1,7 @@
 $media-xs-only: "max-width: 768px"
 $media-sm: "min-width: 768px"
-$media-md: "min-width: 1200px"
+$media-md: "min-width: 1024px"
+$media-md-only: "max-width: 1023px"
 $media-lg: "min-width: 1200px"
 
 @mixin media-xs
@@ -16,6 +17,10 @@ $media-lg: "min-width: 1200px"
 
 @mixin media-md
   @media ($media-md)
+    @content
+
+@mixin media-sm-md
+  @media ($media-md-only) and ($media-sm)
     @content
 
 @mixin media-lg
