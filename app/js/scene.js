@@ -20,25 +20,23 @@
       translateY: ['0%', '100%']
     }, {
       duration: 2000,
-      easing: 'easeOut'
+      easing: 'easeOutSine'
     });
 
     $mountains.velocity({
       translateZ: 0,
-      translateY: ['0px', '100%']
+      translateY: ['0px', '140%']
     }, {
       duration: 2000,
-      delay: 300,
-      easing: 'easeOut'
+      easing: 'easeOutSine'
     });
 
     $sun.velocity({
       translateZ: 0,
-      translateY: ['0%', '120%']
+      translateY: ['0%', '180%']
     }, {
       duration: 2000,
-      delay: 500,
-      easing: 'easeOut'
+      easing: 'easeOutSine'
     });
 
     $cloudsWrapper.velocity({
