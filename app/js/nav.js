@@ -1,12 +1,15 @@
 $(function() {
   'use strict';
 
+  var ESCAPE_CODE = 27;
+
   var $document = $(document);
   var $nav = $('#Nav');
   var $btn = $('#BurgerBtn');
   $document.on('scroll', setNavClass);
   $btn.on('click', toggleMenuWithoutPropagation);
   $nav.on('click', '.NavContent a', toggleMenu);
+  $nav.on('keydown', handleLeaveMenu);
   setNavClass();
   setOverlayState();
 
@@ -47,9 +50,19 @@ $(function() {
     if ($btn.hasClass('BurgerBtn--open')) {
       $('.Nav-overlay').attr('aria-hidden', 'false');
       $('a, input', '.Nav-overlay').attr('tabindex', '0');
+      $('.Nav-overlay a').first().focus();
+      $btn.removeAttr('aria-labelledby');
     } else {
       $('.Nav-overlay').attr('aria-hidden', 'true');
       $('a, input', '.Nav-overlay').attr('tabindex', '-1');
+      $btn.attr('aria-labelledby', 'OpenMenuLabel');
+    }
+  }
+
+  function handleLeaveMenu() {
+    if (event.keyCode === ESCAPE_CODE) {
+      toggleMenuWithoutPropagation(event);
+      $btn.focus();
     }
   }
 });
