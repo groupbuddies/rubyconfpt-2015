@@ -73,7 +73,6 @@
       ease: 'easeInOut'
     })
 
-    console.log(getUrlParameter('no-anim'));
     if ($document.scrollTop() > 100
         || getUrlParameter('no-anim')
         || $('.Nav').hasClass('Nav--alwaysOpaque')) {

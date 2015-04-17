@@ -2,16 +2,16 @@ $(function() {
   'use strict';
 
   var ESCAPE_CODE = 27;
+  var TAB_CODE = 9;
 
   var $document = $(document);
   var $nav = $('#Nav');
   var $btn = $('#BurgerBtn');
-  $document.on('scroll', setNavClass);
-  $btn.on('click', toggleMenuWithoutPropagation);
-  $nav.on('click', '.NavContent a', toggleMenu);
-  $nav.on('keydown', handleLeaveMenu);
+  var $firstFocusableElement = $btn;
+  var $lastFocusableElement = $('.NavContent-bottom .NavContent-item:last-child');
   setNavClass();
   setOverlayState();
+  setupListeners();
 
   function setNavClass(event) {
     var scroll = $document.scrollTop();
@@ -50,6 +50,7 @@ $(function() {
     if ($btn.hasClass('BurgerBtn--open')) {
       $('.Nav-overlay').attr('aria-hidden', 'false');
       $('a, input', '.Nav-overlay').attr('tabindex', '0');
+      $('#mce-hidden-input').attr('tabindex', '-1');
       $('.Nav-overlay a').first().focus();
       $btn.removeAttr('aria-labelledby');
     } else {
@@ -59,10 +60,42 @@ $(function() {
     }
   }
 
-  function handleLeaveMenu() {
+  function setupListeners() {
+    $document.on('scroll', setNavClass);
+    $btn.on('click', toggleMenuWithoutPropagation);
+    $nav.on('click', '.NavContent a', toggleMenu);
+
+    $btn.on('menu-opened', function() {
+      $nav.on('keydown', handleLeaveMenu);
+      $lastFocusableElement.on('keydown', trapTab);
+      $firstFocusableElement.on('keydown', trapShiftTab);
+    });
+
+    $btn.on('menu-closed', function() {
+      $nav.off('keydown');
+      $lastFocusableElement.off('keydown');
+      $firstFocusableElement.off('keydown');
+    });
+  }
+
+  function handleLeaveMenu(event) {
     if (event.keyCode === ESCAPE_CODE) {
       toggleMenuWithoutPropagation(event);
       $btn.focus();
+    }
+  }
+
+  function trapTab(event) {
+    if(event.keyCode === TAB_CODE) {
+      event.preventDefault();
+      $firstFocusableElement.focus();
+    }
+  }
+
+  function trapShiftTab(event) {
+    if(event.keyCode === TAB_CODE && event.shiftKey) {
+      event.preventDefault();
+      $lastFocusableElement.focus();
     }
   }
 });
