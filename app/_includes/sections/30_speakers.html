@@ -5,9 +5,9 @@
 
   <ul class="Speakers-list">
     {% for speaker in site.data.speakers %}
-      <div class="Speaker">
+      <article class="Speaker">
         <div class="Speaker-pictureWrapper">
-          <img class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
+          <img alt="" class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
         </div>
         <h1 class="Speaker-name">
           <div class="Speaker-firstName">{{ speaker.firstName }}</div>
@@ -16,28 +16,30 @@
         <h2 class="Speaker-shortDesc">{{ speaker.shortDesc }}</h2>
         <div class="Speaker-links">
           {% if speaker.twitter %}
-            <a target="_blank" href="https://twitter.com/{{ speaker.twitter }}">
+            <a aria-label=""{{ speaker.firstName }} {{ speaker.lastName }}'s twitter" target="_blank" href="https://twitter.com/{{ speaker.twitter }}">
               <i class="fa fa-twitter"></i>
             </a>
           {% endif %}
 
           {% if speaker.github %}
-            <a target="_blank" href="https://github.com/{{ speaker.github }}">
+          <a aria-label="{{ speaker.firstName }} {{ speaker.lastName }}'s github" target="_blank" href="https://github.com/{{ speaker.github }}">
               <i class="fa fa-github"></i>
             </a>
           {% endif %}
         </div>
-      </div>
+      </article>
     {% endfor %}
 
-    <a target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}" class="Speaker">
-      <div class="Speaker-pictureWrapper">
-        <img class="Speaker-picture" src="/img/sauron.png">
-      </div>
-      <h1 class="Speaker-name">
-        <div class="Speaker-firstName">searching for</div>
-        <div class="Speaker-lastName">more</div>
-      </h1>
-    </a>
+    <article>
+      <a aria-label="Call for Proposals" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}" class="Speaker">
+        <div class="Speaker-pictureWrapper">
+          <img alt="" class="Speaker-picture" src="/img/sauron.png">
+        </div>
+        <h1 aria-hidden="true" class="Speaker-name">
+          <div class="Speaker-firstName">searching for</div>
+          <div class="Speaker-lastName">more</div>
+        </h1>
+      </a>
+    </article>
   </ul>
 </section>
