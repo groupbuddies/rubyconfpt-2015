@@ -14,3 +14,11 @@
   github: sgrif
   picture_name: sean-griffin.jpg
   website:
+
+- firstName: Koichi
+  lastName: Sasada
+  shortDesc: Programmer,<br>mainly developping Ruby interpreter<br>(CRuby/MRI)
+  twitter: koichisasada
+  github: ko1
+  picture_name: koichi.jpg
+  website: http://www.atdot.net/~ko1/
