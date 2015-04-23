@@ -37,9 +37,14 @@ $nav-bar-size: 60px
     opacity: 1
 
 .Nav-bar
-  .Nav-barLogo,
   .Btn
     display: none
+
+.Nav-title
+  display: none
+
+.Nav-barLogo
+  display: flex
 
 +media-large-menu
   .Nav:not(.Nav--open),
@@ -47,11 +52,8 @@ $nav-bar-size: 60px
       display: block
 
 +media-sm
-  .Nav.Nav--scrolled,
-  .Nav.Nav--alwaysOpaque,
-  .Nav.Nav--open
-    .Nav-barLogo
-      display: flex
+  .Nav-title
+    display: initial
 
 .Nav--scrolled,
 .Nav--alwaysOpaque
