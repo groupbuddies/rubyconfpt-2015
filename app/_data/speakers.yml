@@ -25,7 +25,7 @@
 
 - firstName: Steve
   lastName: Klabnik
-  shortDesc: Rails commiter, member of the Rust Core team
+  shortDesc: Rails commiter,<br>member of the Rust Core team
   twitter: steveklabnik
   github: steveklabnik
   picture_name: klabnik.jpg
