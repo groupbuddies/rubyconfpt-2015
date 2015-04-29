@@ -44,7 +44,12 @@ $nav-bar-size: 60px
   display: none
 
 .Nav-barLogo
-  display: flex
+  display: none
+
+.Nav--scrolled,
+.Nav--alwaysOpaque
+  .Nav-barLogo
+    display: flex
 
 +media-large-menu
   .Nav:not(.Nav--open),
