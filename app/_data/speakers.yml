@@ -22,3 +22,11 @@
   github: ko1
   picture_name: koichi.jpg
   website: http://www.atdot.net/~ko1/
+
+- firstName: Steve
+  lastName: Klabnik
+  shortDesc:
+  twitter: steveklabnik
+  github: steveklabnik
+  picture_name: klabnik.jpg
+  website: https://www.steveklabnik.com/
