@@ -30,3 +30,11 @@
   github: steveklabnik
   picture_name: klabnik.jpg
   website: https://www.steveklabnik.com/
+
+- firstName: Davy
+  lastName: Stevenson
+  twitter: davystevenson
+  github: davy
+  picture_name: davy-stevenson.jpg
+  shortDesc: Software engineer from Portland, Oregon
+  website: http://www.davystevenson.com/
