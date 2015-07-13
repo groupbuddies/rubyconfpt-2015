@@ -38,3 +38,19 @@
   picture_name: davy-stevenson.jpg
   shortDesc: Software engineer from Portland, Oregon
   website: http://www.davystevenson.com/
+
+- firstName: Sam
+  lastName: Phippen
+  twitter: samphippen
+  github: samphippen
+  picture_name: sam-phippen.jpg
+  shortDesc: RSpec core team member. Hacker at  Fun and Plausible Solutions
+  website: http://samphippen.com/
+
+- firstName: Christian
+  lastName: Weyer
+  twitter: chrisweyer
+  github: cweyer
+  picture_name: christian-weyer.jpg
+  shortDesc: Developer, partner at Crispy Mountain, standby doctor, runner, mountainbiker
+  website: https://www.crispymtn.com/
