@@ -1,0 +1,36 @@
+ruby:
+  - name: Subvisual
+    logo: subvisual
+    height: 183px
+    url: https://subvisual.co
+gold:
+  - name: Bold
+    logo: bold
+    height: 50px
+    url: http://www.boldint.com/
+  - name: Sage
+    logo: sage
+    height: 50px
+    url: http://www.sage.pt/
+platinum:
+  - name: Landing.jobs
+    logo: landing.jobs
+    height: 25px
+    url: https://landing.jobs/
+  - name: Fyber
+    logo: fyber
+    height: 50px
+    url: http://www.fyber.com/
+stone:
+  - name: Imaginary Cloud
+    logo: imaginary.cloud
+    height: 60px
+    url: http://www.imaginarycloud.com/
+  - name: Rupeal
+    logo: rupeal
+    height: 100px
+    url: http://www.rupeal.com/
+  - name: Standstand
+    logo: standstand
+    height: 100px
+    url: https://www.standstand.com/

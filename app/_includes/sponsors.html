@@ -1,0 +1,14 @@
+<section class="Sponsors Sponsors--{{ include.class }}">
+  <h1 class="SectionTitle SectionTitle--serif SectionTitle--{{ include.titleClass }}">{{ include.title }}</h1>
+
+  <div class="Sponsors-list">
+    <div class="u-paddingLarge"></div>
+    {% for sponsor in site.data.sponsors[include.class] %}
+      <a target="blank" href="{{ sponsor.url }}">
+        <img class="Sponsors-sponsor" src="/img/sponsors/{{ sponsor.logo }}.png" alt="{{ sponsor.name }}">
+      </a>
+    {% endfor %}
+  </div>
+
+  <div class="u-paddingHuge"></div>
+</section>
