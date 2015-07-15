@@ -62,3 +62,11 @@
   picture_name: piotr.jpg
   shortDesc: Hacker scientist. Assistant professor at Warsaw University of Technology
   website: http://chastell.net/
+
+- firstName: Sergio
+  lastName: Gil
+  twitter: porras
+  github: porras
+  picture_name: sergio-gil.jpg
+  shortDesc: Backend developer at SoundCloud
+  website: http://iamserg.io/
