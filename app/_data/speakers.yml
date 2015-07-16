@@ -70,3 +70,11 @@
   picture_name: sergio-gil.jpg
   shortDesc: Backend developer at SoundCloud
   website: http://iamserg.io/
+
+- firstName: Kylie
+  lastName: Stradley
+  twitter: kyfast
+  github: kyfast
+  picture_name: kylie.png
+  shortDesc: Web Developer at Big Nerd Ranch
+  website: http://kyfast.net/
