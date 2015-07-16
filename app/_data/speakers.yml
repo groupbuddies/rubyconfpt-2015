@@ -85,3 +85,13 @@
   github: pedrosmmoreira
   picture_name: pedro-moreira.jpg
   shortDesc: Language geek, cares too much.
+
+
+
+- firstName: PJ
+  lastName: Hagerty
+  twitter: aspleenic
+  github: aspleenic
+  picture_name: pj.png
+  shortDesc: Master of Ceremonies
+  modifier: mc

@@ -5,7 +5,7 @@
 
   <ul class="Speakers-list">
     {% for speaker in site.data.speakers %}
-      <article class="Speaker">
+      <article class="Speaker Speaker--{{ speaker.modifier }}">
         <div class="Speaker-pictureWrapper">
           <img alt="" class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
         </div>
@@ -29,17 +29,5 @@
         </div>
       </article>
     {% endfor %}
-
-    <article class="Speaker">
-      <a aria-label="Call for Proposals" target="_blank" href="{{ site.data.rubyconfpt.cfp_url }}">
-        <div class="Speaker-pictureWrapper">
-          <img alt="" class="Speaker-picture" src="/img/sauron.png">
-        </div>
-        <h1 aria-hidden="true" class="Speaker-name">
-          <div class="Speaker-firstName">searching for</div>
-          <div class="Speaker-lastName">more</div>
-        </h1>
-      </a>
-    </article>
   </ul>
 </section>
