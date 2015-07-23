@@ -1,0 +1,34 @@
+---
+layout: scene
+title: RubyConf Portugal 2015 - Speakers
+---
+
+{% include sections/00_nav.html class="Nav--alwaysOpaque" %}
+<section class="SpeakerList">
+  <div class="SpeakerList-intro">
+    <h1 class="SpeakerList-title">
+      <span class="SectionTitle SectionTitle--with-description">Meet Our Speakers</span>
+    </h1>
+    <p class="SpeakerList-description">
+      <span class="SectionDescription">The world's leading speakers are coming to Braga to inspire you, to share their insights and to spill the secrets of their success.</span>
+    </p>
+  </div>
+  <div class="SpeakerList-list">
+    {% assign speakers = site.data.speakers | where: "modifier", nil %}
+    {% for speaker in speakers %}
+    <a class="SpeakerEntry-anchor" id="{{ speaker.twitter }}"></a>
+      <article class="SpeakerEntry">
+        <div class="SpeakerEntry-basics">
+          {% include components/speakers/identification.html class="Speaker-name--spaced" %}
+          {% include components/speakers/links.html %}
+        </div>
+        <div class="SpeakerEntry-info">
+          <h2 class="Speaker-descTitle">{{ speaker.shortDesc }}</h2>
+          <p class="Speaker-info-text">{{ speaker.bio }}</p>
+          {% include components/speakers/talk.html %}
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+</section>
+{% include sections/90_footer.html %}

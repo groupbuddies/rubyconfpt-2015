@@ -35,6 +35,9 @@ $speaker-picture-border-size: 6px
   color: $color-blue
   margin-top: $space-small
 
+.Speaker-name.Speaker-name--spaced
+  margin-bottom: $space-small
+
 .Speaker-firstName,
 .Speaker-lastName
   width: 100%
@@ -53,6 +56,14 @@ $speaker-picture-border-size: 6px
   text-align: center
   color: $color-yellow
 
+.Speaker-descTitle
+  +font-text
+  +sans-serif
+  margin: 0 15px 15px 0
+  +media-xs-only
+    text-align: center
+    margin: 15px
+
 .Speaker-links
   font-size: 26px
   a
@@ -62,3 +73,15 @@ $speaker-picture-border-size: 6px
       margin-right: 13px
     &:hover
       color: darken($color-grey, 5%)
+
+.Speaker-info-text
+  +font-text
+  +serif
+  color: $color-grey
+  margin-top: $space-small
+  margin-bottom: $space-base
+
+.Speaker-talk-title
+  +sans-serif
+  +font-title
+  color: $color-yellow

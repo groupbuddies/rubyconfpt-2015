@@ -6,99 +6,132 @@
   shortDesc: Master of Ceremonies
   modifier: mc
 
-
 - firstName: Avdi
   lastName: Grimm
   shortDesc: Founder of RubyTapas
   twitter: avdi
   github: avdi
-  talk_title:
+  bio: Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a Ruby Rogue. He lives in Eastern Tennessee with his wife and a steadily incrementing number of children, and in his copious spare time blogs and podcasts at Virtuous Code and Wide Teams.
+  talk_title: TBA
+  talk_description: TBA
   picture_name: avdi.png
   website:
 
 - firstName: Sean
   lastName: Griffin
-  shortDesc: Rails commiter,<br>host of bikeshed
+  shortDesc: Rails commiter, host of bikeshed
   twitter: sgrif
   github: sgrif
+  bio: Sean is a Rails committer, cohost of “The Bike Shed”, and a web developer for thoughtbot. He is a fanatic about Vim, Rails, and TDD. He may call Ruby and Rails his home, but he enjoys spending time in functional languages such as Haskell and Scala, and bringing those concepts back to the Ruby community.
+  talk_title: "Designing a Great Ruby API:<br>How We're Simplifying Rails 5"
+  talk_description: The most useful APIs are simple and composeable. Omnipotent DSLs can be great, but sometimes we want to just write Ruby. We're going to look at the process of designing a new API for attributes and type casting in Rails 5.0, and why simpler is better. We'll unravel some of the mysteries behind the internals of Active Record. After all, Rails is ultimately just a large legacy code base.<br><br>In this talk you'll learn about the process of finding those simple APIs which are begging to be extracted. You'll learn the refactoring process that can be used to tease them out slowly. And you'll be getting a sneak peak at several of the features coming in Rails 5.0.
   picture_name: sean-griffin.jpg
   website:
 
 - firstName: Koichi
   lastName: Sasada
-  shortDesc: Programmer,<br>mainly developing Ruby interpreter<br>(CRuby/MRI)
+  shortDesc: Programmer, mainly developing Ruby interpreter (CRuby/MRI)
   twitter: _ko1
   github: ko1
+  bio: Koichi Sasada is a programmer, mainly developing Ruby interpreter (CRuby/MRI). He received Ph.D (Information Science and Technology) from the University of Tokyo, 2007. He became a faculty of University of Tokyo (Assistant associate 2006-2008, Assistant professor 2008-2012). After the 13 years life in university, now, he is a member of Matz’s team in Heroku, Inc. He is also a director of Ruby Association. See a summary page of his activities (in Japanese) or a LinkedIn page for more details.
+  talk_title: TBA
+  talk_description: TBA
   picture_name: koichi.jpg
-  website: http://www.atdot.net/~ko1/
+  website: "http://www.atdot.net/~ko1/"
 
 - firstName: Steve
   lastName: Klabnik
-  shortDesc: Rails commiter,<br>member of the Rust Core team
+  shortDesc: Rails commiter, member of the Rust Core team
   twitter: steveklabnik
   github: steveklabnik
+  bio: Steve is a Ruby Hero, Rails committer, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects and has written a book on Designing Hypermedia APIs. He’s currently a member of the Rust core team.
+  talk_title: TBA
+  talk_description: TBA
   picture_name: klabnik.jpg
-  website: https://www.steveklabnik.com/
+  website: "https://www.steveklabnik.com/"
 
 - firstName: Davy
   lastName: Stevenson
   twitter: davystevenson
   github: davy
+  bio: Davy is a software engineer in beautiful, sunny Portland, Oregon. When not writing Ruby, she enjoys gardening, knitting, twittering, drinking all the fantastic beer that Portland has to provide, and ignoring her cats as much as they ignore her. She is a prominent member of Portland Twitter Storm Team, and has attained a black belt in emoji usage.
+  talk_title: Orders of Magnitude
+  talk_description: Up until the 17th century, the world was mostly limited to what we could see with the naked eye. Our understanding of things much smaller and much larger than us was limited. In the past 400 years our worldview has increased enormously, which has led to the advent of technology, space exploration, computers and the internet. However, our brains are ill equipped to handle dealing with numbers at these scales, and attempt to trick us at every turn.<br><br>Software engineers deal with computers every day, and thus we are subject to both incredibly tiny and massively large numbers all the time. Learn about how your brain is fooling you when you are dealing with issues of latency, scalability, and algorithm optimization, so that you can become a better programmer.
   picture_name: davy-stevenson.jpg
   shortDesc: Software engineer from Portland, Oregon
-  website: http://www.davystevenson.com/
+  website: "http://www.davystevenson.com/"
 
 - firstName: Sam
   lastName: Phippen
   twitter: samphippen
   github: samphippen
+  bio: Sam Phippen is a swashbuckling hacker from London, UK. He fixes every size of data problem atFun and Plausible Solutions. He helps fight for the forces of justice as a member of the RSpec core team. He’s sad that he can’t hug every cat.
+  talk_title: Extremely Defensive Coding
+  talk_description: Defensive programming is one of those abstract ideas that seems great. We all want to use these ideas to ensure the long-term maintainability of our codebases. It is, however, often unclear what we should be defending against and what form those defenses should take. We can find places where defensive patterns could be added by looking at the edge cases that occur in our system. Where it seems appropriate, we can then apply ideas and patterns from defensive programming.<br><br>In this talk we'll look at some of the extremely defensive patterns that have been driven out in RSpec throughout the years. We'll look at building Ruby that works accross a wide range of interpreters and versions (including 1.8.7!). We'll investigate how you can write code that defends against objects that redefine methods like send, method and is_a?. We'll also see how the behaviour of prepend can occasionally confuse even the most mature source bases.<br><br>You should come to this talk if you want to learn about inheritence and method resolution in ruby, defensive programming techniques and cross interpreter Ruby patterns.
   picture_name: sam-phippen.jpg
   shortDesc: RSpec core team member. Hacker at  Fun and Plausible Solutions
-  website: http://samphippen.com/
+  website: "http://samphippen.com/"
 
 - firstName: Christian
   lastName: Weyer
   twitter: chrisweyer
   github: cweyer
+  bio: Christian was born in 1985 in the Saarland region of Germany. From an early age he had an interested in computers and started programming at the age of 12. Mostly drawn to web development from the beginning he made the transition from PHP to Ruby and Rails in 2006 and has never looked back. After finishing university and completing his dissertation in neuroscience software, Christian founded Crispy Mountain together with his childhood friends. It is their mission to make the world more clickable by writing software with modern methods for mid-sized and large cooperations, while heavily focusing on the UI and UX aspects, an approach nearly unheard of in this field of software before.<br><br>When Christian is not working, he is madly in love with dogs, science, his running shoes and bikes, trains, planes and the Alan Parsons Project. Being not married yet, he sometimes even has the time to appreciate all of the above.
+  talk_title: Industrial Rails
+  talk_description: Most everybody seems to be into sexy consumer apps or small business SAAS these days.<br>We are not quite.<br>In the last two years we built numerous applications for the industry, from production management in printeries to warehousing/accounting for one of the biggest cargo handlers at Frankfurt Airport.<br><br>In this talk I want to give an overview over the technologies we used, starting with Rails and ending in mobile techs like Ember, Cordova or even native Swift. I present a report from the battle field, where we experienced many problems first-hand and had to make sure our precious tools hold up to the dirty production world of warehouses full of barcodes and ink-fumed printing shops.<br><br>What we learned however is applicable to every Rails programmer out there, especially when a multitude of (mobile) devices come into play. Also, I want to show you how awesome and indeed sexy it is to work for the industry, while they are starting their fourth revolution, which is software and UI/UX driven and thus shaped by us, the software writers.
   picture_name: christian-weyer.jpg
   shortDesc: Developer, partner at Crispy Mountain, standby doctor, runner, mountainbiker
-  website: https://www.crispymtn.com/
+  website: "https://www.crispymtn.com/"
 
 - firstName: Piotr
   lastName: Szotkowski
   twitter: chastell
   github: chastell
+  bio: "Piotr is a hacker scientist: an assistant professor at Warsaw University of Technology, a Ruby developer at Rebased, a reek maintainer and a founding member of Warsaw Hackerspace. When not coding (or talking about coding) he coaches at Rails Girls Warsaw and Rails Girls Summer of Code and organises Warsaw Ruby Users Group."
+  talk_title: Ruby Smells
+  talk_description: "Writing good object-oriented code is hard: object boundaries are not always as clear-cut as we’d like, their responsibilities and reasons to change tend to grow over time, inter-object coupling makes isolated testing complicated – and emergency refactorings are tiresome, gnarly and seem to always happen too late. At the same time it’s often hard to see the exact moment when a simple refactoring would save a given class from taking the wrong turn, and real-life projects tend to have real-life sadlines with their tireless chants of ‘let’s refactor this in thenext sprint’.<br><br>Ruby’s dynamism means static code analysis is tricky (to say the least), but tools like RuboCop and reek bravely show it’s not impossible. This talk shows how to effectively use such tools, make informed decisions on when and how to refactor, and – most importantly – learn over time to spot potential code smells right when they’re introduced."
   picture_name: piotr.jpg
   shortDesc: Hacker scientist. Assistant professor at Warsaw University of Technology
-  website: http://chastell.net/
+  website: "http://chastell.net/"
 
 - firstName: Sergio
   lastName: Gil
   twitter: porras
   github: porras
+  bio: First in Madrid and now in Berlin, I have already been some years working with Ruby and involved in its community. I’m a backend developer at SoundCloud. I’m happy and proud of having added some drops to the ocean of open source. I love octopus and bacalhau!
+  talk_title: 5 hidden gems of the Ruby standard library
+  talk_description: There are over 100,000 gems in Rubygems, enough for the Ruby community to have coined the half-joke “there's a gem for that” as an answer to everything. When presented with a new problem, a rubyist's first impulse is often searching for that gem. And yet, it is often the case that, for the sake of simplicity, we would be better not doing that. Why add another dependency without first checking whether the standard library already covers that. Because there are many overlooked pieces of the standard library that will be handy for us and solve our problems in a simple, dependency-free way.<br><br>This talk will cover 5 of them (since it is impossible to show them all). You'll learn how to use 5 new tools that you already have, and on top of it you'll learn to always look there first ;)
   picture_name: sergio-gil.jpg
   shortDesc: Backend developer at SoundCloud
-  website: http://iamserg.io/
+  website: "http://iamserg.io/"
 
 - firstName: Kylie
   lastName: Stradley
   twitter: kyfast
   github: kyfast
+  bio: Kylie is a Web Developer at Big Nerd Ranch in Atlanta, GA. Untrained in computer science, she first taught herself Visual Basic as a survival tactic and then Ruby on Rails in an attempt to switch careers. As a recovering Visual Basic developer & business major she defaults to using while loops with embarrassing frequency.
+  talk_title: Amelia Bedelia Learns to Code
+  talk_description: "\"Did you really think you could make changes to the database by editing the schema file? Who are you, Amelia Bedelia?\"<br>The silly mistakes we all made when first learning Rails may be funny to us now, but we should remember how we felt at the time. New developers don't always realize senior developers were once beginners too and may assume they are the first and last developer to mix up when to use the rails and rake commands.<br><br>This talk, presented in a storybook style, will be a lighthearted examination of some of the common mistakes (and causes of those mistakes) made by beginner Rails developers."
   picture_name: kylie.png
   shortDesc: Web Developer at Big Nerd Ranch
-  website: http://kyfast.net/
+  website: "http://kyfast.net/"
 
 - firstName: Pedro
   lastName: Moreira
   twitter: pedrosmmoreira
   github: pedrosmmoreira
+  bio: Ruby developer, spending time between London and Porto. Usually found within proximity of coffee, music and the sea.
+  talk_title: Unreliable narrators and legacy code
+  talk_description: "You arrive at a foreign land just as the day is ending. Soon, you encounter your first obstacle: the directions you had to your hotel do not seem correct. You know the local language and feel confident enough to find directions on your own. A few steps along the way, you find the first sign:<br><br>Possible infinite loop. Choose direction carefully.<br><br>We all been here before, trying to find a path to understanding in code written by many different hands and voices. This talk examines the balance between being the traveller of legacy code and one of the its narrators to future visitors."
   picture_name: pedro-moreira.jpg
   shortDesc: Language geek, cares too much.
-
 
 - firstName: Sabrina
   lastName: Leandro
   twitter: saleandro
   github: saleandro
+  bio: Sabrina moved to London from Brazil, and since 2008 has been helping build Songkick, a live music platform for fans and artists. She enjoys working in cross-functional teams developing useful and delightful products, while focusing on code quality and good software design practices. She wishes the quote on the team page about “going to most concerts than anyone at Songkick” was still true.
+  talk_title: Rewriting code and culture
+  talk_description: There’s nothing more frustrating than not being able to deliver new features because of unnecessarily complicated code. You may decide it’s time to throw it all away and start over… and what starts off full of optimism, drags on for months and months, adding even more complexity and various levels of legacy.<br>It doesn’t have to be this way! In this presentation, you’ll hear a first-hand experience of a rewrite project that was successful in more ways than expected.<br><br>This talk will teach you lessons on how to start, and most importantly, finish a big rewrite project. You will learn how to avoid the most common pitfalls when changing the architecture of a complex codebase, how we took our first steps towards a service oriented architecture, and moved to continuous deployment.<br><br>This rewrite project was a transformative process, not only of our codebase, but of our culture. During this time, our company discovered that by working together in cross-functional teams we can be more productive and deliver better products.
   picture_name: sabrina-leandro.jpg
   shortDesc: VP of Technology at Songkick
