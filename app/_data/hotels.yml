@@ -1,0 +1,23 @@
+- name: Hotel Bracara Augusta
+  priceSingle: 55
+  priceDouble: 65
+  minutes: 5
+  stars: 4
+
+- name: Hotel Mercure Braga Centro
+  priceSingle: 55
+  priceDouble: 65
+  minutes: 5
+  stars: 4
+
+- name: Hotel Dona Sofia
+  priceSingle: 55
+  priceDouble: 65
+  minutes: 5
+  stars: 3
+
+- name: Hotel ibis Budget Braga Centro
+  priceSingle: 55
+  priceDouble: 65
+  minutes: 6
+  stars: 2

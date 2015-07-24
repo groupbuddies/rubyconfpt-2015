@@ -1,0 +1,35 @@
+<section class="WhereToStay" id="where-to-stay">
+  <h1 class="SectionTitle">Where to Stay?</h1>
+
+  <p>To get access to these prices, you need to send an email to the hotel. Mention that you're attending RubyConf, the room type and your check-in and check-out dates. These special conditions apply for your whole stay, not just the days of the conference, so you can take the chance to spend some time in the country.</p>
+
+  <div class="WhereToStay-hotels u-paddingHuge">
+    {% for hotel in site.data.hotels %}
+      <article class="Hotel">
+        <h2 class="u-paddingSmall">{{ hotel.name }}</h2>
+        <ul class="Hotel-stars">
+          {% for i in (1..hotel.stars) %}
+            <li class="Hotel-star">S</li>
+          {% endfor %}
+        </ul>
+
+        <div class="Hotel-prices u-paddingSmall">
+          <div class="Hotel-price">
+            <div class="Hotel-priceValue">{{ hotel.valueSingle }}</div>
+            <div class="Hotel-priceType">single</div>
+          </div>
+          <div class="Hotel-price">
+            <div class="Hotel-priceValue">{{ hotel.valueDouble }}</div>
+            <div class="Hotel-priceType">double</div>
+          </div>
+        </div>
+
+        <div class="Hotel-distance u-paddingSmall">
+          walking distance to the venue: {{ hotel.minutes }} minutes.
+        </div>
+
+        <a class="Btn Btn--regular" href="mailto:{{ hotel.email }}">Send email</a>
+      </article>
+    {% endfor %}
+  </div>
+</section>

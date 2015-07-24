@@ -1,0 +1,16 @@
+.Venue-showcase
+  display: flex
+  flex-direction: column
+  justify-content: center
+  +media-sm
+    flex-direction: row
+
+.Venue-column
+  max-width: 300px
+  margin: 25px
+  display: flex
+
+  &:nth-child(odd)
+    flex-direction: column
+  &:nth-child(even)
+    flex-direction: column-reverse
