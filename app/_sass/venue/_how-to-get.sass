@@ -1,0 +1,26 @@
+.HowToGet-columns
+  display: flex
+  flex-direction: column
+  +media-sm
+    flex-direction: row
+    justify-content: center
+
+.HowToGet-column
+  width: 400px
+  margin: 25px
+
+.HowToGet-columnTitle
+  +font-title
+  line-height: 1.5em
+
+.HowToGet-columnText
+  margin-bottom: 25px
+
+.HowToGet-columnText,
+.HowToGet-columnText a
+  +font-text
+  +serif
+  color: $color-grey
+
+.HowToGet-columnText a
+  font-weight: bold
