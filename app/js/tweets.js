@@ -1,6 +1,6 @@
 $(function() {
-  var tweetsPath = 'tweets.json';
-  var picturesPath = 'pictures.json';
+  var tweetsPath = '/tweets.json';
+  var picturesPath = '/pictures.json';
 
   var tweetLinkClass = '.Tweet';
   var tweetTextClass = '.Tweet-text';

@@ -16,7 +16,8 @@ title: RubyConf Portugal 2015 - Speakers
   <div class="SpeakerList-list">
     {% assign speakers = site.data.speakers | where: "modifier", nil %}
     {% for speaker in speakers %}
-    <a class="SpeakerEntry-anchor" id="{{ speaker.twitter }}"></a>
+    <a class="SpeakerEntry-anchor u-paddingHuge" id="{{ speaker.twitter }}"></a>
+      <div class="u-paddingLarge"></div>
       <article class="SpeakerEntry">
         <div class="SpeakerEntry-basics">
           {% include components/speakers/identification.html class="Speaker-name--spaced" %}

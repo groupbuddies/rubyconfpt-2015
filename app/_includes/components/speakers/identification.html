@@ -1,7 +1,9 @@
-<div class="Speaker-pictureWrapper">
-  <a href="/speakers#{{speaker.twitter}}"><img alt="" class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}"></a>
-</div>
-<h1 class="Speaker-name {{ include.class }}">
-  <div class="Speaker-firstName">{{ speaker.firstName }}</div>
-  <div class="Speaker-lastName">{{ speaker.lastName }}</div>
-</h1>
+<a href="/speakers#{{speaker.twitter}}">
+  <div class="Speaker-pictureWrapper">
+    <img alt="" class="Speaker-picture" src="/img/speakers/{{ speaker.picture_name }}">
+  </div>
+  <h1 class="Speaker-name {{ include.class }}">
+    <div class="Speaker-firstName">{{ speaker.firstName }}</div>
+    <div class="Speaker-lastName">{{ speaker.lastName }}</div>
+  </h1>
+</a>

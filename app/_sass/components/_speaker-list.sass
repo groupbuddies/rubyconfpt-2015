@@ -1,4 +1,3 @@
-@import "sections/nav"
 .SpeakerList-list
   display: flex
   flex-direction: column
@@ -9,31 +8,3 @@
   text-align: center
   max-width: 470px
   padding: 0 $space-small
-
-.SpeakerEntry
-  width: 800px
-  display: flex
-  flex-wrap: wrap
-  flex-direction: row
-  align-items: flex-start
-  margin-bottom: $space-base
-  justify-content: space-between
-  +media-xs-only
-    width: 100%
-
-.SpeakerEntry-basics
-  max-width: 160px
-  text-align: center
-  +media-xs-only
-    margin: 0 auto
-
-.SpeakerEntry-info
-  max-width: 470px
-  text-align: left
-  padding: 0 $space-small
-
-.SpeakerEntry-anchor
-  display: block
-  position: relative
-  visibility: hidden
-  top: -($nav-bar-size + $space-small)
