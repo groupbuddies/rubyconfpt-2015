@@ -6,12 +6,19 @@
     justify-content: center
 
 .HowToGet-column
-  width: 400px
-  margin: 25px
+  padding: 25px
+  width: 280px
+  margin: auto
+  +media-sm
+    width: 400px
+    margin: 0
 
 .HowToGet-columnTitle
   +font-title
   line-height: 1.5em
+  text-align: center
+  +media-sm
+    text-align: left
 
 .HowToGet-columnText
   margin-bottom: 25px
@@ -24,3 +31,10 @@
 
 .HowToGet-columnText a
   font-weight: bold
+
+.HowToGet-map
+  width: 70%
+  margin: auto
+
+  iframe
+    width: 100%

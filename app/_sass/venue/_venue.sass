@@ -3,11 +3,12 @@
   flex-direction: column
   justify-content: center
   align-items: center
+  margin: 25px
   +media-sm
     flex-direction: row
 
 .Venue-column
-  max-width: 300px
+  max-width: 400px
   margin: 25px
   display: flex
 
@@ -21,7 +22,15 @@
 
 .Venue-title
   +font-title
+  text-align: center
+  +media-sm
+    text-align: left
 
 .Venue-text
+  +font-text
   +serif
   color: $color-grey
+
+.Venue-img
+  width: 100%
+  border: solid 3px $color-yellow

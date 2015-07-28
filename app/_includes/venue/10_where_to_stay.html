@@ -1,20 +1,22 @@
 <section class="WhereToStay" id="where-to-stay">
   <h1 class="SectionTitle SectionTitle--noPadding">Where to Stay?</h1>
-  <div class="u-paddingSmall"></div>
+  <div class="u-paddingLarge"></div>
 
-  <p class="WhereToStay-text u-paddingSmall">To get access to these prices, you need to send an email to the hotel. Mention that you're attending RubyConf, the room type and your check-in and check-out dates. These special conditions apply for your whole stay, not just the days of the conference, so you can take the chance to spend some time in the country.</p>
+  <p class="WhereToStay-text u-paddingHuge">To get access to these prices, you need to send an email to the hotel. Mention that you're attending RubyConf, the room type and your check-in and check-out dates. These special conditions apply for your whole stay, not just the days of the conference, so you can take the chance to spend some time in the country.</p>
 
-  <div class="WhereToStay-hotels u-paddingHuge">
+  <div class="WhereToStay-hotels u-paddingLarge">
     {% for hotel in site.data.hotels %}
       <article class="Hotel u-paddingLarge">
-        <h2 class="Hotel-name">{{ hotel.name }}</h2>
-        <ul class="Hotel-stars u-paddingSmall">
+        <h2 class="Hotel-name">
+          <a href="{{ hotel.website }}" target="blank" class="Hotel-link">{{ hotel.name }}</a>
+        </h2>
+        <ul class="Hotel-stars u-paddingAlwaysSmall">
           {% for i in (1..hotel.stars) %}
             <li class="Hotel-star">&#x2605;</li>
           {% endfor %}
         </ul>
 
-        <div class="Hotel-prices u-paddingSmall">
+        <div class="Hotel-prices u-paddingAlwaysSmall">
           <div class="Hotel-price">
             <div class="Hotel-priceValue">{{ hotel.priceSingle }}€</div>
             <div class="Hotel-priceType">single</div>
@@ -25,11 +27,13 @@
           </div>
         </div>
 
-        <div class="Hotel-distance u-paddingSmall">
+        <div class="Hotel-distance u-paddingAlwaysSmall">
           walking distance to the venue: {{ hotel.minutes }} minutes.
         </div>
 
-        <a class="Btn Btn--regular" href="mailto:{{ hotel.email }}">Send email</a>
+        <div class="Hotel-mailBtn">
+          <a class="Btn Btn--regular" href="mailto:{{ hotel.email }}">Send email</a>
+        </div>
       </article>
     {% endfor %}
   </div>

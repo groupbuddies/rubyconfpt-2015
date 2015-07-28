@@ -12,8 +12,8 @@
   twitter: avdi
   github: avdi
   bio: Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a Ruby Rogue. He lives in Eastern Tennessee with his wife and a steadily incrementing number of children, and in his copious spare time blogs and podcasts at Virtuous Code and Wide Teams.
-  talk_title: TBA
-  talk_description: TBA
+  talk_title: To be announced
+  talk_description: 
   picture_name: avdi.png
   website:
 
@@ -34,8 +34,8 @@
   twitter: _ko1
   github: ko1
   bio: Koichi Sasada is a programmer, mainly developing  the Ruby interpreter (MRI). He received a Ph.D (Information Science and Technology) from the University of Tokyo in 2007. He became a faculty at the University of Tokyo (Assistant associate 2006-2008, Assistant professor 2008-2012). After 13 years at the university, he is now a member of Matz’s team in Heroku, Inc. He is also a director of the Ruby Association.
-  talk_title: TBA
-  talk_description: TBA
+  talk_title: Evolution of Keyword parameters
+  talk_description: Keyword parameters are introduced from Ruby 2.0. This feature helps us to write readable Ruby program. However, Ruby 2.0 and Ruby 2.1 have a performance issue because the keyword arguments are passed by Hash objects. Ruby 2.2 solves this performance issue and achieves over 10 times faster implementation. In this presentation, I introduce a brief history of Ruby's keyword arguments and keyword parameters, and implementation techniques to make them faster.
   picture_name: koichi.jpg
   website: "http://www.atdot.net/~ko1/"
 
@@ -45,8 +45,8 @@
   twitter: steveklabnik
   github: steveklabnik
   bio: Steve is a Ruby Hero, Rails committer, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects and has written a book on Designing Hypermedia APIs. He’s currently a member of the Rust core team.
-  talk_title: TBA
-  talk_description: TBA
+  talk_title: To be announced
+  talk_description:
   picture_name: klabnik.jpg
   website: "https://www.steveklabnik.com/"
 

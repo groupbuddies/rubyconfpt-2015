@@ -1,18 +1,29 @@
 .Hotel
-  max-width: 400px
   flex-grow: 1
   margin: 25px
+  max-width: 280px
+  +media-sm
+    max-width: 400px
 
 .Hotel-name
   +font-title
+  margin-bottom: 10px
+
+.Hotel-link
+  color: white
 
 .Hotel-stars
   list-style-type: none
   display: flex
   flex-direction: row
+  justify-content: center
+  +media-sm
+    justify-content: flex-start
 
 .Hotel-star
   color: $color-yellow
+  &:not(:last-child)
+    padding-right: 10px
 
 .Hotel-prices
   +serif
@@ -26,3 +37,17 @@
 .Hotel-priceValue
   +font-title
   color: $color-yellow
+
+.Hotel-distance
+  font-size: $theme-font-small
+  letter-spacing: 1px
+  text-transform: uppercase
+
+.Hotel-name,
+.Hotel-price,
+.Hotel-distance,
+.Hotel-mailBtn
+  text-align: center
+  +media-sm
+    text-align: left
+  

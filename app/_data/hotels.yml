@@ -1,23 +1,31 @@
-- name: Hotel Bracara Augusta
-  priceSingle: 55
-  priceDouble: 65
-  minutes: 5
-  stars: 4
-
 - name: Hotel Mercure Braga Centro
-  priceSingle: 55
-  priceDouble: 65
+  priceSingle: 49
+  priceDouble: 57
   minutes: 5
   stars: 4
+  email: h8308@accor.com
+  website: http://www.mercure.com/gb/home/index.shtml
 
 - name: Hotel Dona Sofia
-  priceSingle: 55
-  priceDouble: 65
+  priceSingle: 43.50
+  priceDouble: 55
   minutes: 5
   stars: 3
+  email: info@hoteldonasofia.com
+  website: http://hoteldonasofia.com/hotelds/
+
+- name: Hotel ibis Braga Centro
+  priceSingle: 36.50
+  priceDouble: 44
+  minutes: 8
+  stars: 2
+  email: h1802@accor.com
+  website: http://www.ibis.com/gb/hotel-1802-ibis-braga-centro/index.shtml
 
 - name: Hotel ibis Budget Braga Centro
-  priceSingle: 55
-  priceDouble: 65
+  priceSingle: 30.50
+  priceDouble: 34
   minutes: 6
   stars: 2
+  email: h9042@accor.com
+  website: http://www.ibis.com/gb/hotel-9042-ibis-budget-braga-centro/index.shtml
