@@ -48,3 +48,15 @@ $media-lg: "min-width: 1200px"
     display: none
   +media-md
     display: block
+
+.u-md-hidden
+  +media-xs
+    display: none
+  +media-lg
+    display: block
+
+.u-md-only
+  +media-xs
+    display: block
+  +media-lg
+    display: none

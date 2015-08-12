@@ -1,0 +1,40 @@
+.CityGuide-wrapper
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  justify-content: center
+  align-items: flex-start
+  margin: $padding-small
+  +media-xs-only
+    flex-direction: column
+
+.CityGuide-row
+  max-width: $city-guide-lg
+  margin: $padding-small
+  +media-xs-only
+    margin: 0 auto
+
+.CityGuide-text
+  +font-text
+  +serif
+  color: $color-grey
+
+.CityGuideDescription
+  @extend .CityGuide-text
+  max-width: $city-guide-lg
+  text-align: left
+  +media-xs-only
+    max-width: $city-guide-sm
+
+.CityGuideImg
+  @extend .CityGuide-row
+  +media-xs-only
+    text-align: center
+
+  img
+    max-width: $city-guide-lg
+    border: solid 3px $color-yellow
+    +media-xs-only
+      margin: 0
+      margin-top: $padding-large
+      max-width: $city-guide-sm - 10px // compensating margin

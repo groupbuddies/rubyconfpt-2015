@@ -1,0 +1,39 @@
+
+.CityPicture
+  border: solid 3px $color-yellow
+  max-width: $city-guide-lg
+  width: 100%
+  +media-lg
+    max-width: $city-grid-sm
+  +media-xs-only
+    max-width: $city-guide-sm
+
+.CityPicture.CityPicture--large
+  +media-lg
+    max-width: $city-grid-lg
+
+.CityCaption
+  +font-text
+  +serif
+  color: $color-grey
+  max-width: $city-guide-lg
+  margin: 0 auto
+  +media-lg
+    max-width: $city-grid-sm
+    margin: 0
+  +media-xs-only
+    max-width: $city-guide-sm
+    margin: 0
+
+.CityCaption.CityCaption--large
+  +media-lg
+    max-width: $city-grid-lg
+    text-align: justify
+
+.CityCaption a
+  font-weight: bold
+  color: $color-grey
+
+.CityLearnMore
+  margin: 0 auto
+  text-align: center

@@ -1,0 +1,29 @@
+.CitiesNearby-list
+  max-width: 850px
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
+  align-items: flex-start
+  justify-content: space-between
+  margin: 0 auto
+
+.CityNearby
+  max-width: $city-guide-lg
+  margin: 0 auto
+  text-align: center
+  +media-sm-md
+    padding: 15px
+
+.CityNearby-img
+  max-width: $city-guide-md
+  +media-lg
+    max-width: $city-guide-lg
+  +media-xs-only
+    max-width: $city-guide-sm
+    margin: 20px
+    padding-top: $padding-small
+
+.CityNearby-caption
+  +font-text
+  +serif
+  color: $color-grey

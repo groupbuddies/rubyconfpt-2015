@@ -1,0 +1,30 @@
+.CityGrid
+  max-width: 1280px
+  min-width: $city-guide-sm
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  margin: $padding-small auto
+  +media-lg
+    margin: 0 auto
+    flex-direction: row
+
+.CityGrid-cell
+  text-align: left
+  align-self: flex-start
+  margin: $padding-small auto
+  max-width: $city-grid-lg
+  +media-xs-only
+    max-width: $city-guide-md
+  +media-lg
+    margin: $padding-small
+
+.CityGrid-cell.CityGrid-cell--full
+  +media-sm
+    width: 100%
+    max-width: $city-grid-lg - 2 * $padding-small // remove margin
+  +media-lg
+    width: auto
+    max-width: $city-grid-lg
