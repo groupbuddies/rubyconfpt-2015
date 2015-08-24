@@ -1,0 +1,13 @@
+<section id="fringe" class="FringeEvents">
+  <h1 class="SectionTitle FringeEvents-sectionTitle">Fringe Events</h1>
+
+  {% for day in site.data.fringe-events %}
+    <div class="FringeEvents-title">{{ day.date }}</div>
+
+    <div class="FringeEvents-container">
+      {% for event in day.events %}
+        {% include components/agenda/fringe-event.html %}
+      {% endfor %}
+    </div>
+  {% endfor %}
+</section>

@@ -1,0 +1,37 @@
+- date: Sunday, 13th September
+  events:
+    - name: Rails Girls
+      time: 09h00 - 19h00
+      location: GNRation
+      info: http://www.railsgirls.com/braga
+      description: Rails Girls aims to give tools and a community for women to understand technology and build their ideas. We do this by providing a great experience on building things and by making technology more approachable. The event will finish with the Welcome Drinks for RubyConf Portugal.
+
+    - name: The Gathering, Unconference
+      time: 16h00 - 20h00
+      location: GNRation
+      info: http://attending.io/events/the-gathering
+      description: In order to welcome everyone and gather the local community for the main event, we decided to host a small ‘unconference-like’ event that ends with a glorious Welcoming Party for this year’s RubyConf Portugal.
+
+    - name: Welcome Drinks
+      time: 20h00
+      location: Convento do Carmo
+      description: If you're around on the evening before the conference, you're most welcome to join us at GNRation for a chat and some drinks with us and the attendees and coaches from Rails Girls.
+
+- date: Monday, 14th September
+  events:
+    - name: Sunset Party
+      time: 19h00
+      location: Casa dos Coimbras
+      description: "To close the first day of RubyConf in style, we're throwing a big Sunset Party. We'll be serving food & drinks, creating the perfect chance for everyone to chill out and mingle. We're also preparing quite a few surprises for this, so keep an eye out for anything out of the ordinary. Spoiler alert: there will be music involved."
+
+- date: Tuesday, 14th September
+  events:
+    - name: Conference Dinners
+      time: 19h00
+      location: Historical center of Braga
+      description: Information about the dinners will be updated in the next few days.
+
+    - name: Farewell Party
+      time: 21h00
+      location: Sé de Braga
+      description: We want RubyConf Portugal to stick with you for many years to come, so we decided to get some drinks to mark the end of the conference, allowing for everyone to talk a bit more and get social.

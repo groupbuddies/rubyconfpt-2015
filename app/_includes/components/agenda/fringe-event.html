@@ -1,0 +1,12 @@
+<div class="FringeEvent">
+  <div class="FringeEvent-information">
+    <p class="FringeEvent-name">{{ event.name }}</p>
+    <div class="FringeEvent-location">
+      <div class="FringeEvent-locationIcon">{% include /img/marker.svg %}</div>
+      {{ event.location }}
+      <span class="FringeEvent-date">{{ event.time }}</span>
+    </div>
+  </div>
+
+  <p class="FringeEvent-description">{{ event.description }}</p>
+</div>

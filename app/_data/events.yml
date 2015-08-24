@@ -1,0 +1,155 @@
+- name: Day 1
+  date: Monday, 14th September
+  class: column
+  events:
+    - name: Check-in
+      time: 09h00 - 09h45
+
+    - name: Opening
+      time: 09h45 - 10h00
+
+    - name: 'Talk #1'
+      time: 10h00 - 10h40
+      type: talk
+      speaker: Koichi Sasada
+      picture_name: koichi.jpg
+
+    - name: Coffee-break
+      time: 10h40 - 11h00
+      type: coffeeBreak
+      sponsor: landing jobs
+      closed: true
+
+    - name: 'Talk #2'
+      time: 11h00 - 11h40
+      type: talk
+      speaker: Piotr Szotkowski
+      picture_name: piotr.jpg
+
+    - name: Break
+      time: 11h40 - 12h00
+
+    - name: 'Talk #3'
+      time: 12h00 - 12h40
+      type: talk
+      speaker: Kylie Stradley
+      picture_name: kylie.png
+
+    - name: Lunch
+      time: 12h40 - 14h30
+      type: lunch
+      sponsor: Host this lunch
+
+    - name: Lightning Talks Part I
+      time: 14h30 - 15h00
+      type: ligthningTalk
+
+    - name: 'Talk #4'
+      time: 15h00 - 15h40
+      type: talk
+      speaker: Pedro Moreira
+      picture_name: pedro-moreira.jpg
+
+    - name: Break
+      time: 15h40 - 16h00
+
+    - name: 'Talk #5'
+      time: 16h00 - 16h40
+      type: talk
+      speaker: Sabrina Leandro
+      picture_name: sabrina-leandro.jpg
+
+    - name: Coffee-break
+      time: 16h40 - 17h00
+      type: coffeeBreak
+      sponsor: Host this coffee-break
+
+    - name: 'Talk #6'
+      time: 17h00 - 17h40
+      type: talk
+      speaker: Sam Phippen
+      picture_name: sam-phippen.jpg
+
+    - name: Break
+      time: 17h40 - 18h00
+
+    - name: Panel
+      time: 18h00 - 19h00
+      type: ligthningTalk
+
+- name: Day 2
+  date: Thusday, 15th September
+  class: halfColumn
+  events:
+    - type: space
+
+    - name: Opening
+      time: 09h45 - 10h00
+
+    - name: 'Talk #7'
+      time: 10h00 - 10h40
+      type: talk
+      speaker: Sean Griffin
+      picture_name: sean-griffin.jpg
+
+    - name: Coffee-break
+      time: 10h40 - 11h00
+      type: coffeeBreak
+      sponsor: fiber
+      closed: true
+
+    - name: 'Talk #8'
+      time: 11h00 - 11h40
+      type: talk
+      speaker: Christian Weyer
+      picture_name: christian-weyer.jpg
+
+    - name: Break
+      time: 11h40 - 12h00
+
+    - name: 'Talk #9'
+      time: 12h00 - 12h40
+      type: talk
+      speaker: Davy Stevenson
+      picture_name: davy-stevenson.jpg
+
+    - name: Lunch
+      time: 12h40 - 14h30
+      type: lunch
+      sponsor: mailjet
+      closed: true
+
+    - name: Lightning Talks Part II
+      time: 14h30 - 15h00
+      type: ligthningTalk
+
+    - name: 'Talk #10'
+      time: 15h00 - 15h40
+      type: talk
+      speaker: Steve Klabnik
+      picture_name: klabnik.jpg
+
+    - name: Break
+      time: 15h40 - 16h00
+
+    - name: 'Talk #11'
+      time: 16h00 - 16h40
+      type: talk
+      speaker: Sergio Gil
+      picture_name: sergio-gil.jpg
+
+    - name: Coffee-break
+      time: 16h40 - 17h00
+      type: coffeeBreak
+      sponsor: Host this coffee-break
+
+    - name: 'Talk #12'
+      time: 17h00 - 17h40
+      type: talk
+      speaker: Avdi Grimm
+      picture_name: avdi.png
+
+    - name: Closing
+      time: 17h40 - 18h00
+
+    - type: space

@@ -1,0 +1,25 @@
+{% if event.type %}
+  {% capture eventClass %}
+    Event Event--{{ event.type }}
+  {% endcapture %}
+{% else %}
+  {% assign eventClass = 'Event' %}
+{% endif %}
+
+<div class="{{ eventClass }}">
+  <p class="Event-time">{{ event.time }}</p>
+    <div class="Event-details">
+      <span class="Event-name">{{ event.name }}</span>
+
+      {% if event.speaker %}
+        {% include components/agenda/speaker.html %}
+      {% endif %}
+
+      {% if event.sponsor %}
+        {% capture sponsorClass %}
+          Sponsor Sponsor--{{ event.type }}
+        {% endcapture %}
+        {% include components/agenda/sponsor.html %}
+      {% endif %}
+    </div>
+</div>
