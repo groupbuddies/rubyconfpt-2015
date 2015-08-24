@@ -52,7 +52,30 @@ $Schedule-ball-size: 10px
   font-weight: bold
   text-transform: uppercase
 
+.ScheduleEntry-sponsor
+  display: flex
+  color: $color-white
+  width: 220px
+  height: 40px
+  justify-content: center
+  align-items: center
+  margin: 10px 0 0 25px
+  font-weight: bold
+  text-transform: uppercase
+
+  background: $color-grey
+  border-radius: 25px
+
+.ScheduleEntry-sponsorLabel
+  +serif
+  font-size: $theme-font-base
+  font-style: italic
+  font-weight: normal
+  text-transform: capitalize
+  margin-right: 10px
+
 .ScheduleEntry-picture
+  width: 30px
   border-radius: 50%
   margin-right: 10px
 
@@ -75,10 +98,21 @@ $Schedule-ball-size: 10px
     background: $color-green
     border-color: $color-green
 
+  .ScheduleEntry-sponsor
+    background: $color-green
+
 .ScheduleEntry.ScheduleEntry--ligthningTalk
-  .ScheduleEntry-name:before
-    background: $color-yellow
-    border-color: $color-yellow
+  .ScheduleEntry-name
+    +serif
+    font-style: italic
+    text-transform: capitalize
+
+  .ScheduleEntry-speaker
+    color: $color-yellow
+
+    &:before
+      background: $color-yellow
+      border-color: $color-yellow
 
 .ScheduleEntry.ScheduleEntry--party
   .ScheduleEntry-time
@@ -87,6 +121,9 @@ $Schedule-ball-size: 10px
   .ScheduleEntry-name:before
     background: $color-twitter-blue
     border-color: $color-twitter-blue
+
+  .ScheduleEntry-sponsor
+    background: $color-twitter-blue
 
 .ScheduleEntry.ScheduleEntry--coffeeBreak
   .ScheduleEntry-time
