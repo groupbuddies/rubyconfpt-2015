@@ -1,0 +1,78 @@
+$Schedule-ball-size: 10px
+
+.ScheduleEntry
+  width: 100%
+  display: flex
+  flex-direction: row
+  justify-content: flex-end
+  align-items: center
+
+.ScheduleEntry-time
+  +serif
+  width: 50%
+  padding: 10px 0
+  text-align: right
+  color: $color-grey
+
+  &:after
+    content: ''
+    margin-right: 20px
+
+.ScheduleEntry-name
+  +font-text
+  width: calc(50% - 12px)
+  padding: 10px 0
+  text-align: left
+  align-self: flex-end
+  text-transform: uppercase
+
+  border-left: 1px solid $color-grey
+
+  &:before
+    content: ''
+    width: $Schedule-ball-size
+    height: $Schedule-ball-size
+
+    margin-right: 10px
+
+    display: inline-block
+    border: 1px solid $color-grey
+    border-radius: 50%
+    background: $color-white
+
+    transform: translateX(-6px)
+
+.ScheduleEntry.ScheduleEntry--talk
+  .ScheduleEntry-time
+    color: $color-blue
+
+  .ScheduleEntry-name:before
+    background: $color-blue
+    border-color: $color-blue
+
+.ScheduleEntry.ScheduleEntry--lunch
+
+  .ScheduleEntry-name:before
+    background: $color-green
+    border-color: $color-green
+
+.ScheduleEntry.ScheduleEntry--ligthningTalk
+  .ScheduleEntry-name:before
+    background: $color-yellow
+    border-color: $color-yellow
+
+.ScheduleEntry.ScheduleEntry--party
+  .ScheduleEntry-time
+    color: $color-twitter-blue
+
+  .ScheduleEntry-name:before
+    background: $color-twitter-blue
+    border-color: $color-twitter-blue
+
+.ScheduleEntry.ScheduleEntry--coffeeBreak
+  .ScheduleEntry-time
+    color: $color-grey
+
+  .ScheduleEntry-name:before
+    background: $color-grey
+    border-color: $color-grey
