@@ -3,4 +3,3 @@
 npm install
 bundle install
 bower install
-grunt deploy
