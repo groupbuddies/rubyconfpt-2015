@@ -5,7 +5,7 @@ $Schedule-ball-size: 10px
   display: flex
   flex-direction: row
   justify-content: flex-end
-  align-items: center
+  align-items: flex-start
 
 .ScheduleEntry-time
   +serif
@@ -13,6 +13,7 @@ $Schedule-ball-size: 10px
   padding: 10px 0
   text-align: right
   color: $color-grey
+  margin-top: 5px
 
   &:after
     content: ''
@@ -25,7 +26,6 @@ $Schedule-ball-size: 10px
   text-align: left
   align-self: flex-end
   text-transform: uppercase
-
   border-left: 1px solid $color-grey
 
   &:before
@@ -42,13 +42,32 @@ $Schedule-ball-size: 10px
 
     transform: translateX(-6px)
 
+.ScheduleEntry-speaker
+  +sans-serif
+  font-style: normal
+  display: flex
+  justify-content: flex-start
+  align-items: center
+  margin: 10px 0 0 25px
+  font-weight: bold
+  text-transform: uppercase
+
+.ScheduleEntry-picture
+  border-radius: 50%
+  margin-right: 10px
+
 .ScheduleEntry.ScheduleEntry--talk
   .ScheduleEntry-time
     color: $color-blue
 
-  .ScheduleEntry-name:before
-    background: $color-blue
-    border-color: $color-blue
+  .ScheduleEntry-name
+    +serif
+    font-style: italic
+    text-transform: capitalize
+
+    &:before
+      background: $color-blue
+      border-color: $color-blue
 
 .ScheduleEntry.ScheduleEntry--lunch
 
