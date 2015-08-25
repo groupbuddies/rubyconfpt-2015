@@ -17,7 +17,8 @@
     - name: Coffee-break
       time: 10h40 - 11h00
       type: coffeeBreak
-      sponsor: Mailjet
+      sponsor: landing jobs
+      closed: true
 
     - name: 'Talk #2'
       time: 11h00 - 11h40
@@ -37,7 +38,7 @@
     - name: Lunch
       time: 12h40 - 14h30
       type: lunch
-      sponsor: Mailjet
+      sponsor: Host this lunch
 
     - name: Lightning Talks Part I
       time: 14h30 - 15h00
@@ -61,7 +62,7 @@
     - name: Coffee-break
       time: 16h40 - 17h00
       type: coffeeBreak
-      sponsor: Mailjet
+      sponsor: Host this coffee-break
 
     - name: 'Talk #6'
       time: 17h00 - 17h40
@@ -94,7 +95,8 @@
     - name: Coffee-break
       time: 10h40 - 11h00
       type: coffeeBreak
-      sponsor: Mailjet
+      sponsor: fiber
+      closed: true
 
     - name: 'Talk #8'
       time: 11h00 - 11h40
@@ -114,7 +116,8 @@
     - name: Lunch
       time: 12h40 - 14h30
       type: lunch
-      sponsor: Mailjet
+      sponsor: mailjet
+      closed: true
 
     - name: Lightning Talks Part II
       time: 14h30 - 15h00
@@ -138,7 +141,7 @@
     - name: Coffee-break
       time: 16h40 - 17h00
       type: coffeeBreak
-      sponsor: Mailjet
+      sponsor: Host this coffee-break
 
     - name: 'Talk #12'
       time: 17h00 - 17h40

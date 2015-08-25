@@ -1,4 +1,8 @@
 <div class="{{ sponsorClass }}">
-  <div class="Sponsor-label">Sponsored by: </div>
-  <div>mailjet</div>
+  {% if event.closed %}
+    <div class="Sponsor-label">Sponsored by: </div>
+    <div>{{ event.sponsor }}</div>
+  {% else %}
+    <a class="Sponsor-cta" target="_blank" href="{{ site.data.rubyconfpt.prospectus }}" data-track-link="Clicked 'Sponsorhip' link in the navbar">{{ event.sponsor }}</a>
+  {% endif %}
 </div>
