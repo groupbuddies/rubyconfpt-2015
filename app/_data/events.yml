@@ -39,7 +39,7 @@
       type: lunch
       sponsor: Mailjet
 
-    - name: Lightning Talks Part I (4 talks)
+    - name: Lightning Talks Part I
       time: 14h30 - 15h00
       type: ligthningTalk
 
@@ -80,6 +80,9 @@
   date: Thusday, 15th September
   class: halfColumn
   events:
+    - name:
+      time:
+
     - name: Opening
       time: 09h45 - 10h00
 
@@ -114,7 +117,7 @@
       type: lunch
       sponsor: Mailjet
 
-    - name: Lightning Talks Part II (4 talks)
+    - name: Lightning Talks Part II
       time: 14h30 - 15h00
       type: ligthningTalk
 
@@ -146,3 +149,6 @@
 
     - name: Closing
       time: 17h40 - 18h00
+
+    - name:
+      time:
