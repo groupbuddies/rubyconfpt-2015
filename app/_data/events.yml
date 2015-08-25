@@ -80,8 +80,7 @@
   date: Thusday, 15th September
   class: halfColumn
   events:
-    - name:
-      time:
+    - type: space
 
     - name: Opening
       time: 09h45 - 10h00
@@ -150,5 +149,4 @@
     - name: Closing
       time: 17h40 - 18h00
 
-    - name:
-      time:
+    - type: space

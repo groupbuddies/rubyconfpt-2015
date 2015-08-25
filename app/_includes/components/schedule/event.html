@@ -8,18 +8,18 @@
 
 <div class="{{ eventClass }}">
   <p class="Event-time">{{ event.time }}</p>
-  <div class="Event-details">
-    {{ event.name }}
+    <div class="Event-details">
+      {{ event.name }}
 
-    {% if event.speaker %}
-      {% include components/schedule/speaker.html %}
-    {% endif %}
+      {% if event.speaker %}
+        {% include components/schedule/speaker.html %}
+      {% endif %}
 
-    {% if event.sponsor %}
-      {% capture sponsorClass %}
-        Sponsor Sponsor--{{ event.type }}
-      {% endcapture %}
-      {% include components/schedule/sponsor.html %}
-    {% endif %}
-  </div>
+      {% if event.sponsor %}
+        {% capture sponsorClass %}
+          Sponsor Sponsor--{{ event.type }}
+        {% endcapture %}
+        {% include components/schedule/sponsor.html %}
+      {% endif %}
+    </div>
 </div>
