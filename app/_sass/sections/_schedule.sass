@@ -9,10 +9,9 @@ $Schedule-dash-spacing: 4px
   height: 100%
   display: flex
 
-  +media-sm-md
+  +media-xs-only
     flex-wrap: wrap
-    justify-content: center
-    margin-right: 8%
+    justify-content: flex-start
 
 .Schedule-column
   width: 50%
@@ -21,16 +20,23 @@ $Schedule-dash-spacing: 4px
   display: flex
   flex-direction: column
 
+  +media-xs-only
+    width: 100%
+
 .Schedule-halfColumn
   margin-right: 10%
 
-  +media-sm-md
-    margin: $space-base 10%
+  +media-xs-only
+    margin: $space-base 0
 
 .Schedule-columnTitle
   width: 50%
   align-self: flex-end
   text-align: left
+
+  +media-xs-only
+    width: auto
+    align-self: center
 
 .Schedule-day
   +sans-serif
@@ -57,11 +63,11 @@ $Schedule-dash-spacing: 4px
 
   display: flex
   align-items: flex-end
+  align-self: flex-end
 
   border-left: 1px solid $color-grey
 
 
-  align-self: flex-end
 
 .Schedule-columnFooter
   .Schedule-dash
@@ -69,5 +75,5 @@ $Schedule-dash-spacing: 4px
     // Event-icon-size + border-size
     transform: translateX(-12px)
 
-    +media-sm-md
+    +media-xs-only
       display: block

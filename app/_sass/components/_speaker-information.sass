@@ -1,5 +1,6 @@
 $SpeakerInformation-spacing: 10px
 $SpeakerInformation-picture-size: 30px
+$SpeakerInformation-picture-size-mobile: 20px
 
 .SpeakerInformation
   +sans-serif
@@ -13,6 +14,9 @@ $SpeakerInformation-picture-size: 30px
   font-style: normal
   text-transform: uppercase
 
+  +media-xs-only
+    font-size: $theme-font-small
+
 .SpeakerInformation-picture
   width: $SpeakerInformation-picture-size
   height: $SpeakerInformation-picture-size
@@ -21,5 +25,12 @@ $SpeakerInformation-picture-size: 30px
 
   border-radius: 50%
 
+  +media-xs-only
+    width: $SpeakerInformation-picture-size-mobile
+    height: $SpeakerInformation-picture-size-mobile
+
 .SpeakerInformation-name
   white-space: nowrap
+
+  +media-xs-only
+    font-size: $theme-font-small

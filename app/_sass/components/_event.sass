@@ -5,6 +5,9 @@ $Event-icon-border-size: 1px
   display: flex
   justify-content: flex-end
 
+  +media-xs-only
+    justify-content: flex-start
+
 .Event-time
   +serif
   width: 50%
@@ -19,6 +22,11 @@ $Event-icon-border-size: 1px
     content: ''
     margin-right: $Event-icon-size * 2
 
+  +media-xs-only
+    width: 30%
+    margin-top: 0
+    font-size: $theme-font-small
+
 .Event-details
   +font-text
   // Event-icon-size + border-size
@@ -31,6 +39,9 @@ $Event-icon-border-size: 1px
   text-transform: uppercase
 
   border-left: $Event-icon-border-size solid $color-grey
+
+  +media-xs-only
+    font-size: $theme-font-small
 
   &:before
     content: ''

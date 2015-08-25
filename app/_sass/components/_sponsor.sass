@@ -18,6 +18,11 @@ $Sponsor-spacing: 10px
   color: $color-white
   text-transform: uppercase
 
+  +media-xs-only
+    width: $Sponsor-width * 0.5
+
+    font-size: $theme-font-small
+
 .Sponsor-label
   +serif
 
@@ -27,6 +32,9 @@ $Sponsor-spacing: 10px
   font-style: italic
   font-weight: normal
   text-transform: capitalize
+
+  +media-xs-only
+    font-size: $theme-font-small
 
 .Sponsor-cta
   color: $color-white
