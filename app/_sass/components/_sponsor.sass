@@ -1,24 +1,32 @@
+$Sponsor-width: 220px
+$Sponsor-height: 40px
+$Sponsor-spacing: 10px
+
 .Sponsor
+  width: $Sponsor-width
+  height: $Sponsor-height
+
+  border-radius: $space-small
+  margin: $Sponsor-spacing 0 0 $space-small
+  background: $color-grey
+
   display: flex
-  color: $color-white
-  width: 220px
-  height: 40px
   justify-content: center
   align-items: center
-  margin: 10px 0 0 25px
-  font-weight: bold
-  text-transform: uppercase
 
-  background: $color-grey
-  border-radius: 25px
+  font-weight: bold
+  color: $color-white
+  text-transform: uppercase
 
 .Sponsor-label
   +serif
+
+  margin-right: $Sponsor-spacing
+
   font-size: $theme-font-base
   font-style: italic
   font-weight: normal
   text-transform: capitalize
-  margin-right: 10px
 
 .Sponsor.Sponsor--lunch
   background: $color-green

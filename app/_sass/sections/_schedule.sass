@@ -1,3 +1,7 @@
+$Schedule-dash-width: 15px
+$Schedule-dash-height: 1px
+$Schedule-dash-spacing: 4px
+
 .Schedule
   background-color: $color-white
 
@@ -34,13 +38,14 @@
 
 .Schedule-dash
   background: $color-grey
-  width: 15px
-  height: 1px
+  width: $Schedule-dash-width
+  height: $Schedule-dash-height
   display: block
   margin-top: $space-small * 0.5
-  margin-left: 4px
+  margin-left: $Schedule-dash-spacing
 
 .Schedule-columnFooter
+  // Event-icon-size + border-size
   width: calc(50% - 12px)
   height: $padding-huge * 0.5
 
