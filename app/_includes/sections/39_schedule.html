@@ -3,7 +3,7 @@
 
   <div class="Schedule-twoColumnContainer">
     {% for day in site.data.events %}
-      <div class="Schedule-{{day.class}}">
+      <div class="Schedule-column Schedule-{{day.class}}">
         <div class="Schedule-columnTitle">
           <p class="Schedule-day">{{ day.name }}</p>
           <p class="Schedule-date">{{ day.date }}</p>

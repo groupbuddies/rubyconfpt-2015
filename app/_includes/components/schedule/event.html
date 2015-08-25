@@ -9,7 +9,7 @@
 <div class="{{ eventClass }}">
   <p class="Event-time">{{ event.time }}</p>
     <div class="Event-details">
-      {{ event.name }}
+      <span class="Event-name">{{ event.name }}</span>
 
       {% if event.speaker %}
         {% include components/schedule/speaker.html %}
