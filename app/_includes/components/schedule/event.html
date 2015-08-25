@@ -1,0 +1,31 @@
+{% if event.type %}
+  {% capture eventClass %}
+    Event Event--{{ event.type }}
+  {% endcapture %}
+{% else %}
+  {% assign eventClass = 'Event' %}
+{% endif %}
+
+<div class="{{ eventClass }}">
+  <p class="Event-time">{{ event.time }}</p>
+  <div class="Event-details">
+    {{ event.name }}
+
+    {% if event.speaker %}
+      <div class="SpeakerInformation">
+        <img class="SpeakerInformation-picture" src="/img/speakers/{{ event.picture_name }}"></img>
+        {{ event.speaker }}
+      </div>
+    {% endif %}
+
+    {% if event.sponsor %}
+      {% capture sponsorClass %}
+        Sponsor Sponsor--{{ event.type }}
+      {% endcapture %}
+      <div class="{{ sponsorClass }}">
+        <div class="Sponsor-label">Sponsored by: </div>
+        <div>mailjet</div>
+      </div>
+    {% endif %}
+  </div>
+</div>
