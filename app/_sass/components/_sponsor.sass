@@ -1,6 +1,7 @@
 $Sponsor-width: 260px
 $Sponsor-height: 40px
 $Sponsor-spacing: 10px
+$Sponsor-font-small: 10px
 
 .Sponsor
   width: $Sponsor-width
@@ -19,9 +20,10 @@ $Sponsor-spacing: 10px
   text-transform: uppercase
 
   +media-xs-only
-    width: $Sponsor-width * 0.5
+    width: $Sponsor-width * 0.6
+    height: $Sponsor-height * 0.6
 
-    font-size: $theme-font-small
+    font-size: $Sponsor-font-small
 
 .Sponsor-label
   +serif
@@ -34,7 +36,7 @@ $Sponsor-spacing: 10px
   text-transform: capitalize
 
   +media-xs-only
-    font-size: $theme-font-small
+    font-size: $Sponsor-font-small
 
 .Sponsor-cta
   color: $color-white

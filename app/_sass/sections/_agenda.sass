@@ -11,7 +11,7 @@ $Agenda-dash-spacing: 4px
 
   +media-xs-only
     flex-wrap: wrap
-    justify-content: flex-start
+    align-content: center
 
 .Agenda-column
   width: 50%
@@ -35,8 +35,8 @@ $Agenda-dash-spacing: 4px
   text-align: left
 
   +media-xs-only
-    width: auto
-    align-self: center
+    width: 65%
+    margin-top: $space-base
 
 .Agenda-day
   +sans-serif
@@ -56,6 +56,10 @@ $Agenda-dash-spacing: 4px
   margin-top: $space-small * 0.5
   margin-left: $Agenda-dash-spacing
 
+  +media-xs-only
+    margin-top: $space-small
+    margin-left: 0
+
 .Agenda-columnFooter
   // Event-icon-size + border-size
   width: calc(50% - 12px)
@@ -68,15 +72,15 @@ $Agenda-dash-spacing: 4px
   border-left: 1px solid $color-grey
 
   +media-xs-only
-    width: calc(70% - 12px)
+    width: 65%
+    height: 0
     align-self: flex-end
 
 
 .Agenda-columnFooter
   .Agenda-dash
     display: none
-    // Event-icon-size + border-size
-    transform: translateX(-12px)
 
     +media-xs-only
       display: block
+      margin-left: 0

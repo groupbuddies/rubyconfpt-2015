@@ -6,6 +6,7 @@ $Event-icon-border-size: 1px
   justify-content: flex-end
 
   +media-xs-only
+    width: 100%
     justify-content: flex-start
 
 .Event-time
@@ -23,7 +24,7 @@ $Event-icon-border-size: 1px
     margin-right: $Event-icon-size * 2
 
   +media-xs-only
-    width: 30%
+    width: calc(35% + 12px)
     margin-top: 0
     font-size: $theme-font-small
 
@@ -41,6 +42,7 @@ $Event-icon-border-size: 1px
   border-left: $Event-icon-border-size solid $color-grey
 
   +media-xs-only
+    width: 65%
     font-size: $theme-font-small
 
   &:before
@@ -98,6 +100,9 @@ $Event-icon-border-size: 1px
     border-color: $color-grey
 
 .Event.Event--space
+  +media-xs-only
+    display: none
+
   .Event-details:before
     border: none
     background: none
