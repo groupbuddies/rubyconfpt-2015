@@ -12,14 +12,14 @@
       <span class="Event-name">{{ event.name }}</span>
 
       {% if event.speaker %}
-        {% include components/schedule/speaker.html %}
+        {% include components/agenda/speaker.html %}
       {% endif %}
 
       {% if event.sponsor %}
         {% capture sponsorClass %}
           Sponsor Sponsor--{{ event.type }}
         {% endcapture %}
-        {% include components/schedule/sponsor.html %}
+        {% include components/agenda/sponsor.html %}
       {% endif %}
     </div>
 </div>

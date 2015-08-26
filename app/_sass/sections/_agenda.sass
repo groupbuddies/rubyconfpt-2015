@@ -1,11 +1,11 @@
-$Schedule-dash-width: 15px
-$Schedule-dash-height: 1px
-$Schedule-dash-spacing: 4px
+$Agenda-dash-width: 15px
+$Agenda-dash-height: 1px
+$Agenda-dash-spacing: 4px
 
-.Schedule
+.Agenda
   background-color: $color-white
 
-.Schedule-twoColumnContainer
+.Agenda-twoColumnContainer
   height: 100%
   display: flex
 
@@ -13,7 +13,7 @@ $Schedule-dash-spacing: 4px
     flex-wrap: wrap
     justify-content: flex-start
 
-.Schedule-column
+.Agenda-column
   width: 50%
   height: 100%
 
@@ -23,13 +23,13 @@ $Schedule-dash-spacing: 4px
   +media-xs-only
     width: 100%
 
-.Schedule-halfColumn
+.Agenda-halfColumn
   margin-right: 10%
 
   +media-xs-only
     margin: $space-base 0
 
-.Schedule-columnTitle
+.Agenda-columnTitle
   width: 50%
   align-self: flex-end
   text-align: left
@@ -38,25 +38,25 @@ $Schedule-dash-spacing: 4px
     width: auto
     align-self: center
 
-.Schedule-day
+.Agenda-day
   +sans-serif
   +font-title
   font-weight: bold
 
-.Schedule-date
+.Agenda-date
   +serif
   +font-text
   color: $color-grey
 
-.Schedule-dash
+.Agenda-dash
   background: $color-grey
-  width: $Schedule-dash-width
-  height: $Schedule-dash-height
+  width: $Agenda-dash-width
+  height: $Agenda-dash-height
   display: block
   margin-top: $space-small * 0.5
-  margin-left: $Schedule-dash-spacing
+  margin-left: $Agenda-dash-spacing
 
-.Schedule-columnFooter
+.Agenda-columnFooter
   // Event-icon-size + border-size
   width: calc(50% - 12px)
   height: $padding-huge * 0.5
@@ -72,8 +72,8 @@ $Schedule-dash-spacing: 4px
     align-self: flex-end
 
 
-.Schedule-columnFooter
-  .Schedule-dash
+.Agenda-columnFooter
+  .Agenda-dash
     display: none
     // Event-icon-size + border-size
     transform: translateX(-12px)

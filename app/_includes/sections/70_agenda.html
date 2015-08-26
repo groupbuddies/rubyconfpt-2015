@@ -1,0 +1,23 @@
+<section class="Agenda" id="agenda">
+  <h1 class="SectionTitle">Agenda</h1>
+
+  <div class="Agenda-twoColumnContainer">
+    {% for day in site.data.events %}
+      <div class="Agenda-column Agenda-{{day.class}}">
+        <div class="Agenda-columnTitle">
+          <p class="Agenda-day">{{ day.name }}</p>
+          <p class="Agenda-date">{{ day.date }}</p>
+          <span class="Agenda-dash"></span>
+        </div>
+
+        {% for event in day.events %}
+          {% include components/agenda/event.html %}
+        {% endfor %}
+
+        <div class="Agenda-columnFooter">
+          <span class="Agenda-dash"></span>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</section>
