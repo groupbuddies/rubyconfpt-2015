@@ -1,0 +1,9 @@
+<section id="fringe">
+  <h1 class="SectionTitle">Fringe Events</h1>
+
+  <div class="FringeEvents">
+    {% for event in site.data.fringe-events %}
+      {% include components/agenda/fringe-event.html %}
+    {% endfor %}
+  </div>
+</section>

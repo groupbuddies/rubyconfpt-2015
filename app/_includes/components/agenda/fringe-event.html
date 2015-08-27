@@ -1,0 +1,15 @@
+<div class="FringeEvent">
+  <div class="FringeEvent-details">
+    <p class="FringeEvent-date">{{ event.date }}</p>
+  </div>
+  <div class="FringeEvent-description">
+    {% if event.info %}
+      <a href="{{event.info}}" target="blank" class="FringeEvent-name">{{ event.name }}</a>
+    {% else %}
+      <p class="FringeEvent-name">{{ event.name }}</p>
+    {% endif %}
+    <p class="FringeEvent-location">{{ event.location }}</p>
+
+    <p class="FringeEvent-fullDescription">{{ event.description }}</p>
+  </div>
+</div>

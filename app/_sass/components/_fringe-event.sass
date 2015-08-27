@@ -1,0 +1,59 @@
+.FringeEvent
+  display: flex
+
+.FringeEvent-details
+  width: 40%
+
+  border-right: 1px solid $color-grey
+
+.FringeEvent-description
+  +sans-serif
+  +font-text
+
+  width: 60%
+
+  padding: 0 0 $space-small $space-small
+
+  &:before
+    content: ''
+
+    position: absolute
+
+    display: inline-block
+
+    width: 18px
+    height: 18px
+
+    transform: translate((-$space-small - 10), 2.5px)
+
+    background-color: $color-white
+
+    border: 1px solid $color-grey
+    border-radius: 50%
+
+.FringeEvent-name,
+.FringeEvent-location
+  +serif
+  +font-title
+
+  margin-bottom: $space-small
+
+  color: $color-blue
+
+  font-weight: bold
+
+.FringeEvent-location:before
+  +serif
+  +font-title
+
+  content: 'Where: '
+
+  color: $color-grey
+
+  font-weight: normal
+
+
+.FringeEvent-date
+  +font-title
+
+  color: $color-grey
