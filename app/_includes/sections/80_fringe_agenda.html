@@ -2,8 +2,12 @@
   <h1 class="SectionTitle">Fringe Events</h1>
 
   <div class="FringeEvents">
+    <div class="FringeEvent"><span class="FringeEvent-dash"></span></div>
+
     {% for event in site.data.fringe-events %}
       {% include components/agenda/fringe-event.html %}
     {% endfor %}
+
+    <div class="FringeEvent"><span class="FringeEvent-dash"></span></div>
   </div>
 </section>
