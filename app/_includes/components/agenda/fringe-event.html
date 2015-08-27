@@ -1,15 +1,44 @@
 <div class="FringeEvent">
-  <div class="FringeEvent-details">
-    <p class="FringeEvent-date">{{ event.date }}</p>
-  </div>
-  <div class="FringeEvent-description">
-    {% if event.info %}
-      <a href="{{event.info}}" target="blank" class="FringeEvent-name">{{ event.name }}</a>
-    {% else %}
-      <p class="FringeEvent-name">{{ event.name }}</p>
-    {% endif %}
-    <p class="FringeEvent-location">{{ event.location }}</p>
+  {% if eventIndex == 'odd' %}
+    <div class="FringeEvent-details">
+      <p class="FringeEvent-date">{{ event.time }}</p>
+    </div>
+    <div class="FringeEvent-description">
+      {% if event.info %}
+        <a href="{{event.info}}" target="blank" class="FringeEvent-name">{{ event.name }}</a>
+      {% else %}
+        <p class="FringeEvent-name">{{ event.name }}</p>
+      {% endif %}
+      <div class="FringeEvent-location">
+        <div class="FringeEvent-locationIcon">
+          {% include /img/marker.svg %}
+        </div>
+        {{ event.location }}
+      </div>
 
-    <p class="FringeEvent-fullDescription">{{ event.description }}</p>
-  </div>
+      <p class="FringeEvent-fullDescription">{{ event.description }}</p>
+    </div>
+
+  {% else %}
+
+    <div class="FringeEvent-details even">
+      {% if event.info %}
+        <a href="{{event.info}}" target="blank" class="FringeEvent-name even">{{ event.name }}</a>
+      {% else %}
+        <p class="FringeEvent-name even">{{ event.name }}</p>
+      {% endif %}
+      <div class="FringeEvent-location even">
+        {{ event.location }}
+        <div class="FringeEvent-locationIcon even">
+          {% include /img/marker.svg %}
+        </div>
+      </div>
+
+      <p class="FringeEvent-fullDescription even">{{ event.description }}</p>
+    </div>
+    <div class="FringeEvent-description even">
+      <p class="FringeEvent-date even">{{ event.time }}</p>
+    </div>
+
+  {% endif %}
 </div>

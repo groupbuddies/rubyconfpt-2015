@@ -2,19 +2,22 @@
   display: flex
 
 .FringeEvent-details
-  width: 40%
+  width: 50%
 
   border-right: 1px solid $color-grey
 
   padding: $space-small 0
 
+.FringeEvent-details.even
+  text-align: right
+
 .FringeEvent-description
   +sans-serif
   +font-text
 
-  width: 60%
+  width: 50%
 
-  padding: $space-small 0 $space-small $space-small
+  padding: $space-small 0
 
   &:before
     content: ''
@@ -26,7 +29,7 @@
     width: 18px
     height: 18px
 
-    transform: translate((-$space-small - 10), 2.5px)
+    transform: translate(-18px/2 - 1, 4px)
 
     background-color: $color-white
 
@@ -40,40 +43,82 @@
 
   display: block
 
-  margin-bottom: $space-small
+  padding: 0 0 5px $space-small
 
   color: $color-blue
 
   font-weight: bold
 
-.FringeEvent-location:before
-  +serif
-  +font-title
+  +media-xs-only
+    +font-text
 
-  content: 'Where: '
+.FringeEvent-name.even
+  padding: 0 $space-small 5px 0
 
-  color: $color-grey
+.FringeEvent-location
+  +font-text
 
-  font-weight: normal
+  display: inline-block
 
+  padding-bottom: $space-small
+
+  color: $color-green
+
+  +media-xs-only
+    font-size: $theme-font-base
+
+.FringeEvent-location.even
+  padding-left: 0
+  padding-right: $space-small
+
+.FringeEvent-locationIcon
+  display: inline-block
+
+  margin-right: 5px
+
+.FringeEvent-locationIcon.even
+  margin-right: 0
+  margin-left: 5px
 
 .FringeEvent-date
   +serif
-  +font-title
+  +font-text
 
+  margin-top: 4px
   padding-right: $space-small
 
   text-align: right
 
   color: $color-grey
 
+  +media-xs-only
+    font-size: $theme-font-base
+
+.FringeEvent-date.even
+  padding: 0 0 0 $space-small
+
+  text-align: left
+
 .FringeEvent-fullDescription
-  padding: 0 0 $space-small 0
+  padding: 0 0 $space-small $space-small
+
+  +media-xs-only
+    font-size: $theme-font-small
+
+.FringeEvent-fullDescription.even
+  padding: 0 $space-small $space-small 0
 
 .FringeEvent-dash
   width: 30px
   height: 1px
 
-  margin-left: calc(40% - 24.5px)
+  margin-left: calc(50% - 15px)
 
   background-color: $color-grey
+
+.FringeEvent-marker
+  height: 13px
+  fill: $color-green
+
+  +media-xs-only
+    height: 10px
