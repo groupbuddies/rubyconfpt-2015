@@ -1,7 +1,28 @@
 .FringeEvents
-  width: 70%
+  background-color: $color-blue
+  margin: 0 auto
 
-  margin: $space-base auto
+  padding-bottom: $space-base * 2
+
+.FringeEvents-sectionTitle
+  color: $color-yellow
+
+.FringeEvents-title
+  +font-title
+
+  margin: $space-base 0
+
+  color: $color-white
+
+  font-weight: bold
+  text-align: center
+  text-transform: uppercase
 
   +media-xs-only
-    width: 95%
+    font-size: $theme-font-text
+
+.FringeEvents-container
+  display: flex
+  justify-content: space-around
+
+  flex-wrap: wrap

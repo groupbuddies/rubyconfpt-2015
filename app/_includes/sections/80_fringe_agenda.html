@@ -1,19 +1,13 @@
-<section id="fringe">
-  <h1 class="SectionTitle">Fringe Events</h1>
+<section id="fringe" class="FringeEvents">
+  <h1 class="SectionTitle FringeEvents-sectionTitle">Fringe Events</h1>
 
-  <div class="FringeEvents">
-    <div class="FringeEvent"><span class="FringeEvent-dash"></span></div>
+  {% for day in site.data.fringe-events %}
+    <div class="FringeEvents-title">{{ day.date }}</div>
 
-    {% for event in site.data.fringe-events %}
-      {% capture eventIndex %}{% cycle 'odd', 'even' %}{% endcapture %}
-
-      {% if thecycle == 'odd' %}
-        <div>echo something</div>
-      {% endif %}
-
-      {% include components/agenda/fringe-event.html %}
-    {% endfor %}
-
-    <div class="FringeEvent"><span class="FringeEvent-dash"></span></div>
-  </div>
+    <div class="FringeEvents-container">
+      {% for event in day.events %}
+        {% include components/agenda/fringe-event.html %}
+      {% endfor %}
+    </div>
+  {% endfor %}
 </section>

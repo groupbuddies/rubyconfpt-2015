@@ -1,49 +1,26 @@
 .FringeEvent
+  max-width: 28%
+  min-width: 240px
+
   display: flex
+  flex-direction: column
 
-.FringeEvent-details
-  width: 50%
+  padding: $space-small
+  margin: 0 0 $space-base 0
 
-  border-right: 1px solid $color-grey
+  background-color: $color-white
 
-  padding: $space-small 0
+  border-radius: 10px
 
-.FringeEvent-details.even
-  text-align: right
-
-.FringeEvent-description
-  +sans-serif
-  +font-text
-
-  width: 50%
-
-  padding: $space-small 0
-
-  &:before
-    content: ''
-
-    position: absolute
-
-    display: inline-block
-
-    width: 18px
-    height: 18px
-
-    transform: translate(-18px/2 - 1, 4px)
-
-    background-color: $color-white
-
-    border: 1px solid $color-grey
-    border-radius: 50%
+.FringeEvent-information
+  display: flex
+  flex-direction: column
+  justify-content: space-between
 
 .FringeEvent-name,
 .FringeEvent-location
   +sans-serif
   +font-title
-
-  display: block
-
-  padding: 0 0 5px $space-small
 
   color: $color-blue
 
@@ -52,69 +29,44 @@
   +media-xs-only
     +font-text
 
-.FringeEvent-name.even
-  padding: 0 $space-small 5px 0
-
 .FringeEvent-location
   +font-text
 
   display: inline-block
 
-  padding-bottom: $space-small
+  padding-top: 5px
 
   color: $color-green
 
   +media-xs-only
     font-size: $theme-font-base
 
-.FringeEvent-location.even
-  padding-left: 0
-  padding-right: $space-small
-
 .FringeEvent-locationIcon
   display: inline-block
 
   margin-right: 5px
 
-.FringeEvent-locationIcon.even
-  margin-right: 0
-  margin-left: 5px
-
 .FringeEvent-date
   +serif
   +font-text
 
-  margin-top: 4px
-  padding-right: $space-small
+  margin-left: 5px
 
   text-align: right
 
   color: $color-grey
+  font-weight: normal
 
   +media-xs-only
     font-size: $theme-font-base
 
-.FringeEvent-date.even
-  padding: 0 0 0 $space-small
+.FringeEvent-description
+  +font-text
 
-  text-align: left
-
-.FringeEvent-fullDescription
-  padding: 0 0 $space-small $space-small
+  padding: $space-small 0
 
   +media-xs-only
     font-size: $theme-font-small
-
-.FringeEvent-fullDescription.even
-  padding: 0 $space-small $space-small 0
-
-.FringeEvent-dash
-  width: 30px
-  height: 1px
-
-  margin-left: calc(50% - 15px)
-
-  background-color: $color-grey
 
 .FringeEvent-marker
   height: 13px
