@@ -19,6 +19,7 @@
       time: 10h40 - 11h00
       type: coffeeBreak
       sponsor: landing jobs
+      sponsor_link: http://landing.jobs
       closed: true
 
     - name: 'Talk #2'
@@ -102,7 +103,8 @@
     - name: Coffee-break
       time: 10h40 - 11h00
       type: coffeeBreak
-      sponsor: fiber
+      sponsor: fyber
+      sponsor_link: http://fyber.com
       closed: true
 
     - name: 'Talk #8'
@@ -126,6 +128,7 @@
       time: 12h40 - 14h30
       type: lunch
       sponsor: mailjet
+      sponsor_link: https://www.mailjet.com/
       closed: true
 
     - name: Lightning Talks Part II

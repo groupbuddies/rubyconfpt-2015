@@ -1,7 +1,7 @@
 <div class="{{ sponsorClass }}">
   {% if event.closed %}
     <div class="Sponsor-label">Sponsored by: </div>
-    <div>{{ event.sponsor }}</div>
+    <a href="{{ event.sponsor_link }}" target="blank" class="Sponsor-name">{{ event.sponsor }}</a>
   {% else %}
     <a class="Sponsor-cta" target="_blank" href="{{ site.data.rubyconfpt.prospectus }}" data-track-link="Clicked 'Sponsorhip' link in the navbar">{{ event.sponsor }}</a>
   {% endif %}
