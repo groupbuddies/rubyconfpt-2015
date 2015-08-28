@@ -1,4 +1,7 @@
+$SpeakerEntry-anchor-offset: -100px
+
 .SpeakerEntry
+  position: relative
   width: 800px
   display: flex
   flex-wrap: wrap
@@ -7,6 +10,10 @@
   justify-content: space-between
   +media-xs-only
     width: 100%
+
+.SpeakerEntry-anchor
+  position: absolute
+  top: $SpeakerEntry-anchor-offset
 
 .SpeakerEntry-basics
   max-width: 160px
