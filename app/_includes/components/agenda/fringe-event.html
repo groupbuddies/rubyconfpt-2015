@@ -1,9 +1,18 @@
 <div class="FringeEvent">
   <div class="FringeEvent-information">
-    <p class="FringeEvent-name">{{ event.name }}</p>
-    <div class="FringeEvent-location">
-      <div class="FringeEvent-locationIcon">{% include /img/marker.svg %}</div>
-      {{ event.location }}
+    {% if event.info %}
+      <a class="FringeEvent-name" href="{{ event.info }}" target="blank">
+        {{ event.name }}
+      </a>
+    {% else %}
+      <p class="FringeEvent-name">{{ event.name }}</p>
+    {% endif %}
+
+    <div>
+      <a class="FringeEvent-location" href="{{ site.data.rubyconfpt.map}}" target="blank">
+        <div class="FringeEvent-locationIcon">{% include /img/marker.svg %}</div>
+        {{ event.location }}
+      </a>
       <span class="FringeEvent-date">{{ event.time }}</span>
     </div>
   </div>
