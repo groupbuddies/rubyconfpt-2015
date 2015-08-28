@@ -8,7 +8,7 @@
     - name: Opening
       time: 09h45 - 10h00
 
-    - name: 'Talk #1'
+    - name: 'Evolution of Keyword parameters'
       time: 10h00 - 10h40
       type: talk
       speaker: Koichi Sasada
@@ -22,7 +22,7 @@
       sponsor_link: http://landing.jobs
       closed: true
 
-    - name: 'Talk #2'
+    - name: 'Ruby Smells'
       time: 11h00 - 11h40
       type: talk
       speaker: Piotr Szotkowski
@@ -32,7 +32,7 @@
     - name: Break
       time: 11h40 - 12h00
 
-    - name: 'Talk #3'
+    - name: 'Amelia Bedelia Learns to Code'
       time: 12h00 - 12h40
       type: talk
       speaker: Kylie Stradley
@@ -48,7 +48,7 @@
       time: 14h30 - 15h00
       type: ligthningTalk
 
-    - name: 'Talk #4'
+    - name: 'Unreliable narrators and legacy code'
       time: 15h00 - 15h40
       type: talk
       speaker: Pedro Moreira
@@ -58,7 +58,7 @@
     - name: Break
       time: 15h40 - 16h00
 
-    - name: 'Talk #5'
+    - name: 'Rewriting code and culture'
       time: 16h00 - 16h40
       type: talk
       speaker: Sabrina Leandro
@@ -70,7 +70,7 @@
       type: coffeeBreak
       sponsor: Host this coffee-break
 
-    - name: 'Talk #6'
+    - name: 'Extremely Defensive Coding'
       time: 17h00 - 17h40
       type: talk
       speaker: Sam Phippen
@@ -93,7 +93,7 @@
     - name: Opening
       time: 09h45 - 10h00
 
-    - name: 'Talk #7'
+    - name: "Designing a Great Ruby API: How We're Simplifying Rails 5"
       time: 10h00 - 10h40
       type: talk
       speaker: Sean Griffin
@@ -107,7 +107,7 @@
       sponsor_link: http://fyber.com
       closed: true
 
-    - name: 'Talk #8'
+    - name: 'Industrial Rails'
       time: 11h00 - 11h40
       type: talk
       speaker: Christian Weyer
@@ -117,7 +117,7 @@
     - name: Break
       time: 11h40 - 12h00
 
-    - name: 'Talk #9'
+    - name: 'Orders of Magnitude'
       time: 12h00 - 12h40
       type: talk
       speaker: Davy Stevenson
@@ -135,7 +135,7 @@
       time: 14h30 - 15h00
       type: ligthningTalk
 
-    - name: 'Talk #10'
+    - name: 't.b.a'
       time: 15h00 - 15h40
       type: talk
       speaker: Steve Klabnik
@@ -145,7 +145,7 @@
     - name: Break
       time: 15h40 - 16h00
 
-    - name: 'Talk #11'
+    - name: '5 hidden gems of the Ruby standard library'
       time: 16h00 - 16h40
       type: talk
       speaker: Sergio Gil
@@ -157,7 +157,7 @@
       type: coffeeBreak
       sponsor: Host this coffee-break
 
-    - name: 'Talk #12'
+    - name: 't.b.a'
       time: 17h00 - 17h40
       type: talk
       speaker: Avdi Grimm

@@ -47,9 +47,13 @@ $Event-icon-border-size: 1px
 
   &:before
     content: ''
+
+    position: absolute
+
     width: $Event-icon-size
     height: $Event-icon-size
 
+    margin-top: $Event-icon-size / 2
     margin-right: $Event-icon-size
 
     display: inline-block
@@ -58,6 +62,14 @@ $Event-icon-border-size: 1px
     background: $color-white
 
     transform: translateX(- $Event-icon-size / 2 - $Event-icon-border-size)
+
+    +media-xs-only
+      margin-top: 0
+
+.Event-name
+  min-height: 22px
+  display: block
+  margin-left: $space-small
 
 .Event.Event--talk
   .Event-time
