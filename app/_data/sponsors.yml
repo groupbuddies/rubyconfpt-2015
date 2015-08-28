@@ -34,3 +34,11 @@ stone:
     logo: standstand
     height: 100px
     url: https://www.standstand.com/
+additional:
+  - name: ndrive
+    logo: ndrive
+    url: http://www.ndrive.com/
+
+  - name: mailjet
+    logo: mailjet
+    url: https://www.mailjet.com/
