@@ -34,6 +34,10 @@ stone:
     logo: standstand
     height: 100px
     url: https://www.standstand.com/
+  - name: EPSN
+    logo: epsn
+    height: 100px
+    url: http://www.epsnworkforce.com/en/home/
 additional:
   - name: ndrive
     logo: ndrive
