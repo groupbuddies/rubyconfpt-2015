@@ -5,7 +5,7 @@
     <div class="u-paddingLarge"></div>
     {% for sponsor in site.data.sponsors[include.class] %}
       <a target="blank" href="{{ sponsor.url }}">
-        <img class="Sponsors-sponsor" src="/img/sponsors/{{ sponsor.logo }}.png" alt="{{ sponsor.name }}">
+        <img class="Sponsors-sponsor {{sponsor.modifier}}" src="/img/sponsors/{{ sponsor.logo }}.png" alt="{{ sponsor.name }}">
       </a>
     {% endfor %}
   </div>

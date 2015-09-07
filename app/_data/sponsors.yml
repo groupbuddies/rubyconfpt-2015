@@ -21,6 +21,11 @@ platinum:
     logo: fyber
     height: 50px
     url: http://www.fyber.com/
+  - name: jobandtalent
+    logo: jt
+    height: 100px
+    url: http://www.jobandtalent.com/
+    modifier: Sponsors-sponsorSmall
 stone:
   - name: Imaginary Cloud
     logo: imaginary.cloud
@@ -42,7 +47,8 @@ additional:
   - name: ndrive
     logo: ndrive
     url: http://www.ndrive.com/
-
+    modifier: Sponsors-sponsorSmall
   - name: mailjet
     logo: mailjet
     url: https://www.mailjet.com/
+    modifier: Sponsors-sponsorSmall
