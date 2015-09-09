@@ -68,7 +68,9 @@
     - name: Coffee-break
       time: 16h40 - 17h00
       type: coffeeBreak
-      sponsor: Host this coffee-break
+      sponsor: jobandtalent
+      sponsor_link: jobandtalent.com
+      closed: true
 
     - name: 'Extremely Defensive Coding'
       time: 17h00 - 17h40
@@ -83,6 +85,8 @@
     - name: Panel
       time: 18h00 - 19h00
       type: ligthningTalk
+
+    - type: space
 
 - name: Day 2
   date: Tuesday, 15th September
