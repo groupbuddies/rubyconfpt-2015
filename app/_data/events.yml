@@ -69,7 +69,7 @@
       time: 16h40 - 17h00
       type: coffeeBreak
       sponsor: jobandtalent
-      sponsor_link: jobandtalent.com
+      sponsor_link: http://jobandtalent.com
       closed: true
 
     - name: 'Extremely Defensive Coding'
