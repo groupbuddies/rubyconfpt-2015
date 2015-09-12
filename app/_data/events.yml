@@ -139,7 +139,7 @@
       time: 14h30 - 15h00
       type: ligthningTalk
 
-    - name: 't.b.a'
+    - name: What Rust can teach us about Ruby
       time: 15h00 - 15h40
       type: talk
       speaker: Steve Klabnik

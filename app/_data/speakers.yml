@@ -12,8 +12,8 @@
   twitter: avdi
   github: avdi
   bio: Avdi Grimm has been hacking Ruby code for over 10 years, and is still loving it. He is chief aeronaut at ShipRise, head chef at RubyTapas.com, and a Ruby Rogue. He lives in Eastern Tennessee with his wife and a steadily incrementing number of children, and in his copious spare time blogs and podcasts at Virtuous Code and Wide Teams.
-  talk_title: To be announced
-  talk_description: 
+  talk_title: The Soul of Software
+  talk_description:
   picture_name: avdi.png
   website:
 
@@ -45,8 +45,8 @@
   twitter: steveklabnik
   github: steveklabnik
   bio: Steve is a Ruby Hero, Rails committer, software craftsman, and an aspiring digital humanities scholar. He spends most of his time contributing to Open Source projects and has written a book on Designing Hypermedia APIs. He’s currently a member of the Rust core team.
-  talk_title: To be announced
-  talk_description:
+  talk_title: What Rust can teach us about Ruby
+  talk_description: Learning a new language is a great way to appreciate languages you already know. In this talk, Steve will teach you about Ruby internals by comparing and contrasting them with Rust code.
   picture_name: klabnik.jpg
   website: "https://www.steveklabnik.com/"
 
