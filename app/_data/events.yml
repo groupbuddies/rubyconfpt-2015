@@ -161,7 +161,7 @@
       type: coffeeBreak
       sponsor: Host this coffee-break
 
-    - name: 't.b.a'
+    - name: The Soul of Software
       time: 17h00 - 17h40
       type: talk
       speaker: Avdi Grimm
