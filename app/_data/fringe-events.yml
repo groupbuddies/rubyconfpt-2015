@@ -24,13 +24,54 @@
       location: Casa dos Coimbras
       description: "To close the first day of RubyConf in style, we're throwing a big Sunset Party. We'll be serving food & drinks, creating the perfect chance for everyone to chill out and mingle. We're also preparing quite a few surprises for this, so keep an eye out for anything out of the ordinary. Spoiler alert: there will be music involved."
 
+
 - date: Tuesday, 15th September
   events:
     - name: Conference Dinners
       time: 19h00
       location: Historical center of Braga
-      description: Information about the dinners will be updated in the next few days.
+      description: |+
+        For the last day of RubyConf, we handpicked some of our favourite restaurants in town just for you. Enjoy the fine food and hospitality from northern Portugal, in the company of your fellow attendees. After that, we'll meet up for the Farewell Party
+        <br>We selected some of the best restaurants in Braga, covering all price ranges. Seats are limited, but we can always get some more depending on the interest.
+        <br><br>Use this <a href="https://ti.to/groupbuddies/rubyconfpt2015-conference-dinners">form</a> to reserve your seat.
+        <br><br>Please keep in mind that this is an extra service, the dinner price is not included in your conference ticket. The form will be used only to ensure your seat is reserved. Payment will be handled at the restaurant (RubyConf staff members will be there to assist). All restaurants include a vegetarian option.
+        <br><br>The options are:
 
+- date:
+  events:
+    - name: Bira dos Namorados
+      time:
+      location: Historical center of Braga
+      description: |+
+        A tribute to the Minho region. 'Bira' suggests the traditional dance from Minho, the 'Vira', and 'Namorados' comes from the traditional handkerchiefs of the region, 'Lenços dos Namorados'.
+        <br>It presents three concepts which are connected in order to obtain an integrated offer in a single establishment: handmade hamburgers and steaks, a regional store and a Café Concert.
+
+        <br><br><strong>Price:</strong> 8.5€<br><br>
+
+        Includes appetizers, main dish & drink
+
+    - name: Taberna do Migaitas
+      time:
+      location: Historical center of Braga
+      description: |+
+        Appeared in 2004, beside Sé de Braga. Its goal is to invigorate one of the most emblematic parts of the city. It doesn't cease to amaze who decides to try a traditional dish.
+
+        <br><br><strong>Price:</strong> 15€<br><br>
+
+        Includes appetizers, main dish (meat or fish options available), drink, dessert and coffee
+
+
+    - name: Copo 1/2
+      time:
+      location: Historical center of Braga
+      description: |+
+        A multifaceted space which provides many experiences: restaurant, wine bar & tapas and cocktail & gin bar. All options have thought-out spots designed specifically for each concept. It presents a menu inspired in typical food from Minho. The tapas make a perfect match with a glass of wine which is the house trademark.
+
+        <br><br><strong>Price:</strong> 25€<br><br>
+        Includes a complimentary glass of Port Wine, appetizers, main dish (meat or fish options available), drink, dessert and coffee
+
+- date:
+  events:
     - name: Farewell Party
       time: 21h00
       location: Sé de Braga
