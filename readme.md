@@ -1,6 +1,6 @@
 #RubyConf Portugal '15 website
 
-The 2015 edition website, live [here](http://rubyconf.pt/)
+The 2015 edition website, live [here](http://2015.rubyconf.pt/)
 
 ##Development
 
